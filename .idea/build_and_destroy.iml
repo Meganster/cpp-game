@@ -441,6 +441,7 @@
       <sourceFolder url="file://$MODULE_DIR$/cocos2d/extensions/Particle3D/PU/CCPUOnEventFlagObserver.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/cocos2d/extensions/Particle3D/PU/CCPULineEmitter.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/cocos2d/extensions/Particle3D/PU/CCPUPositionEmitterTranslator.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/cocos2d/extensions/Particle3D/PU/CCPULinearForceAffector.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/cocos2d/extensions/Particle3D/PU/CCPUMaterialManager.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/cocos2d/extensions/Particle3D/PU/CCPUFlockCenteringAffector.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/cocos2d/extensions/Particle3D/PU/CCPUParticleSystem3D.cpp" isTestSource="false" />
@@ -460,7 +461,7 @@
       <sourceFolder url="file://$MODULE_DIR$/cocos2d/extensions/Particle3D/PU/CCPUBehaviourTranslator.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/cocos2d/extensions/Particle3D/PU/CCPUDynamicAttribute.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/cocos2d/extensions/Particle3D/PU/CCPUOnVelocityObserverTranslator.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/cocos2d/extensions/Particle3D/PU/CCPUPointEmitter.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/cocos2d/extensions/Particle3D/PU/CCPUBaseColliderTranslator.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/cocos2d/extensions/Particle3D/PU/CCPUTextureRotator.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/cocos2d/extensions/Particle3D/PU/CCPUListener.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/cocos2d/extensions/Particle3D/PU/CCPURandomiserTranslator.h" isTestSource="false" />
@@ -478,7 +479,7 @@
       <sourceFolder url="file://$MODULE_DIR$/cocos2d/extensions/Particle3D/PU/CCPUOnQuotaObserver.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/cocos2d/extensions/Particle3D/PU/CCPUOnCountObserver.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/cocos2d/extensions/Particle3D/PU/CCPULinearForceAffectorTranslator.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/cocos2d/extensions/Particle3D/PU/CCPUBaseColliderTranslator.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/cocos2d/extensions/Particle3D/PU/CCPUPlaneColliderTranslator.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/cocos2d/extensions/Particle3D/PU/CCPUPositionEmitterTranslator.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/cocos2d/extensions/Particle3D/PU/CCPUBeamRender.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/cocos2d/extensions/Particle3D/PU/CCPUColorAffectorTranslator.cpp" isTestSource="false" />
@@ -620,9 +621,9 @@
       <sourceFolder url="file://$MODULE_DIR$/cocos2d/extensions/Particle3D/PU/CCPUAffectorTranslator.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/cocos2d/extensions/Particle3D/PU/CCPUPointEmitterTranslator.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/cocos2d/extensions/Particle3D/PU/CCPUOnExpireObserverTranslator.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/cocos2d/extensions/Particle3D/PU/CCPUMaterialTranslator.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/cocos2d/extensions/Particle3D/PU/CCPUOnCollisionObserver.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/cocos2d/extensions/Particle3D/PU/CCPUAffectorManager.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/cocos2d/extensions/Particle3D/PU/CCPUCircleEmitter.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/cocos2d/extensions/Particle3D/PU/CCPUOnTimeObserverTranslator.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/cocos2d/extensions/Particle3D/PU/CCPUGravityAffectorTranslator.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/cocos2d/extensions/Particle3D/PU/CCPUObserverManager.cpp" isTestSource="false" />
@@ -649,7 +650,6 @@
       <sourceFolder url="file://$MODULE_DIR$/cocos2d/extensions/Particle3D/PU/CCPUPathFollowerTranslator.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/cocos2d/extensions/Particle3D/PU/CCPUOnTimeObserverTranslator.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/cocos2d/extensions/Particle3D/PU/CCPULineEmitterTranslator.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/cocos2d/extensions/Particle3D/PU/CCPUPlaneColliderTranslator.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/cocos2d/extensions/Particle3D/PU/CCPUSlaveEmitter.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/cocos2d/extensions/Particle3D/PU/CCPUObserverTranslator.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/cocos2d/extensions/Particle3D/PU/CCPUScaleAffectorTranslator.cpp" isTestSource="false" />
@@ -673,7 +673,7 @@
       <sourceFolder url="file://$MODULE_DIR$/cocos2d/extensions/Particle3D/PU/CCPUTranslateManager.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/cocos2d/extensions/Particle3D/PU/CCPUBehaviour.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/cocos2d/extensions/Particle3D/PU/CCPUDoStopSystemEventHandler.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/cocos2d/extensions/Particle3D/PU/CCPULinearForceAffector.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/cocos2d/extensions/Particle3D/PU/CCPUPointEmitter.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/cocos2d/extensions/Particle3D/PU/CCPUParticleFollower.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/cocos2d/extensions/Particle3D/PU/CCPULinearForceAffector.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/cocos2d/extensions/Particle3D/PU/CCPULineAffectorTranslator.cpp" isTestSource="false" />
@@ -712,7 +712,7 @@
       <sourceFolder url="file://$MODULE_DIR$/cocos2d/extensions/Particle3D/PU/CCPUOnPositionObserver.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/cocos2d/extensions/Particle3D/PU/CCPUSphereSurfaceEmitterTranslator.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/cocos2d/extensions/Particle3D/PU/CCPUBaseCollider.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/cocos2d/extensions/Particle3D/PU/CCPUCircleEmitter.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/cocos2d/extensions/Particle3D/PU/CCPUMaterialTranslator.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/cocos2d/extensions/Particle3D/PU/CCPUGeometryRotator.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/cocos2d/extensions/Particle3D/PU/CCPUNoise.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/cocos2d/extensions/Particle3D/PU/CCPUPositionEmitter.h" isTestSource="false" />
@@ -1108,7 +1108,7 @@
       <sourceFolder url="file://$MODULE_DIR$/cocos2d/cocos/editor-support/cocostudio/CCUtilMath.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/cocos2d/cocos/editor-support/cocostudio/CCComAudio.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/cocos2d/cocos/editor-support/cocostudio/CCComExtensionData.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/cocos2d/cocos/editor-support/cocostudio/CCSpriteFrameCacheHelper.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/cocos2d/cocos/editor-support/cocostudio/CCSGUIReader.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/cocos2d/cocos/editor-support/cocostudio/CCComExtensionData.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/cocos2d/cocos/editor-support/cocostudio/CCSGUIReader.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/cocos2d/cocos/editor-support/cocostudio/FlatBuffersSerialize.h" isTestSource="false" />
@@ -1207,7 +1207,7 @@
       <sourceFolder url="file://$MODULE_DIR$/cocos2d/cocos/editor-support/cocostudio/CCComRender.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/cocos2d/cocos/editor-support/cocostudio/CCDecorativeDisplay.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/cocos2d/cocos/editor-support/cocostudio/TriggerBase.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/cocos2d/cocos/editor-support/cocostudio/CCSGUIReader.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/cocos2d/cocos/editor-support/cocostudio/CCSpriteFrameCacheHelper.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/cocos2d/cocos/editor-support/cocostudio/DictionaryHelper.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/cocos2d/cocos/editor-support/cocostudio/CCDecorativeDisplay.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/cocos2d/cocos/editor-support/cocostudio/CCDisplayFactory.h" isTestSource="false" />
@@ -1564,13 +1564,17 @@
       <sourceFolder url="file://$MODULE_DIR$/cocos2d/cocos/math/Vec4.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/proj.linux/main.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Classes/MyCustomEvent.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Classes/AppDelegate.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Classes/TreeNode.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Classes/TreeScene.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Classes/HelloWorldScene.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Classes/event_wrappers.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Classes/HelloWorldScene.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Classes/TreeNode.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Classes/AppDelegate.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Classes/MyCustomEvent.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Classes/event_wrappers.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Classes/TreeScene.cpp" isTestSource="false" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />

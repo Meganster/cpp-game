@@ -133,7 +133,7 @@ set(GAME_HEADERS
   Classes/HelloWorldScene.h
   ${PLATFORM_SPECIFIC_HEADERS}
         Classes/TreeNode.cpp Classes/TreeNode.h Classes/TreeScene.cpp Classes/TreeScene.h
-)
+        Classes/event_wrappers.cpp Classes/event_wrappers.h)
 
 if( ANDROID )
     add_library(${APP_NAME} SHARED ${GAME_SRC} ${GAME_HEADERS})
