@@ -9,24 +9,38 @@
 #include <vector>
 #include <string>
 
-class MyEventCustom : public cocos2d::EventCustom {
-public:
-    MyEventCustom() : cocos2d::EventCustom(kEventName) {};
-    static const std::string kEventName;
-};
+namespace EventWrapper {
+    /** This class is a wrapper around cocos2d::EventCustom.
+ *  The only purpose of this class creation is std::string kEventName,
+ *  which enables to use unnamed custom events.
+ */
+    class MyEventCustom : public cocos2d::EventCustom {
+    public:
+        MyEventCustom() = delete;
 
-const std::string MyEventCustom::kEventName = "Some event";
-
-
-class MyEventListenerCustom : public cocos2d::EventListenerCustom {
-public:
-    /** This method is defined as a template to enable its specification in
-     * case of creation of events with non-standard behavior.
-     */
-    template <typename T=MyEventCustom>
-    static cocos2d::EventListenerCustom* create(const T* event, const std::function<void(T*)>& callback) {
-        return cocos2d::EventListenerCustom::create(event->kEventName, callback);
+        template <class T>
+        MyEventCustom(const T* event): cocos2d::EventCustom(event->kEventName) {};
+        static const std::string kEventName;
     };
-};
+
+
+/**
+ * This function is to be used to create event listeners for arbitrary custom events.
+ * It enables to use any behavior defined in the classes inherited from MyEventCustom.
+ * When used, event class has to be explicitly provided to the function call:
+ * Usage example: auto listener = create_listener<EventClass>([](EventClass* event)->{std::cout << eventkEventName})
+ */
+    template <class T>
+    cocos2d::EventListenerCustom* create_listener(const std::function<void(T*)>& callback) {
+        auto inner_function = [callback](cocos2d::EventCustom* event_ptr) -> void {
+            auto original_event_ptr = (T*)event_ptr;
+            callback(original_event_ptr);
+        };
+
+        return cocos2d::EventListenerCustom::create(T::kEventName, inner_function);
+    };
+}
+
+
 
 #endif //MYGAME_EVENT_WRAPPERS_H

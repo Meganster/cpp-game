@@ -30,9 +30,8 @@ void TreeNode::selectTreeNode(cocos2d::EventMouse* event, TreeNode* tree_node_pt
 
     if (bounding_box.containsPoint(event_point)) {
         tree_node_ptr->setScale(0.5);
-        std::cout << "Right click generated" << std::endl;
 
-        auto select_event = TreeNodeSelectedEvent(tree_node_ptr);
+        auto select_event = TreeNodeSelectedEvent(100);
         tree_node_ptr->_eventDispatcher->dispatchEvent(&select_event);
     }
 }
@@ -49,6 +48,16 @@ void TreeNode::addEvents() {
     };
 
     _eventDispatcher->addEventListenerWithSceneGraphPriority(mouse_listener, this);
+
+    /* TODO delete next */
+    /*
+    auto call_back = [](TreeNodeSelectedEvent* event) -> void {
+        std::cout << event->kEventName << std::endl;
+    };
+    auto listener = create_listener<TreeNodeSelectedEvent>(call_back);
+
+    _eventDispatcher->addEventListenerWithSceneGraphPriority(listener, this);
+    */
 };
 
 TreeNode* TreeNode::create() {
@@ -74,10 +83,6 @@ TreeNode* TreeNode::createAttachedTreeNode(const std::vector<TreeNode*>& nodes, 
         TreeNode_ptr->setPosition(position);
         return TreeNode_ptr;
     }
-}
-
-TreeNode* TreeNode::createAttachedTreeNode(const std::vector<TreeNode*>& nodes, float x, float y) {
-    return TreeNode::createAttachedTreeNode(nodes, cocos2d::Vec2(x, y));
 }
 
 int TreeNode::curr_max_index_ = 0;

@@ -35,14 +35,15 @@ private:
 };
 
 
-class TreeNodeSelectedEvent : public MyEventCustom {
+class TreeNodeSelectedEvent : public EventWrapper::MyEventCustom {
 public:
-    TreeNodeSelectedEvent() : MyEventCustom() {};
-    TreeNodeSelectedEvent(TreeNode* tree_node_ptr) : MyEventCustom() {
-        setUserData(tree_node_ptr);
-    }
+    //TreeNodeSelectedEvent() : EventWrapper::MyEventCustom(kEventName) {};
+    TreeNodeSelectedEvent() : EventWrapper::MyEventCustom(this) {};
+    TreeNodeSelectedEvent(int val) : EventWrapper::MyEventCustom(this), someVar(val) {};
 
     static const std::string kEventName;
+
+    int someVar;
 
 };
 
