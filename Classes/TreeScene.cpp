@@ -5,8 +5,8 @@
 #include "TreeScene.h"
 #include "TreeNode.h"
 #include <iostream>
-#include "event_wrappers.h"
-#include "TreeManager.h"
+#include "event_system/event_wrappers.h"
+#include "managers/TreeManager.h"
 USING_NS_CC;
 
 Scene* TreeScene::createScene() {

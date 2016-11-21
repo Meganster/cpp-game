@@ -133,7 +133,7 @@ set(GAME_HEADERS
   Classes/HelloWorldScene.h
   ${PLATFORM_SPECIFIC_HEADERS}
         Classes/TreeNode.cpp Classes/TreeNode.h Classes/TreeScene.cpp Classes/TreeScene.h
-        Classes/event_wrappers.cpp Classes/event_wrappers.h Classes/TreeManager.cpp Classes/TreeManager.h Classes/PointManager.cpp Classes/PointManager.h Classes/TurnManager.cpp Classes/TurnManager.h)
+        Classes/event_system/event_wrappers.cpp Classes/event_system/event_wrappers.h Classes/managers/TreeManager.cpp Classes/managers/TreeManager.h Classes/managers/ScoreManager.cpp Classes/managers/ScoreManager.h Classes/managers/TurnManager.cpp Classes/managers/TurnManager.h Classes/managers/Scorable.h)
 
 if( ANDROID )
     add_library(${APP_NAME} SHARED ${GAME_SRC} ${GAME_HEADERS})

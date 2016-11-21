@@ -8,7 +8,7 @@
 #include "cocos2d.h"
 #include <vector>
 #include <string>
-#include "event_wrappers.h"
+#include "event_system/event_wrappers.h"
 
 class TreeNode : public cocos2d::Sprite {
 public:

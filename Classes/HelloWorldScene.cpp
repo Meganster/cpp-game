@@ -1,7 +1,7 @@
 #include "HelloWorldScene.h"
 #include "SimpleAudioEngine.h"
 #include "TreeNode.h"
-#include "TreeManager.h"
+#include "managers/TreeManager.h"
 
 #include <iostream>
 

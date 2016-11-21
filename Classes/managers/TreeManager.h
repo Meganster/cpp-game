@@ -6,7 +6,7 @@
 #define MYGAME_TREEMANAGER_H
 
 #include "cocos2d.h"
-#include "event_wrappers.h"
+#include "event_system/event_wrappers.h"
 #include "TreeNode.h"
 
 class CreateEdgeRequest;
