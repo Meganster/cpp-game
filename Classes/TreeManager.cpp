@@ -11,12 +11,12 @@ TreeManager::TreeManager() {};
 TreeManager::~TreeManager() {};
 
 void TreeManager::addEvents() {
-    auto call_back = [](TreeNodeSelectedEvent* event) -> void {
-        std::cout << event->someVar << std::endl;
-    };
+    //auto call_back = [](TreeNodeSelectedEvent* event) -> void {
+    //    std::cout << event->someVar << std::endl;
+    //};
 
-    auto listener = EventWrapper::create_listener<TreeNodeSelectedEvent>(call_back);
-    _eventDispatcher->addEventListenerWithSceneGraphPriority(listener, this);
+    //auto listener = EventWrapper::create_listener<TreeNodeSelectedEvent>(call_back);
+    //_eventDispatcher->addEventListenerWithSceneGraphPriority(listener, this);
 }
 
 void TreeManager::initOptions() {};

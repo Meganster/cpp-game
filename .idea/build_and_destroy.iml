@@ -1564,18 +1564,22 @@
       <sourceFolder url="file://$MODULE_DIR$/cocos2d/cocos/math/Vec4.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/proj.linux/main.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Classes/event_wrappers.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Classes/TreeNode.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Classes/AppDelegate.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Classes/TreeScene.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Classes/HelloWorldScene.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Classes/TreeManager.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Classes/HelloWorldScene.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Classes/TurnManager.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Classes/TreeNode.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Classes/AppDelegate.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Classes/TreeManager.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Classes/event_wrappers.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Classes/event_wrappers.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Classes/TreeScene.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Classes/event_wrappers.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Classes/PointManager.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Classes/PointManager.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Classes/TreeManager.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Classes/TreeManager.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Classes/HelloWorldScene.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Classes/TreeScene.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Classes/TreeNode.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Classes/HelloWorldScene.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Classes/TurnManager.h" isTestSource="false" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library">

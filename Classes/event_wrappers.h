@@ -10,7 +10,7 @@
 #include <string>
 
 namespace EventWrapper {
-    /** This class is a wrapper around cocos2d::EventCustom.
+/** This class is a wrapper around cocos2d::EventCustom.
  *  The only purpose of this class creation is std::string kEventName,
  *  which enables to use unnamed custom events.
  */

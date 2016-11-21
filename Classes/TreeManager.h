@@ -9,16 +9,23 @@
 #include "event_wrappers.h"
 #include "TreeNode.h"
 
+class CreateEdgeRequest;
+class DeleteEdgeRequest;
 
 class TreeManager: public cocos2d::Sprite {
 public:
     TreeManager();
+
     ~TreeManager();
 
     static TreeManager* create();
-
 private:
+    void createEdge(CreateEdgeRequest*);
+
+    void deleteEdge(DeleteEdgeRequest*);
+
     void initOptions();
+
     void addEvents();
 
 };
