@@ -1,7 +1,7 @@
 #include "HelloWorldScene.h"
 #include "SimpleAudioEngine.h"
 #include "TreeNode.h"
-#include "managers/TreeManager.h"
+#include "managers/TreeManagement/TreeManager.h"
 
 #include <iostream>
 
@@ -71,7 +71,7 @@ bool HelloWorld::init()
         }
     }
 
-    auto tree_manager = TreeManager::create();
+    auto tree_manager = TreeManagement::create();
     this->addChild(tree_manager, 100);
     
     return true;

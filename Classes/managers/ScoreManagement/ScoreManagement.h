@@ -2,8 +2,8 @@
 // Created by artem on 21.11.16.
 //
 
-#ifndef MYGAME_POINTMANAGER_H
-#define MYGAME_POINTMANAGER_H
+#ifndef MYGAME_SCOREMANAGEMENT_H
+#define MYGAME_SCOREMANAGEMENT_H
 
 #include <vector>
 #include "Scorable.h"
@@ -15,9 +15,9 @@ namespace score_management {
     /**
      * This class manages points distribution between 2 players
      */
-    class ScoreManager {
+    class ScoreManagement {
     public:
-        static ScoreManager& getInstance();
+        static ScoreManagement& getInstance();
 
         score_type getPlayer1Score() const;
 
@@ -49,8 +49,8 @@ namespace score_management {
 
         bool requestObjectCreation(const Scorable*) const;
 
-    private:
-        ScoreManager();
+    protected:
+        ScoreManagement();
 
         score_type getSellPrice(const std::vector<Scorable*>&) const ;
 
@@ -73,4 +73,4 @@ namespace score_management {
 }
 
 
-#endif //MYGAME_POINTMANAGER_H
+#endif //MYGAME_SCOREMANAGEMENT_H

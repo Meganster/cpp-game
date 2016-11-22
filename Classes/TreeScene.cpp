@@ -5,8 +5,8 @@
 #include "TreeScene.h"
 #include "TreeNode.h"
 #include <iostream>
-#include "event_system/event_wrappers.h"
-#include "managers/TreeManager.h"
+#include "event_system/EventWrappers.h"
+#include "managers/TreeManagement/TreeManager.h"
 USING_NS_CC;
 
 Scene* TreeScene::createScene() {
@@ -48,7 +48,7 @@ bool TreeScene::init() {
         }
     }
 
-    auto tree_manager = TreeManager::create();
+    auto tree_manager = TreeManagement::create();
     this->addChild(tree_manager, 100);
 
     return true;

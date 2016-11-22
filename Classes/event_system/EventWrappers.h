@@ -2,14 +2,14 @@
 // Created by artem on 12.11.16.
 //
 
-#ifndef MYGAME_EVENT_WRAPPERS_H
-#define MYGAME_EVENT_WRAPPERS_H
+#ifndef MYGAME_EVENTWRAPPERS_H
+#define MYGAME_EVENTWRAPPERS_H
 
 #include "cocos2d.h"
 #include <vector>
 #include <string>
 
-namespace EventWrapper {
+namespace event_wrappers {
 /** This class is a wrapper around cocos2d::EventCustom.
  *  The only purpose of this class creation is std::string kEventName,
  *  which enables to use unnamed custom events.
@@ -18,6 +18,10 @@ namespace EventWrapper {
     public:
         MyEventCustom() = delete;
 
+        /**
+         * Every constructor of child classes must begin with MyEventCustom(this) to initialize
+         * MyEventCustom with kEventName of the childClass
+         */
         template <class T>
         MyEventCustom(const T* event): cocos2d::EventCustom(event->kEventName) {};
         static const std::string kEventName;
@@ -43,4 +47,4 @@ namespace EventWrapper {
 
 
 
-#endif //MYGAME_EVENT_WRAPPERS_H
+#endif //MYGAME_EVENTWRAPPERS_H
