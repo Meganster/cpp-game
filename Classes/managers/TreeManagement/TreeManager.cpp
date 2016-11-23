@@ -3,64 +3,34 @@
 //
 
 #include "TreeManager.h"
+#include "../ScoreManagement/ScoreManagement.h"
 
 
-tree_management::TreeManager::TreeManager(): is_active(false) {
+tree_management::TreeManager::TreeManager(): is_active{false}, edge_factory{nullptr} {
     addEvents();
 };
 
-void tree_management::TreeManager::createTreeManagers() {
-    getFirstManager()->set_active();
-    getSecondManager()->set_passive();
-}
-
-tree_management::TreeManager* tree_management::TreeManager::getActiveManager() {
-    if (getFirstManager()->is_active && !getSecondManager()->is_active) {
-        return getFirstManager();
-    } else if (getSecondManager()->is_active && !getFirstManager()->is_active) {
-        return getSecondManager();
-    } else {
-        return nullptr;
-    }
-}
-
-tree_management::TreeManager* tree_management::TreeManager::getPassiveManager() {
-    if (getFirstManager()->is_active && !getSecondManager()->is_active) {
-        return getSecondManager();
-    } else if (getSecondManager()->is_active && !getFirstManager()->is_active) {
-        return getFirstManager();
-    } else {
-        return nullptr;
-    }
-}
-
-void tree_management::TreeManager::switchManagers() {
-    getFirstManager()->switchState();
-    getSecondManager()->switchState();
-}
-
-tree_management::TreeManager* tree_management::TreeManager::getFirstManager() {
-    static TreeManager first_tree_manager = TreeManager();
-
-    return &first_tree_manager;
-}
-
-tree_management::TreeManager* tree_management::TreeManager::getSecondManager() {
-    static TreeManager second_tree_manager = TreeManager();
-
-    return &second_tree_manager;
-}
-
-void tree_management::TreeManager::set_active() {
-    is_active = true;
-}
-
-void tree_management::TreeManager::set_passive() {
-    is_active = false;
-}
+tree_management::TreeManager::TreeManager(bool is_active, std::shared_ptr<tree_interfaces::EdgeFactoryInterface> edge_factory):
+        is_active{is_active}, edge_factory{edge_factory} {};
 
 void tree_management::TreeManager::switchState() {
     is_active = !is_active;
+}
+
+void tree_management::TreeManager::setFactory(std::shared_ptr<tree_interfaces::EdgeFactoryInterface> factory) {
+    edge_factory = factory;
+}
+
+void tree_management::TreeManager::setActive() {
+    is_active = true;
+}
+
+void tree_management::TreeManager::setPassive() {
+    is_active = false;
+}
+
+bool tree_management::TreeManager::isActive() {
+    return is_active;
 }
 
 void tree_management::TreeManager::selectNode(tree_interfaces::TreeNodeInterface* node) {
@@ -74,7 +44,6 @@ void tree_management::TreeManager::deselectNode(tree_interfaces::TreeNodeInterfa
 }
 
 void tree_management::TreeManager::addEvents() {
-    /*
     auto node_selected_call_back = [this](tree_events::TreeNodeSelectionEvent* event) -> void {
         manageTreeNodeSelectionEvent(event);
     };
@@ -108,7 +77,6 @@ void tree_management::TreeManager::addEvents() {
     };
     auto edge_deleted_listener = event_wrappers::create_listener<tree_events::TreeEdgeDeletionEvent>(edge_deleted_call_back);
     cocos2d::Director::getInstance()->getEventDispatcher()->addEventListenerWithFixedPriority(edge_deleted_listener, 1);
-     */
 }
 
 void tree_management::TreeManager::manageTreeNodeSelectionEvent(tree_events::TreeNodeSelectionEvent* event) {
@@ -119,35 +87,67 @@ void tree_management::TreeManager::manageTreeNodeDeselectionEvent(tree_events::T
     deselectNode(event->deselected_node);
 }
 
-/*
-TreeManagement::TreeManagement() {};
+void tree_management::TreeManager::manageTreeEdgeCreationEvent(tree_events::TreeEdgeCreationEvent* event) {
+    cocos2d::Vec2 point_1 = event->tree_node_1->getPosition();
+    cocos2d::Vec2 point_2 = event->tree_node_2->getPosition();
 
-TreeManagement::~TreeManagement() {};
+    edge_factory->setRequest(point_1, point_2);
 
-void TreeManagement::addEvents() {
-    //auto call_back = [](TreeNodeSelectedEvent* event) -> void {
-    //    std::cout << event->someVar << std::endl;
-    //};
+    auto score_manager = score_management::ScoreManager::getInstance();
 
-    //auto listener = event_wrappers::create_listener<TreeNodeSelectedEvent>(call_back);
-    //_eventDispatcher->addEventListenerWithSceneGraphPriority(listener, this);
-}
+    if (score_manager.requestObjectCreation(edge_factory)) {
 
-void TreeManagement::initOptions() {};
-
-TreeManagement* TreeManagement::create() {
-    TreeManagement* tree_manager_ptr = new TreeManagement();
-
-    if (tree_manager_ptr->initWithFile(TreeNode::kSpritePath)) {
-        tree_manager_ptr->autorelease();
-        tree_manager_ptr->initOptions();
-        tree_manager_ptr->addEvents();
-
-        return tree_manager_ptr;
     }
-
-    CC_SAFE_DELETE(tree_manager_ptr);
-    return NULL;
-
+    //TODO Add implementation
 }
-*/
+
+void tree_management::TreeManager::manageTreeEdgeDeletionEvent(tree_events::TreeEdgeDeletionEvent* event) {
+    //TODO Add implementation
+}
+
+void tree_management::TreeManager::manageTreeNodeCreationEvent(tree_events::TreeNodeCreationEvent* event) {
+    //TODO Add implementation
+}
+
+
+tree_management::TreeManagerHolder::TreeManagerHolder(std::shared_ptr<tree_management::TreeManager> manager_1_,
+                                                      std::shared_ptr<tree_management::TreeManager> manager_2_):
+        manager_1{manager_1_}, manager_2{manager_2_} {
+    if ((manager_1->isActive() && manager_2->isActive()) || (!manager_1->isActive() && !manager_2->isActive())) {
+        manager_1->setActive();
+        manager_2->setPassive();
+    }
+};
+
+std::shared_ptr<tree_management::TreeManager> tree_management::TreeManagerHolder::getActiveManager() {
+    if (manager_1->isActive() && !manager_2->isActive()) {
+        return manager_1;
+    } else if (manager_2->isActive() && !manager_2->isActive()) {
+        return manager_2;
+    } else {
+        return nullptr;
+    }
+}
+
+std::shared_ptr<tree_management::TreeManager> tree_management::TreeManagerHolder::getPassiveManager() {
+    if (manager_1->isActive() && !manager_2->isActive()) {
+        return manager_2;
+    } else if (manager_2->isActive() && !manager_2->isActive()) {
+        return manager_1;
+    } else {
+        return nullptr;
+    }
+}
+
+void tree_management::TreeManagerHolder::switchManagers() {
+    manager_1->switchState();
+    manager_2->switchState();
+}
+
+std::shared_ptr<tree_management::TreeManager> tree_management::TreeManagerHolder::getFirstManager() {
+    return manager_1;
+}
+
+std::shared_ptr<tree_management::TreeManager> tree_management::TreeManagerHolder::getSecondManager() {
+    return manager_2;
+}

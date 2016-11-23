@@ -7,6 +7,7 @@
 
 #include <vector>
 #include "Scorable.h"
+#include "memory"
 
 namespace score_management {
 
@@ -15,9 +16,9 @@ namespace score_management {
     /**
      * This class manages points distribution between 2 players
      */
-    class ScoreManagement {
+    class ScoreManager {
     public:
-        static ScoreManagement& getInstance();
+        static ScoreManager& getInstance();
 
         score_type getPlayer1Score() const;
 
@@ -35,11 +36,19 @@ namespace score_management {
 
         void sellObjects(const std::vector<Scorable*>&);
 
+        void sellObjects(const std::vector<std::shared_ptr<Scorable>>&);
+
         void sellObject(const Scorable* valuable_object);
+
+        void sellObject(const std::shared_ptr<Scorable> valuable_object);
 
         bool buyObjects(const std::vector<Scorable*>&);
 
+        bool buyObjects(const std::vector<std::shared_ptr<Scorable>>&);
+
         bool buyObject(const Scorable*);
+
+        bool buyObject(const std::shared_ptr<Scorable>);
 
         /**
          *
@@ -47,18 +56,30 @@ namespace score_management {
          */
         bool requestObjectsCreation(const std::vector<Scorable*>&) const;
 
+        bool requestObjectsCreation(const std::vector<std::shared_ptr<Scorable>>&) const;
+
         bool requestObjectCreation(const Scorable*) const;
 
+        bool requestObjectCreation(const std::shared_ptr<Scorable>) const;
+
     protected:
-        ScoreManagement();
+        ScoreManager();
 
         score_type getSellPrice(const std::vector<Scorable*>&) const ;
 
+        score_type getSellPrice(const std::vector<std::shared_ptr<Scorable>>&) const ;
+
         score_type getSellPrice(const Scorable *) const ;
+
+        score_type getSellPrice(const std::shared_ptr<Scorable>) const ;
 
         score_type getBuyPrice(const Scorable *) const ;
 
+        score_type getBuyPrice(const std::shared_ptr<Scorable>) const ;
+
         score_type getBuyPrice(const std::vector<Scorable*>&) const ;
+
+        score_type getBuyPrice(const std::vector<std::shared_ptr<Scorable>>&) const ;
 
         void spend(score_type);
 
