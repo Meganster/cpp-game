@@ -48,9 +48,6 @@ bool TreeScene::init() {
         }
     }
 
-    auto tree_manager = TreeManagement::create();
-    this->addChild(tree_manager, 100);
-
     return true;
 }
 

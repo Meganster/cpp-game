@@ -1,5 +1,4 @@
 #include "AppDelegate.h"
-#include "HelloWorldScene.h"
 #include "TreeScene.h"
 
 USING_NS_CC;

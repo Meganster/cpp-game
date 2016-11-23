@@ -124,14 +124,12 @@ endif( WIN32 )
 
 set(GAME_SRC
   Classes/AppDelegate.cpp
-  Classes/HelloWorldScene.cpp
-  ${PLATFORM_SPECIFIC_SRC}
+        ${PLATFORM_SPECIFIC_SRC}
 )
 
 set(GAME_HEADERS
   Classes/AppDelegate.h
-  Classes/HelloWorldScene.h
-  ${PLATFORM_SPECIFIC_HEADERS}
+        ${PLATFORM_SPECIFIC_HEADERS}
         Classes/TreeNode.cpp Classes/TreeNode.h Classes/TreeScene.cpp Classes/TreeScene.h
         Classes/event_system/EventWrappers.cpp Classes/event_system/EventWrappers.h Classes/managers/TreeManagement/TreeManager.cpp Classes/managers/TreeManagement/TreeManager.h Classes/managers/ScoreManagement/ScoreManagement.cpp Classes/managers/ScoreManagement/ScoreManagement.h Classes/managers/TurnManagement.cpp Classes/managers/TurnManagement.h Classes/managers/ScoreManagement/Scorable.h Classes/managers/TreeManagement/TreeObjectInterfaces.h Classes/managers/TreeManagement/TreeObjectInterfaces.cpp)
 

@@ -74,6 +74,7 @@ void tree_management::TreeManager::deselectNode(tree_interfaces::TreeNodeInterfa
 }
 
 void tree_management::TreeManager::addEvents() {
+    /*
     auto node_selected_call_back = [this](tree_events::TreeNodeSelectionEvent* event) -> void {
         manageTreeNodeSelectionEvent(event);
     };
@@ -107,6 +108,7 @@ void tree_management::TreeManager::addEvents() {
     };
     auto edge_deleted_listener = event_wrappers::create_listener<tree_events::TreeEdgeDeletionEvent>(edge_deleted_call_back);
     cocos2d::Director::getInstance()->getEventDispatcher()->addEventListenerWithFixedPriority(edge_deleted_listener, 1);
+     */
 }
 
 void tree_management::TreeManager::manageTreeNodeSelectionEvent(tree_events::TreeNodeSelectionEvent* event) {

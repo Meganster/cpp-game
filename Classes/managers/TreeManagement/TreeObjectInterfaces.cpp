@@ -4,24 +4,24 @@
 
 #include "TreeObjectInterfaces.h"
 
-tree_events::TreeEdgeCreationEvent::TreeEdgeCreationEvent(tree_interfaces::TreeNodeInterface * tree_node_1,
-                                                      tree_interfaces::TreeNodeInterface * tree_node_2,
-                                                          cocos2d::Node* parent_node):
-        MyEventCustom{this}, tree_node_1{tree_node_1}, tree_node_2{tree_node_2}, parent_node{parent_node} {};
+tree_events::TreeEdgeCreationEvent::TreeEdgeCreationEvent(tree_interfaces::TreeNodeInterface *tree_node_1,
+                                                          tree_interfaces::TreeNodeInterface *tree_node_2,
+                                                          cocos2d::Scene *parent_node):
+        MyEventCustom{this}, tree_node_1{tree_node_1}, tree_node_2{tree_node_2}, scene{parent_node} {};
 
 const std::string tree_events::TreeEdgeCreationEvent::kEventName = "TreeEdgeCreationEvent";
 
 
-tree_events::TreeNodeCreationEvent::TreeNodeCreationEvent(tree_interfaces::TreeNodeInterface* new_node,
-                                                          cocos2d::Node* parent_node):
-        MyEventCustom{this}, new_node{new_node}, parent_node{parent_node} {};
+tree_events::TreeNodeCreationEvent::TreeNodeCreationEvent(tree_interfaces::TreeNodeInterface *new_node,
+                                                          cocos2d::Scene *parent_node):
+        MyEventCustom{this}, new_node{new_node}, scene{parent_node} {};
 
 const std::string tree_events::TreeNodeCreationEvent::kEventName = "TreeNodeCreationEvent";
 
 
-tree_events::TreeEdgeDeletionEvent::TreeEdgeDeletionEvent(tree_interfaces::TreeEdgeInterface* edge_to_delete,
-                                                          cocos2d::Node* parent_node):
-        MyEventCustom{this}, edge_to_delete{edge_to_delete}, parent_node{parent_node} {};
+tree_events::TreeEdgeDeletionEvent::TreeEdgeDeletionEvent(tree_interfaces::TreeEdgeInterface *edge_to_delete,
+                                                          cocos2d::Scene *parent_node):
+        MyEventCustom{this}, edge_to_delete{edge_to_delete}, scene{parent_node} {};
 
 const std::string tree_events::TreeEdgeDeletionEvent::kEventName = "TreeEdgeDeletionEvent";
 
