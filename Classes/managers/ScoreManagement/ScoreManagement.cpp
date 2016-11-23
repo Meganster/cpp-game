@@ -4,36 +4,36 @@
 
 #include "ScoreManagement.h"
 
-score_management::ScoreManager::ScoreManager(): player_1_score{0}, player_2_score{0}, active_player{player_1} {
+score_management::ScoreManagement::ScoreManagement(): player_1_score{0}, player_2_score{0}, active_player{player_1} {
     active_score = &player_1_score;
 };
 
-score_management::ScoreManager& score_management::ScoreManager::getInstance() {
-    static ScoreManager instance;
+score_management::ScoreManagement& score_management::ScoreManagement::getInstance() {
+    static ScoreManagement instance;
     return instance;
 }
 
-score_type score_management::ScoreManager::getPlayer1Score() const {
+score_type score_management::ScoreManagement::getPlayer1Score() const {
     return player_1_score;
 }
 
-score_type score_management::ScoreManager::getPlayer2Score() const {
+score_type score_management::ScoreManagement::getPlayer2Score() const {
     return player_2_score;
 }
 
-score_management::Player score_management::ScoreManager::getActivePlayer() const {
+score_management::Player score_management::ScoreManagement::getActivePlayer() const {
     return active_player;
 }
 
-void score_management::ScoreManager::setPlayer1Score(score_type score) {
+void score_management::ScoreManagement::setPlayer1Score(score_type score) {
     player_1_score = score;
 }
 
-void score_management::ScoreManager::setPlayer2Score(score_type score) {
+void score_management::ScoreManagement::setPlayer2Score(score_type score) {
     player_2_score = score;
 }
 
-void score_management::ScoreManager::setActivePlayer(Player player) {
+void score_management::ScoreManagement::setActivePlayer(Player player) {
     active_player = player;
 
     if (player == player_1) {
@@ -43,7 +43,7 @@ void score_management::ScoreManager::setActivePlayer(Player player) {
     }
 }
 
-void score_management::ScoreManager::switchActivePlayer() {
+void score_management::ScoreManagement::switchActivePlayer() {
     if (active_player == player_1) {
         active_score = &player_2_score;
         active_player = player_2;
@@ -53,23 +53,15 @@ void score_management::ScoreManager::switchActivePlayer() {
     }
 }
 
-void score_management::ScoreManager::sellObjects(const std::vector<Scorable*>& scorable_objects) {
+void score_management::ScoreManagement::sellObjects(const std::vector<Scorable*>& scorable_objects) {
     deposit(getSellPrice(scorable_objects));
 }
 
-void score_management::ScoreManager::sellObjects(const std::vector<std::shared_ptr<Scorable>>& scorable_objects) {
-    deposit(getSellPrice(scorable_objects));
-}
-
-void score_management::ScoreManager::sellObject(const Scorable* scorable) {
+void score_management::ScoreManagement::sellObject(const Scorable* scorable) {
     deposit(getSellPrice(scorable));
 }
 
-void score_management::ScoreManager::sellObject(const std::shared_ptr<Scorable> scorable) {
-    deposit(getSellPrice(scorable));
-}
-
-bool score_management::ScoreManager::buyObjects(const std::vector<Scorable*>& scorable_objects) {
+bool score_management::ScoreManagement::buyObjects(const std::vector<Scorable*>& scorable_objects) {
     score_type price = getBuyPrice(scorable_objects);
 
     if (price >= *active_score) {
@@ -80,18 +72,7 @@ bool score_management::ScoreManager::buyObjects(const std::vector<Scorable*>& sc
     }
 }
 
-bool score_management::ScoreManager::buyObjects(const std::vector<std::shared_ptr<Scorable>>& scorable_objects) {
-    score_type price = getBuyPrice(scorable_objects);
-
-    if (price >= *active_score) {
-        spend(price);
-        return true;
-    } else {
-        return false;
-    }
-}
-
-bool score_management::ScoreManager::buyObject(const Scorable* scorable) {
+bool score_management::ScoreManagement::buyObject(const Scorable* scorable) {
     score_type price = getBuyPrice(scorable);
 
     if (price >= *active_score) {
@@ -102,34 +83,15 @@ bool score_management::ScoreManager::buyObject(const Scorable* scorable) {
     }
 }
 
-bool score_management::ScoreManager::buyObject(const std::shared_ptr<Scorable> scorable) {
-    score_type price = getBuyPrice(scorable);
-
-    if (price >= *active_score) {
-        spend(price);
-        return true;
-    } else {
-        return false;
-    }
-}
-
-bool score_management::ScoreManager::requestObjectsCreation(const std::vector<Scorable*>& scorable_objects) const {
+bool score_management::ScoreManagement::requestObjectsCreation(const std::vector<Scorable*>& scorable_objects) const {
     return getBuyPrice(scorable_objects) >= *active_score;
 }
 
-bool score_management::ScoreManager::requestObjectsCreation(const std::vector<std::shared_ptr<Scorable>>& scorable_objects) const {
-    return getBuyPrice(scorable_objects) >= *active_score;
-}
-
-bool score_management::ScoreManager::requestObjectCreation(const Scorable* scorable) const {
+bool score_management::ScoreManagement::requestObjectCreation(const Scorable* scorable) const {
     return getBuyPrice(scorable) >= *active_score;
 }
 
-bool score_management::ScoreManager::requestObjectCreation(const std::shared_ptr<Scorable> scorable) const {
-    return getBuyPrice(scorable) >= *active_score;
-}
-
-score_type score_management::ScoreManager::getSellPrice(const std::vector<Scorable *>& scorable_objects) const {
+score_type score_management::ScoreManagement::getSellPrice(const std::vector<Scorable *>& scorable_objects) const {
     score_type result = 0;
     for (auto scorable: scorable_objects) {
         result += getSellPrice(scorable);
@@ -138,24 +100,11 @@ score_type score_management::ScoreManager::getSellPrice(const std::vector<Scorab
     return result;
 }
 
-score_type score_management::ScoreManager::getSellPrice(const std::vector<std::shared_ptr<Scorable>>& scorable_objects) const {
-    score_type result = 0;
-    for (auto scorable: scorable_objects) {
-        result += getSellPrice(scorable);
-    }
-
-    return result;
-}
-
-score_type score_management::ScoreManager::getSellPrice(const Scorable *scorable) const {
+score_type score_management::ScoreManagement::getSellPrice(const Scorable *scorable) const {
     return scorable->getSellPrice();
 }
 
-score_type score_management::ScoreManager::getSellPrice(const std::shared_ptr<Scorable> scorable) const {
-    return scorable->getSellPrice();
-}
-
-score_type score_management::ScoreManager::getBuyPrice(const std::vector<Scorable *>& scorable_objects) const {
+score_type score_management::ScoreManagement::getBuyPrice(const std::vector<Scorable *>& scorable_objects) const {
     score_type result = 0;
     for (auto valuable_object: scorable_objects) {
         result += getBuyPrice(valuable_object);
@@ -164,27 +113,14 @@ score_type score_management::ScoreManager::getBuyPrice(const std::vector<Scorabl
     return result;
 }
 
-score_type score_management::ScoreManager::getBuyPrice(const std::vector<std::shared_ptr<Scorable>>& scorable_objects) const {
-    score_type result = 0;
-    for (auto valuable_object: scorable_objects) {
-        result += getBuyPrice(valuable_object);
-    }
-
-    return result;
-}
-
-score_type score_management::ScoreManager::getBuyPrice(const Scorable *scorable) const {
+score_type score_management::ScoreManagement::getBuyPrice(const Scorable *scorable) const {
     return scorable->getBuyPrice();
 }
 
-score_type score_management::ScoreManager::getBuyPrice(const std::shared_ptr<Scorable> scorable) const {
-    return scorable->getBuyPrice();
-}
-
-void score_management::ScoreManager::spend(score_type amount) {
+void score_management::ScoreManagement::spend(score_type amount) {
     *active_score -= amount;
 }
 
-void score_management::ScoreManager::deposit(score_type amount) {
+void score_management::ScoreManagement::deposit(score_type amount) {
     *active_score += amount;
 }

@@ -9,27 +9,31 @@
 #include "../../event_system/EventWrappers.h"
 #include "TreeObjectInterfaces.h"
 #include <set>
-#include <memory>
 
 namespace tree_management {
 
     class TreeManager {
     public:
-        TreeManager();
+        static void createTreeManagers();
 
-        TreeManager(bool, std::shared_ptr<tree_interfaces::EdgeFactoryInterface>);
+        static TreeManager* getActiveManager();
 
-        void switchState();
+        static TreeManager* getPassiveManager();
 
-        void setFactory(std::shared_ptr<tree_interfaces::EdgeFactoryInterface>);
-
-        void setActive();
-
-        void setPassive();
-
-        bool isActive();
+        static void switchManagers();
 
     private:
+        TreeManager();
+
+        static TreeManager* getFirstManager();
+
+        static TreeManager* getSecondManager();
+
+        void set_active();
+
+        void set_passive();
+
+        void switchState();
 
         void selectNode(tree_interfaces::TreeNodeInterface*);
 
@@ -47,28 +51,8 @@ namespace tree_management {
 
         void manageTreeEdgeDeletionEvent(tree_events::TreeEdgeDeletionEvent*);
 
-        std::shared_ptr<tree_interfaces::EdgeFactoryInterface> edge_factory;
         bool is_active;
         std::set<tree_interfaces::TreeNodeInterface*> selected_nodes;
-    };
-
-    class TreeManagerHolder {
-    public:
-        TreeManagerHolder(std::shared_ptr<TreeManager>, std::shared_ptr<TreeManager>);
-
-        std::shared_ptr<TreeManager> getActiveManager();
-
-        std::shared_ptr<TreeManager> getPassiveManager();
-
-        void switchManagers();
-
-        std::shared_ptr<TreeManager> getFirstManager();
-
-        std::shared_ptr<TreeManager> getSecondManager();
-
-    private:
-        std::shared_ptr<TreeManager> manager_1;
-        std::shared_ptr<TreeManager> manager_2;
     };
 
 }
