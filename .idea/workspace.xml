@@ -22,16 +22,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="28a8ec56-e9d5-473f-ba90-b49cf199fad7" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Classes/HelloWorldScene.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Classes/HelloWorldScene.h" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/build_and_destroy.iml" afterPath="$PROJECT_DIR$/.idea/build_and_destroy.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/AppDelegate.cpp" afterPath="$PROJECT_DIR$/Classes/AppDelegate.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/TreeScene.cpp" afterPath="$PROJECT_DIR$/Classes/TreeScene.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/managers/ScoreManagement/ScoreManagement.cpp" afterPath="$PROJECT_DIR$/Classes/managers/ScoreManagement/ScoreManagement.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/managers/ScoreManagement/ScoreManagement.h" afterPath="$PROJECT_DIR$/Classes/managers/ScoreManagement/ScoreManagement.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/managers/TreeManagement/TreeManager.cpp" afterPath="$PROJECT_DIR$/Classes/managers/TreeManagement/TreeManager.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/managers/TreeManagement/TreeObjectInterfaces.cpp" afterPath="$PROJECT_DIR$/Classes/managers/TreeManagement/TreeObjectInterfaces.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/managers/TreeManagement/TreeObjectInterfaces.h" afterPath="$PROJECT_DIR$/Classes/managers/TreeManagement/TreeObjectInterfaces.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/managers/TreeManagement/TreeManager.h" afterPath="$PROJECT_DIR$/Classes/managers/TreeManagement/TreeManager.h" />
     </list>
     <ignored path="build_and_destroy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -51,76 +46,74 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TreeObjectInterfaces.h" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TreeObjectInterfaces.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Classes/managers/TreeManagement/TreeObjectInterfaces.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+            <state relative-caret-position="84">
+              <caret line="20" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
               <folding>
                 <element signature="e#117#137#0" expanded="true" />
-                <element signature="e#947#1379#1" expanded="false" />
-                <element signature="e#1386#1696#1" expanded="false" />
-                <element signature="e#1703#2007#1" expanded="false" />
-                <element signature="e#2014#2275#1" expanded="false" />
-                <element signature="e#2282#2549#1" expanded="false" />
+                <element signature="e#334#463#1" expanded="false" />
+                <element signature="e#1232#1664#1" expanded="false" />
+                <element signature="e#1671#1981#1" expanded="false" />
+                <element signature="e#1988#2292#1" expanded="false" />
+                <element signature="e#2299#2560#1" expanded="false" />
+                <element signature="e#2567#2834#1" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AppDelegate.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Classes/AppDelegate.cpp">
+      <file leaf-file-name="ScoreManagement.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Classes/managers/ScoreManagement/ScoreManagement.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="24" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TreeScene.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Classes/TreeScene.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="362">
-              <caret line="48" column="5" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TreeManager.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Classes/managers/TreeManagement/TreeManager.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="366">
-              <caret line="75" column="47" selection-start-line="75" selection-start-column="47" selection-end-line="75" selection-end-column="47" />
+            <state relative-caret-position="398">
+              <caret line="179" column="85" selection-start-line="179" selection-start-column="85" selection-end-line="179" selection-end-column="85" />
               <folding>
-                <element signature="e#67#149#0" expanded="false" />
-                <element signature="e#152#287#0" expanded="false" />
-                <element signature="e#289#638#0" expanded="false" />
-                <element signature="e#640#990#0" expanded="false" />
-                <element signature="e#992#1124#0" expanded="false" />
-                <element signature="e#1126#1299#0" expanded="false" />
-                <element signature="e#1301#1477#0" expanded="false" />
-                <element signature="e#1479#1552#0" expanded="false" />
-                <element signature="e#1554#1629#0" expanded="false" />
-                <element signature="e#1631#1711#0" expanded="false" />
-                <element signature="e#1713#1837#0" expanded="false" />
-                <element signature="e#1839#2012#0" expanded="false" />
-                <element signature="e#2014#4075#0" expanded="false" />
-                <element signature="e#4077#4226#0" expanded="false" />
-                <element signature="e#4228#4385#0" expanded="false" />
-                <element signature="e#4387#5234#0" expanded="false" />
+                <element signature="e#1523#1684#0" expanded="false" />
+                <element signature="e#1686#1800#0" expanded="false" />
+                <element signature="e#2208#2496#0" expanded="false" />
+                <element signature="e#2741#2998#0" expanded="false" />
+                <element signature="e#3178#3370#0" expanded="false" />
+                <element signature="e#3519#3680#0" expanded="false" />
+                <element signature="e#3937#4205#0" expanded="false" />
+                <element signature="e#4337#4481#0" expanded="false" />
+                <element signature="e#4750#5030#0" expanded="false" />
+                <element signature="e#5160#5302#0" expanded="false" />
+                <marker date="1479940771375" expanded="false" signature="180:219" ph="{...}" />
+                <marker date="1479940771375" expanded="false" signature="300:358" ph="{...}" />
+                <marker date="1479940771375" expanded="false" signature="427:457" ph="{...}" />
+                <marker date="1479940771375" expanded="false" signature="526:556" ph="{...}" />
+                <marker date="1479940771375" expanded="false" signature="639:668" ph="{...}" />
+                <marker date="1479940771375" expanded="false" signature="741:772" ph="{...}" />
+                <marker date="1479940771375" expanded="false" signature="845:876" ph="{...}" />
+                <marker date="1479940771375" expanded="false" signature="946:1107" ph="{...}" />
+                <marker date="1479940771375" expanded="false" signature="1167:1374" ph="{...}" />
+                <marker date="1479940771375" expanded="false" signature="1473:1521" ph="{...}" />
+                <marker date="1479940771375" expanded="false" signature="1892:1932" ph="{...}" />
+                <marker date="1479940771375" expanded="false" signature="2030:2206" ph="{...}" />
+                <marker date="1479940771375" expanded="false" signature="2571:2739" ph="{...}" />
+                <marker date="1479940771375" expanded="false" signature="3114:3176" ph="{...}" />
+                <marker date="1479940771375" expanded="false" signature="3463:3517" ph="{...}" />
+                <marker date="1479940771375" expanded="false" signature="3793:3935" ph="{...}" />
+                <marker date="1479940771375" expanded="false" signature="4295:4335" ph="{...}" />
+                <marker date="1479940771375" expanded="false" signature="4593:4748" ph="{...}" />
+                <marker date="1479940771375" expanded="false" signature="5119:5158" ph="{...}" />
+                <marker date="1479940771375" expanded="false" signature="5366:5398" ph="{...}" />
+                <marker date="1479940771375" expanded="false" signature="5464:5496" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TreeObjectInterfaces.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Classes/managers/TreeManagement/TreeObjectInterfaces.cpp">
+      <file leaf-file-name="ScoreManagement.h" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Classes/managers/ScoreManagement/ScoreManagement.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
-              <folding />
+            <state relative-caret-position="478">
+              <caret line="81" column="73" selection-start-line="81" selection-start-column="73" selection-end-line="81" selection-end-column="73" />
+              <folding>
+                <element signature="e#107#124#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -158,16 +151,17 @@
         <option value="$PROJECT_DIR$/Classes/managers/ScoreManagement.h" />
         <option value="$PROJECT_DIR$/Classes/managers/TurnManagement.h" />
         <option value="$PROJECT_DIR$/Classes/managers/TreeManagement.h" />
-        <option value="$PROJECT_DIR$/Classes/managers/ScoreManagement/ScoreManagement.h" />
         <option value="$PROJECT_DIR$/Classes/event_system/EventWrappers.h" />
         <option value="$PROJECT_DIR$/Classes/managers/TreeManagement/TreeManagement.h" />
-        <option value="$PROJECT_DIR$/Classes/managers/TreeManagement/TreeManager.h" />
         <option value="$PROJECT_DIR$/Classes/managers/TreeManagement/TreeObjectInterfaces.cpp" />
         <option value="$PROJECT_DIR$/Classes/HelloWorldScene.cpp" />
         <option value="$PROJECT_DIR$/Classes/AppDelegate.cpp" />
         <option value="$PROJECT_DIR$/Classes/TreeScene.cpp" />
-        <option value="$PROJECT_DIR$/Classes/managers/TreeManagement/TreeManager.cpp" />
         <option value="$PROJECT_DIR$/Classes/managers/TreeManagement/TreeObjectInterfaces.h" />
+        <option value="$PROJECT_DIR$/Classes/managers/TreeManagement/TreeManager.h" />
+        <option value="$PROJECT_DIR$/Classes/managers/TreeManagement/TreeManager.cpp" />
+        <option value="$PROJECT_DIR$/Classes/managers/ScoreManagement/ScoreManagement.h" />
+        <option value="$PROJECT_DIR$/Classes/managers/ScoreManagement/ScoreManagement.cpp" />
       </list>
     </option>
   </component>
@@ -590,16 +584,16 @@
       <workItem from="1479808840775" duration="16995000" />
       <workItem from="1479827348203" duration="13000" />
       <workItem from="1479844283148" duration="1271000" />
-      <workItem from="1479931926319" duration="1346000" />
+      <workItem from="1479931926319" duration="8894000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67139000" />
+    <option name="totallyTimeSpent" value="74687000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="1682" height="1025" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19915509" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -608,9 +602,9 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32890365" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32890365" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32890365" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22019868" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2192691" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39900663" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -659,13 +653,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Classes/TreeNode.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1404">
-          <caret line="78" column="20" selection-start-line="78" selection-start-column="20" selection-end-line="78" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/proj.linux/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -858,13 +845,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/managers/ScoreManagement/ScoreManagement.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cocos2d/cocos/base/CCEventDispatcher.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
@@ -886,27 +866,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/managers/ScoreManagement/ScoreManagement.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Classes/managers/ScoreManagement/Scorable.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="384">
           <caret line="12" column="48" selection-start-line="12" selection-start-column="48" selection-end-line="12" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/managers/TreeManagement/TreeManager.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="818">
-          <caret line="47" column="84" selection-start-line="47" selection-start-column="84" selection-end-line="47" selection-end-column="84" />
-          <folding>
-            <element signature="e#105#125#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -934,6 +898,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/cocos2d/cocos/math/Vec2.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="52" column="13" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Classes/TreeScene.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="362">
@@ -950,42 +922,102 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/managers/TreeManagement/TreeManager.cpp">
+    <entry file="file://$PROJECT_DIR$/Classes/managers/TreeManagement/TreeManager.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="75" column="47" selection-start-line="75" selection-start-column="47" selection-end-line="75" selection-end-column="47" />
+        <state relative-caret-position="774">
+          <caret line="49" column="54" selection-start-line="49" selection-start-column="54" selection-end-line="49" selection-end-column="54" />
           <folding>
-            <element signature="e#67#149#0" expanded="false" />
-            <element signature="e#152#287#0" expanded="false" />
-            <element signature="e#289#638#0" expanded="false" />
-            <element signature="e#640#990#0" expanded="false" />
-            <element signature="e#992#1124#0" expanded="false" />
-            <element signature="e#1126#1299#0" expanded="false" />
-            <element signature="e#1301#1477#0" expanded="false" />
-            <element signature="e#1479#1552#0" expanded="false" />
-            <element signature="e#1554#1629#0" expanded="false" />
-            <element signature="e#1631#1711#0" expanded="false" />
-            <element signature="e#1713#1837#0" expanded="false" />
-            <element signature="e#1839#2012#0" expanded="false" />
-            <element signature="e#2014#4075#0" expanded="false" />
-            <element signature="e#4077#4226#0" expanded="false" />
-            <element signature="e#4228#4385#0" expanded="false" />
-            <element signature="e#4387#5234#0" expanded="false" />
+            <element signature="e#105#125#0" expanded="true" />
+            <element signature="e#1365#1869#1" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Classes/managers/TreeManagement/TreeObjectInterfaces.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+        <state relative-caret-position="84">
+          <caret line="20" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
           <folding>
             <element signature="e#117#137#0" expanded="true" />
-            <element signature="e#947#1379#1" expanded="false" />
-            <element signature="e#1386#1696#1" expanded="false" />
-            <element signature="e#1703#2007#1" expanded="false" />
-            <element signature="e#2014#2275#1" expanded="false" />
-            <element signature="e#2282#2549#1" expanded="false" />
+            <element signature="e#334#463#1" expanded="false" />
+            <element signature="e#1232#1664#1" expanded="false" />
+            <element signature="e#1671#1981#1" expanded="false" />
+            <element signature="e#1988#2292#1" expanded="false" />
+            <element signature="e#2299#2560#1" expanded="false" />
+            <element signature="e#2567#2834#1" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classes/managers/TreeManagement/TreeManager.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="101" column="1" selection-start-line="101" selection-start-column="1" selection-end-line="101" selection-end-column="1" />
+          <folding>
+            <element signature="e#40#64#0" expanded="true" />
+            <element signature="e#115#220#0" expanded="false" />
+            <element signature="e#413#493#0" expanded="false" />
+            <element signature="e#495#636#0" expanded="false" />
+            <element signature="e#712#786#0" expanded="false" />
+            <element signature="e#792#859#0" expanded="false" />
+            <element signature="e#1162#3208#0" expanded="false" />
+            <element signature="e#3210#3359#0" expanded="false" />
+            <element signature="e#3361#3518#0" expanded="false" />
+            <element signature="e#4261#4727#0" expanded="false" />
+            <element signature="e#4730#5054#0" expanded="false" />
+            <element signature="e#5056#5381#0" expanded="false" />
+            <element signature="e#5383#5504#0" expanded="false" />
+            <element signature="e#5506#5631#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classes/managers/ScoreManagement/ScoreManagement.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="179" column="85" selection-start-line="179" selection-start-column="85" selection-end-line="179" selection-end-column="85" />
+          <folding>
+            <element signature="e#1523#1684#0" expanded="false" />
+            <element signature="e#1686#1800#0" expanded="false" />
+            <element signature="e#2208#2496#0" expanded="false" />
+            <element signature="e#2741#2998#0" expanded="false" />
+            <element signature="e#3178#3370#0" expanded="false" />
+            <element signature="e#3519#3680#0" expanded="false" />
+            <element signature="e#3937#4205#0" expanded="false" />
+            <element signature="e#4337#4481#0" expanded="false" />
+            <element signature="e#4750#5030#0" expanded="false" />
+            <element signature="e#5160#5302#0" expanded="false" />
+            <marker date="1479940771375" expanded="false" signature="180:219" ph="{...}" />
+            <marker date="1479940771375" expanded="false" signature="300:358" ph="{...}" />
+            <marker date="1479940771375" expanded="false" signature="427:457" ph="{...}" />
+            <marker date="1479940771375" expanded="false" signature="526:556" ph="{...}" />
+            <marker date="1479940771375" expanded="false" signature="639:668" ph="{...}" />
+            <marker date="1479940771375" expanded="false" signature="741:772" ph="{...}" />
+            <marker date="1479940771375" expanded="false" signature="845:876" ph="{...}" />
+            <marker date="1479940771375" expanded="false" signature="946:1107" ph="{...}" />
+            <marker date="1479940771375" expanded="false" signature="1167:1374" ph="{...}" />
+            <marker date="1479940771375" expanded="false" signature="1473:1521" ph="{...}" />
+            <marker date="1479940771375" expanded="false" signature="1892:1932" ph="{...}" />
+            <marker date="1479940771375" expanded="false" signature="2030:2206" ph="{...}" />
+            <marker date="1479940771375" expanded="false" signature="2571:2739" ph="{...}" />
+            <marker date="1479940771375" expanded="false" signature="3114:3176" ph="{...}" />
+            <marker date="1479940771375" expanded="false" signature="3463:3517" ph="{...}" />
+            <marker date="1479940771375" expanded="false" signature="3793:3935" ph="{...}" />
+            <marker date="1479940771375" expanded="false" signature="4295:4335" ph="{...}" />
+            <marker date="1479940771375" expanded="false" signature="4593:4748" ph="{...}" />
+            <marker date="1479940771375" expanded="false" signature="5119:5158" ph="{...}" />
+            <marker date="1479940771375" expanded="false" signature="5366:5398" ph="{...}" />
+            <marker date="1479940771375" expanded="false" signature="5464:5496" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classes/managers/ScoreManagement/ScoreManagement.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="478">
+          <caret line="81" column="73" selection-start-line="81" selection-start-column="73" selection-end-line="81" selection-end-column="73" />
+          <folding>
+            <element signature="e#107#124#0" expanded="true" />
           </folding>
         </state>
       </provider>
