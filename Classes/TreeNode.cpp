@@ -3,6 +3,7 @@
 //
 
 #include "TreeNode.h"
+#include "./managers/TreeManagement/TreeObjectInterfaces.h"
 #include <iostream>
 
 TreeNode::TreeNode() {
@@ -58,6 +59,8 @@ void TreeNode::selectTreeNode(cocos2d::EventMouse* event, TreeNode* tree_node_pt
         } else {
             std::cout << "Node selected!" << std::endl;
             tree_node_ptr -> selected = true;
+            auto e = tree_events::TreeNodeSelectionEvent(tree_node_ptr);
+            tree_node_ptr->_eventDispatcher->dispatchEvent(&e);
         }
 
         auto select_event = TreeNodeSelectedEvent(100);

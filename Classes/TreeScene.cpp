@@ -52,6 +52,15 @@ bool TreeScene::init() {
 }
 
 void TreeScene::addEvents() {
+    auto call_back = [](tree_events::TreeNodeSelectionEvent* event) -> void {
+        std::cout << event->selected_node->isSelected();
+    };
+
+
+
+    auto listener = event_wrappers::create_listener<tree_events::TreeNodeSelectionEvent>\
+(call_back);
+    _eventDispatcher->addEventListenerWithSceneGraphPriority(listener, this);
 }
 
 void TreeScene::treeNodeSelectedCallback(TreeNodeSelectedEvent* event, TreeScene* tree_scene) {

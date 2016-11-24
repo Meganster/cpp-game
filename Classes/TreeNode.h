@@ -9,8 +9,9 @@
 #include <vector>
 #include <string>
 #include "event_system/EventWrappers.h"
+#include "./managers/TreeManagement/TreeObjectInterfaces.h"
 
-class TreeNode : public cocos2d::Sprite {
+class TreeNode : public tree_interfaces::TreeNodeInterface {
 public:
     TreeNode();
     ~TreeNode();
