@@ -20,6 +20,7 @@ public:
     static TreeNode* createAttachedTreeNode(const std::vector<TreeNode*>&, float, float);
 
     int getIndex() { return index_;};
+    bool isSelected() { return selected;};
 
     const static std::string kSpritePath;
 private:
@@ -28,9 +29,13 @@ private:
 
     static void removeTreeNode(cocos2d::EventMouse*, TreeNode*);
     static void selectTreeNode(cocos2d::EventMouse*, TreeNode*);
+    static void addTreeNode(cocos2d::EventMouse*, TreeNode*);
+    static void addForce(cocos2d::EventMouse*, TreeNode*);
+    static void rectScale(cocos2d::Rect*, int);
 
     static int curr_max_index_;
     int index_;
+    bool selected;
     cocos2d::Vec2 location_;
 };
 
