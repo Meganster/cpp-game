@@ -12,10 +12,15 @@
 
 namespace tree_interfaces {
 
-    class TreeNodeInterface: public cocos2d::Sprite {};
+    class TreePart: public cocos2d::Sprite, public Scorable {};
 
-    class TreeEdgeInterface: public cocos2d::Sprite, Scorable {
+    class TreeNodeInterface: public TreePart {};
+
+    class TreeEdgeInterface: public TreePart {
+    public:
         virtual std::vector<TreeNodeInterface*> getNodes() = 0;
+
+        virtual void setPosition(cocos2d::Vec2, cocos2d::Vec2) = 0;
     };
 
     class EdgeFactoryInterface: public Scorable {
@@ -33,12 +38,17 @@ namespace tree_interfaces {
         /**
          * Through this method you set request to create multiple edges
          */
-        virtual void setRequest(std::vector<cocos2d::Vec2>&, std::vector<cocos2d::Vec2>&) = 0;
+        virtual void setRequest(cocos2d::Vec2, std::vector<cocos2d::Vec2>&) = 0;
 
         /**
          * This method returns the clone of sample edge
          */
-        virtual TreeEdgeInterface* getNewEdge(TreeNodeInterface*, TreeNodeInterface*) = 0;
+        virtual std::vector<TreeEdgeInterface*> getEdges() = 0;
+
+        /**
+         * This method flushes all inner request structures
+         */
+        virtual void closeRequest() = 0;
     };
 }
 
@@ -47,11 +57,12 @@ namespace tree_events {
     class TreeEdgeCreationEvent: public event_wrappers::MyEventCustom {
     public:
         TreeEdgeCreationEvent(tree_interfaces::TreeNodeInterface *, tree_interfaces::TreeNodeInterface *,
-                              cocos2d::Scene *);
+                              tree_interfaces::EdgeFactoryInterface*, cocos2d::Scene *);
 
         static const std::string kEventName;
 
         cocos2d::Scene* scene;
+        tree_interfaces::EdgeFactoryInterface* edge_factory;
         tree_interfaces::TreeNodeInterface* tree_node_1;
         tree_interfaces::TreeNodeInterface* tree_node_2;
     };
@@ -68,12 +79,13 @@ namespace tree_events {
 
     class TreeNodeCreationEvent: public event_wrappers::MyEventCustom {
     public:
-        TreeNodeCreationEvent(tree_interfaces::TreeNodeInterface *, cocos2d::Scene *);
+        TreeNodeCreationEvent(cocos2d::Vec2, tree_interfaces::EdgeFactoryInterface*, cocos2d::Scene *);
 
         static const std::string kEventName;
 
         cocos2d::Scene* scene;
-        tree_interfaces::TreeNodeInterface* new_node;
+        tree_interfaces::EdgeFactoryInterface* edge_factory;
+        cocos2d::Vec2 new_node_coord;
     };
 
     class TreeNodeSelectionEvent: public event_wrappers::MyEventCustom {

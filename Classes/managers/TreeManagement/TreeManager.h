@@ -13,6 +13,19 @@
 
 namespace tree_management {
 
+    class TreeChange {
+    public:
+        TreeChange() = default;
+
+        void addTreePart(tree_interfaces::TreePart*);
+
+        void revert();
+
+        void submit();
+    private:
+        std::vector<tree_interfaces::TreePart*> tree_parts;
+    };
+
     class TreeManager {
     public:
         TreeManager();
@@ -21,15 +34,18 @@ namespace tree_management {
 
         void switchState();
 
-        void setFactory(std::shared_ptr<tree_interfaces::EdgeFactoryInterface>);
-
         void setActive();
 
         void setPassive();
 
         bool isActive();
 
+        bool revertLastChange();
+
+        void submitChanges();
+
     private:
+        void addChange(TreeChange);
 
         void selectNode(tree_interfaces::TreeNodeInterface*);
 
@@ -47,9 +63,9 @@ namespace tree_management {
 
         void manageTreeEdgeDeletionEvent(tree_events::TreeEdgeDeletionEvent*);
 
-        std::shared_ptr<tree_interfaces::EdgeFactoryInterface> edge_factory;
         bool is_active;
         std::set<tree_interfaces::TreeNodeInterface*> selected_nodes;
+        std::stack<TreeChange> tree_changes;
     };
 
     class TreeManagerHolder {

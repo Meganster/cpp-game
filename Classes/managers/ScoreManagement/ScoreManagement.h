@@ -24,6 +24,8 @@ namespace score_management {
 
         score_type getPlayer2Score() const;
 
+        score_type getActivePlayerScore() const;
+
         Player getActivePlayer() const;
 
         void setPlayer1Score(score_type);
@@ -34,40 +36,29 @@ namespace score_management {
 
         void switchActivePlayer();
 
-        void sellObjects(const std::vector<Scorable*>&);
+        void sell(const Scorable *);
 
-        void sellObjects(const std::vector<std::shared_ptr<Scorable>>&);
+        void sell(const std::shared_ptr<Scorable>);
 
-        void sellObject(const Scorable* valuable_object);
+        bool buy(const Scorable *);
 
-        void sellObject(const std::shared_ptr<Scorable> valuable_object);
+        bool buy(const std::shared_ptr<Scorable>);
 
-        bool buyObjects(const std::vector<Scorable*>&);
-
-        bool buyObjects(const std::vector<std::shared_ptr<Scorable>>&);
-
-        bool buyObject(const Scorable*);
-
-        bool buyObject(const std::shared_ptr<Scorable>);
+        /**
+         * Sells scorables with buy price
+         */
+        void revert(const Scorable*);
 
         /**
          *
          * @return returns true if player has enough points to create objects and false otherwise
          */
-        bool requestObjectsCreation(const std::vector<Scorable*>&) const;
+        bool hasEnoughMoney(const std::vector<Scorable *> &) const;
 
-        bool requestObjectsCreation(const std::vector<std::shared_ptr<Scorable>>&) const;
-
-        bool requestObjectCreation(const Scorable*) const;
-
-        bool requestObjectCreation(const std::shared_ptr<Scorable>) const;
+        bool hasEnoughMoney(const Scorable *) const;
 
     protected:
         ScoreManager();
-
-        score_type getSellPrice(const std::vector<Scorable*>&) const ;
-
-        score_type getSellPrice(const std::vector<std::shared_ptr<Scorable>>&) const ;
 
         score_type getSellPrice(const Scorable *) const ;
 
@@ -76,10 +67,6 @@ namespace score_management {
         score_type getBuyPrice(const Scorable *) const ;
 
         score_type getBuyPrice(const std::shared_ptr<Scorable>) const ;
-
-        score_type getBuyPrice(const std::vector<Scorable*>&) const ;
-
-        score_type getBuyPrice(const std::vector<std::shared_ptr<Scorable>>&) const ;
 
         void spend(score_type);
 

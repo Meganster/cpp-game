@@ -131,7 +131,7 @@ set(GAME_HEADERS
   Classes/AppDelegate.h
         ${PLATFORM_SPECIFIC_HEADERS}
         Classes/TreeNode.cpp Classes/TreeNode.h Classes/TreeScene.cpp Classes/TreeScene.h
-        Classes/event_system/EventWrappers.cpp Classes/event_system/EventWrappers.h Classes/managers/TreeManagement/TreeManager.cpp Classes/managers/TreeManagement/TreeManager.h Classes/managers/ScoreManagement/ScoreManagement.cpp Classes/managers/ScoreManagement/ScoreManagement.h Classes/managers/TurnManagement.cpp Classes/managers/TurnManagement.h Classes/managers/ScoreManagement/Scorable.h Classes/managers/TreeManagement/TreeObjectInterfaces.h Classes/managers/TreeManagement/TreeObjectInterfaces.cpp)
+        Classes/event_system/EventWrappers.cpp Classes/event_system/EventWrappers.h Classes/managers/TreeManagement/TreeManager.cpp Classes/managers/TreeManagement/TreeManager.h Classes/managers/ScoreManagement/ScoreManagement.cpp Classes/managers/ScoreManagement/ScoreManagement.h Classes/managers/TurnManagement/TurnManager.cpp Classes/managers/TurnManagement/TurnManager.h Classes/managers/ScoreManagement/Scorable.h Classes/managers/TreeManagement/TreeObjectInterfaces.h Classes/managers/TreeManagement/TreeObjectInterfaces.cpp)
 
 if( ANDROID )
     add_library(${APP_NAME} SHARED ${GAME_SRC} ${GAME_HEADERS})
