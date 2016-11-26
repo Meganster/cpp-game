@@ -26,11 +26,9 @@ void TreeChange::addTreePart(tree_interfaces::TreePart * tree_part) {
 
 
 TreeManager::TreeManager(): is_active{false}{
+    selected_nodes = std::set<tree_interfaces::TreeNodeInterface*>();
     addEvents();
 };
-
-TreeManager::TreeManager(bool is_active, std::shared_ptr<tree_part_creation::EdgeFactoryInterface> edge_factory):
-        is_active{is_active} {};
 
 void TreeManager::switchState() {
     is_active = !is_active;
@@ -119,12 +117,14 @@ void TreeManager::addEvents() {
 void TreeManager::manageTreeNodeSelectionEvent(tree_events::TreeNodeSelectionEvent* event) {
     selectNode(event->selected_node);
     std::cout << "Tree manager: node selected" << std::endl;
+    std::cout << "Total selected " << selected_nodes.size() << std::endl << std::endl;
 }
 
 void TreeManager::manageTreeNodeDeselectionEvent(tree_events::TreeNodeDeselectionEvent* event) {
     deselectNode(event->deselected_node);
 
     std::cout << "Tree manager: node deselected" << std::endl;
+    std::cout << "Total selected " << selected_nodes.size() << std::endl << std::endl;
 }
 
 void TreeManager::manageTreeEdgeCreationEvent(tree_events::TreeEdgeCreationEvent* event) {
@@ -194,8 +194,7 @@ void TreeManager::manageTreeNodeCreationEvent(tree_events::TreeNodeCreationEvent
 }
 
 
-TreeManagerHolder::TreeManagerHolder(std::shared_ptr<TreeManager> manager_1_,
-                                                      std::shared_ptr<TreeManager> manager_2_):
+TreeManagerHolder::TreeManagerHolder(std::shared_ptr<TreeManager> manager_1_, std::shared_ptr<TreeManager> manager_2_):
         manager_1{manager_1_}, manager_2{manager_2_} {
     if ((manager_1->isActive() && manager_2->isActive()) || (!manager_1->isActive() && !manager_2->isActive())) {
         manager_1->setActive();

@@ -32,8 +32,6 @@ namespace tree_management {
     public:
         TreeManager();
 
-        TreeManager(bool, std::shared_ptr<tree_part_creation::EdgeFactoryInterface>);
-
         void switchState();
 
         void setActive();

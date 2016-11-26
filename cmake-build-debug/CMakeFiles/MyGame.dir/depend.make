@@ -253,11 +253,17 @@ CMakeFiles/MyGame.dir/Classes/AppDelegate.cpp.o: ../cocos2d/cocos/renderer/ccGLS
 CMakeFiles/MyGame.dir/Classes/AppDelegate.cpp.o: ../cocos2d/cocos/renderer/ccShaders.h
 CMakeFiles/MyGame.dir/Classes/AppDelegate.cpp.o: ../cocos2d/cocos/vr/CCVRGenericRenderer.h
 CMakeFiles/MyGame.dir/Classes/AppDelegate.cpp.o: ../cocos2d/cocos/vr/CCVRProtocol.h
+CMakeFiles/MyGame.dir/Classes/AppDelegate.cpp.o: ../Classes/./managers/ScoreManagement/Scorable.h
+CMakeFiles/MyGame.dir/Classes/AppDelegate.cpp.o: ../Classes/./managers/TreeManagement/TreePartsInterfaces.h
 CMakeFiles/MyGame.dir/Classes/AppDelegate.cpp.o: ../Classes/AppDelegate.cpp
 CMakeFiles/MyGame.dir/Classes/AppDelegate.cpp.o: ../Classes/AppDelegate.h
 CMakeFiles/MyGame.dir/Classes/AppDelegate.cpp.o: ../Classes/TreeNode.h
 CMakeFiles/MyGame.dir/Classes/AppDelegate.cpp.o: ../Classes/TreeScene.h
 CMakeFiles/MyGame.dir/Classes/AppDelegate.cpp.o: ../Classes/event_system/EventWrappers.h
+CMakeFiles/MyGame.dir/Classes/AppDelegate.cpp.o: ../Classes/managers/TreeManagement/TreeEvents.h
+CMakeFiles/MyGame.dir/Classes/AppDelegate.cpp.o: ../Classes/managers/TreeManagement/TreeManager.h
+CMakeFiles/MyGame.dir/Classes/AppDelegate.cpp.o: ../Classes/managers/TreeManagement/TreePartsCreation.h
+CMakeFiles/MyGame.dir/Classes/AppDelegate.cpp.o: ../Classes/managers/TreeManagement/TreePartsInterfaces.h
 CMakeFiles/MyGame.dir/Classes/AppDelegate.cpp.o: /usr/local/include/GLFW/glfw3.h
 CMakeFiles/MyGame.dir/Classes/AppDelegate.cpp.o: /usr/local/include/GLFW/glfw3native.h
 
@@ -513,6 +519,11 @@ CMakeFiles/MyGame.dir/Classes/TreeNode.cpp.o: ../cocos2d/cocos/renderer/ccGLStat
 CMakeFiles/MyGame.dir/Classes/TreeNode.cpp.o: ../cocos2d/cocos/renderer/ccShaders.h
 CMakeFiles/MyGame.dir/Classes/TreeNode.cpp.o: ../cocos2d/cocos/vr/CCVRGenericRenderer.h
 CMakeFiles/MyGame.dir/Classes/TreeNode.cpp.o: ../cocos2d/cocos/vr/CCVRProtocol.h
+CMakeFiles/MyGame.dir/Classes/TreeNode.cpp.o: ../Classes/./event_system/EventWrappers.h
+CMakeFiles/MyGame.dir/Classes/TreeNode.cpp.o: ../Classes/./managers/ScoreManagement/Scorable.h
+CMakeFiles/MyGame.dir/Classes/TreeNode.cpp.o: ../Classes/./managers/TreeManagement/TreeEvents.h
+CMakeFiles/MyGame.dir/Classes/TreeNode.cpp.o: ../Classes/./managers/TreeManagement/TreePartsCreation.h
+CMakeFiles/MyGame.dir/Classes/TreeNode.cpp.o: ../Classes/./managers/TreeManagement/TreePartsInterfaces.h
 CMakeFiles/MyGame.dir/Classes/TreeNode.cpp.o: ../Classes/TreeNode.cpp
 CMakeFiles/MyGame.dir/Classes/TreeNode.cpp.o: ../Classes/TreeNode.h
 CMakeFiles/MyGame.dir/Classes/TreeNode.cpp.o: ../Classes/event_system/EventWrappers.h
@@ -771,11 +782,12 @@ CMakeFiles/MyGame.dir/Classes/TreeScene.cpp.o: ../cocos2d/cocos/renderer/ccGLSta
 CMakeFiles/MyGame.dir/Classes/TreeScene.cpp.o: ../cocos2d/cocos/renderer/ccShaders.h
 CMakeFiles/MyGame.dir/Classes/TreeScene.cpp.o: ../cocos2d/cocos/vr/CCVRGenericRenderer.h
 CMakeFiles/MyGame.dir/Classes/TreeScene.cpp.o: ../cocos2d/cocos/vr/CCVRProtocol.h
+CMakeFiles/MyGame.dir/Classes/TreeScene.cpp.o: ../Classes/./managers/ScoreManagement/Scorable.h
+CMakeFiles/MyGame.dir/Classes/TreeScene.cpp.o: ../Classes/./managers/TreeManagement/TreePartsInterfaces.h
 CMakeFiles/MyGame.dir/Classes/TreeScene.cpp.o: ../Classes/TreeNode.h
 CMakeFiles/MyGame.dir/Classes/TreeScene.cpp.o: ../Classes/TreeScene.cpp
 CMakeFiles/MyGame.dir/Classes/TreeScene.cpp.o: ../Classes/TreeScene.h
 CMakeFiles/MyGame.dir/Classes/TreeScene.cpp.o: ../Classes/event_system/EventWrappers.h
-CMakeFiles/MyGame.dir/Classes/TreeScene.cpp.o: ../Classes/managers/ScoreManagement/Scorable.h
 CMakeFiles/MyGame.dir/Classes/TreeScene.cpp.o: ../Classes/managers/TreeManagement/TreeEvents.h
 CMakeFiles/MyGame.dir/Classes/TreeScene.cpp.o: ../Classes/managers/TreeManagement/TreeManager.h
 CMakeFiles/MyGame.dir/Classes/TreeScene.cpp.o: ../Classes/managers/TreeManagement/TreePartsCreation.h

@@ -10,15 +10,15 @@ using namespace tree_part_creation;
 
 
 TreeEdgeCreationEvent::TreeEdgeCreationEvent(TreeNodeInterface *tree_node_1, TreeNodeInterface *tree_node_2,
-                                             EdgeFactoryInterface* edge_factory, cocos2d::Scene *parent_node) :
+                                             cocos2d::Scene *parent_node, EdgeFactoryInterface* edge_factory) :
         MyEventCustom{this}, tree_node_1{tree_node_1}, tree_node_2{tree_node_2},
         scene{parent_node}, edge_factory{edge_factory} {};
 
 const std::string TreeEdgeCreationEvent::kEventName = "TreeEdgeCreationEvent";
 
 
-TreeNodeCreationEvent::TreeNodeCreationEvent(cocos2d::Vec2 new_node, EdgeFactoryInterface* edge_factory,
-                                             cocos2d::Scene *parent_node):
+TreeNodeCreationEvent::TreeNodeCreationEvent(cocos2d::Vec2 new_node, cocos2d::Scene *parent_node,
+                                             EdgeFactoryInterface* edge_factory):
         MyEventCustom{this}, new_node_coord{new_node}, edge_factory{edge_factory}, scene{parent_node} {};
 
 const std::string TreeNodeCreationEvent::kEventName = "TreeNodeCreationEvent";

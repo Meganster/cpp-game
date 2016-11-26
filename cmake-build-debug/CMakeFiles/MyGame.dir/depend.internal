@@ -254,11 +254,17 @@ CMakeFiles/MyGame.dir/Classes/AppDelegate.cpp.o
  ../cocos2d/cocos/renderer/ccShaders.h
  ../cocos2d/cocos/vr/CCVRGenericRenderer.h
  ../cocos2d/cocos/vr/CCVRProtocol.h
+ /home/artem/Clion/build-and-destroy/Classes/./managers/ScoreManagement/Scorable.h
+ /home/artem/Clion/build-and-destroy/Classes/./managers/TreeManagement/TreePartsInterfaces.h
  /home/artem/Clion/build-and-destroy/Classes/AppDelegate.cpp
  /home/artem/Clion/build-and-destroy/Classes/AppDelegate.h
  /home/artem/Clion/build-and-destroy/Classes/TreeNode.h
  /home/artem/Clion/build-and-destroy/Classes/TreeScene.h
  /home/artem/Clion/build-and-destroy/Classes/event_system/EventWrappers.h
+ /home/artem/Clion/build-and-destroy/Classes/managers/TreeManagement/TreeEvents.h
+ /home/artem/Clion/build-and-destroy/Classes/managers/TreeManagement/TreeManager.h
+ /home/artem/Clion/build-and-destroy/Classes/managers/TreeManagement/TreePartsCreation.h
+ /home/artem/Clion/build-and-destroy/Classes/managers/TreeManagement/TreePartsInterfaces.h
  /usr/local/include/GLFW/glfw3.h
  /usr/local/include/GLFW/glfw3native.h
 CMakeFiles/MyGame.dir/Classes/TreeNode.cpp.o
@@ -514,6 +520,11 @@ CMakeFiles/MyGame.dir/Classes/TreeNode.cpp.o
  ../cocos2d/cocos/renderer/ccShaders.h
  ../cocos2d/cocos/vr/CCVRGenericRenderer.h
  ../cocos2d/cocos/vr/CCVRProtocol.h
+ /home/artem/Clion/build-and-destroy/Classes/./event_system/EventWrappers.h
+ /home/artem/Clion/build-and-destroy/Classes/./managers/ScoreManagement/Scorable.h
+ /home/artem/Clion/build-and-destroy/Classes/./managers/TreeManagement/TreeEvents.h
+ /home/artem/Clion/build-and-destroy/Classes/./managers/TreeManagement/TreePartsCreation.h
+ /home/artem/Clion/build-and-destroy/Classes/./managers/TreeManagement/TreePartsInterfaces.h
  /home/artem/Clion/build-and-destroy/Classes/TreeNode.cpp
  /home/artem/Clion/build-and-destroy/Classes/TreeNode.h
  /home/artem/Clion/build-and-destroy/Classes/event_system/EventWrappers.h
@@ -772,11 +783,12 @@ CMakeFiles/MyGame.dir/Classes/TreeScene.cpp.o
  ../cocos2d/cocos/renderer/ccShaders.h
  ../cocos2d/cocos/vr/CCVRGenericRenderer.h
  ../cocos2d/cocos/vr/CCVRProtocol.h
+ /home/artem/Clion/build-and-destroy/Classes/./managers/ScoreManagement/Scorable.h
+ /home/artem/Clion/build-and-destroy/Classes/./managers/TreeManagement/TreePartsInterfaces.h
  /home/artem/Clion/build-and-destroy/Classes/TreeNode.h
  /home/artem/Clion/build-and-destroy/Classes/TreeScene.cpp
  /home/artem/Clion/build-and-destroy/Classes/TreeScene.h
  /home/artem/Clion/build-and-destroy/Classes/event_system/EventWrappers.h
- /home/artem/Clion/build-and-destroy/Classes/managers/ScoreManagement/Scorable.h
  /home/artem/Clion/build-and-destroy/Classes/managers/TreeManagement/TreeEvents.h
  /home/artem/Clion/build-and-destroy/Classes/managers/TreeManagement/TreeManager.h
  /home/artem/Clion/build-and-destroy/Classes/managers/TreeManagement/TreePartsCreation.h

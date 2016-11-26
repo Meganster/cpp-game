@@ -13,6 +13,7 @@
 namespace tree_interfaces {
 
     class TreePart: public cocos2d::Sprite, public Scorable {
+    public:
         virtual void setPhantom() = 0;
 
         virtual void setReal() = 0;
@@ -20,7 +21,8 @@ namespace tree_interfaces {
         virtual TreePart* getClone() = 0;
     };
 
-    class TreeNodeInterface: public TreePart {};
+
+    class TreeNodeInterface: public TreePart {    };
 
     class TreeEdgeInterface: public TreePart {
     public:

@@ -15,7 +15,7 @@ namespace tree_events {
     class TreeEdgeCreationEvent: public event_wrappers::MyEventCustom {
     public:
         TreeEdgeCreationEvent(tree_interfaces::TreeNodeInterface *, tree_interfaces::TreeNodeInterface *,
-                              tree_part_creation::EdgeFactoryInterface*, cocos2d::Scene *);
+                              cocos2d::Scene *, tree_part_creation::EdgeFactoryInterface* factory = nullptr);
 
         static const std::string kEventName;
 
@@ -37,7 +37,8 @@ namespace tree_events {
 
     class TreeNodeCreationEvent: public event_wrappers::MyEventCustom {
     public:
-        TreeNodeCreationEvent(cocos2d::Vec2, tree_part_creation::EdgeFactoryInterface*, cocos2d::Scene *);
+        TreeNodeCreationEvent(cocos2d::Vec2, cocos2d::Scene *,
+                              tree_part_creation::EdgeFactoryInterface* factory = nullptr);
 
         static const std::string kEventName;
 

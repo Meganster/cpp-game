@@ -10,11 +10,7 @@
 USING_NS_CC;
 
 Scene* TreeScene::createScene() {
-    auto scene = cocos2d::Scene::create();
-    auto layer = TreeScene::create();
-    scene->addChild(layer);
-
-    return scene;
+    return TreeScene::create();
 }
 
 bool TreeScene::init() {
@@ -68,11 +64,11 @@ void TreeScene::addEvents() {
     };*/
 
     auto listenerSelect = event_wrappers::create_listener<tree_events::TreeNodeSelectionEvent>\
-([](tree_events::TreeNodeSelectionEvent* event) -> void { std::cout << event->selected_node->isSelected();});
+([](tree_events::TreeNodeSelectionEvent* event) -> void {event->selected_node->setScale(0.12);});
     _eventDispatcher->addEventListenerWithSceneGraphPriority(listenerSelect, this);
 
     auto listenerDeselect = event_wrappers::create_listener<tree_events::TreeNodeDeselectionEvent>\
-([](tree_events::TreeNodeDeselectionEvent* event) -> void { std::cout << event->deselected_node->isSelected();});
+([](tree_events::TreeNodeDeselectionEvent* event) -> void {event->deselected_node->setScale(0.1);});
     _eventDispatcher->addEventListenerWithSceneGraphPriority(listenerDeselect, this);
 
     auto listenerAdd = event_wrappers::create_listener<tree_events::TreeNodeCreationEvent>\

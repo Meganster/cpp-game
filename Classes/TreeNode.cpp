@@ -3,7 +3,7 @@
 //
 
 #include "TreeNode.h"
-#include "./managers/TreeManagement/TreeObjectInterfaces.h"
+#include "./managers/TreeManagement/TreeEvents.h"
 #include <iostream>
 
 TreeNode::TreeNode() {
@@ -59,12 +59,12 @@ void TreeNode::selectTreeNode(cocos2d::EventMouse* event, TreeNode* tree_node_pt
     if (bounding_box.containsPoint(event_point)) {
 
         if (tree_node_ptr->isSelected()) {
-            std::cout << "Node deselected!" << std::endl;
+            //std::cout << "Node deselected!" << std::endl;
             tree_node_ptr -> selected = false;
             auto event = tree_events::TreeNodeDeselectionEvent(tree_node_ptr);
             tree_node_ptr->_eventDispatcher->dispatchEvent(&event);
         } else {
-            std::cout << "Node selected!" << std::endl;
+            //std::cout << "Node selected!" << std::endl;
             tree_node_ptr -> selected = true;
             auto event = tree_events::TreeNodeSelectionEvent(tree_node_ptr);
             tree_node_ptr->_eventDispatcher->dispatchEvent(&event);
@@ -96,15 +96,6 @@ void TreeNode::addEvents() {
     };
 
     _eventDispatcher->addEventListenerWithSceneGraphPriority(mouse_listener, this);
-
-    /* TODO delete next */
-    /*
-    auto call_back = [](TreeNodeSelectedEvent* event) -> void {
-        std::cout << event->kEventName << std::endl;
-    };
-    auto listener = create_listener<TreeNodeSelectedEvent>(call_back);
-    _eventDispatcher->addEventListenerWithSceneGraphPriority(listener, this);
-    */
 };
 
 TreeNode* TreeNode::create() {
@@ -130,6 +121,22 @@ TreeNode* TreeNode::createAttachedTreeNode(const std::vector<TreeNode*>& nodes, 
         TreeNode_ptr->setPosition(position);
         return TreeNode_ptr;
     }
+}
+
+score_type TreeNode::getBuyPrice() const {
+    return 0;
+}
+
+score_type TreeNode::getSellPrice() const {
+    return 0;
+}
+
+void TreeNode::setPhantom() {}
+
+void TreeNode::setReal() {}
+
+tree_interfaces::TreePart* TreeNode::getClone() {
+    return nullptr;
 }
 
 int TreeNode::curr_max_index_ = 0;
