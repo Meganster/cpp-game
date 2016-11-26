@@ -37,6 +37,8 @@ private:
     static int curr_max_index_;
     int index_;
     bool selected;
+    static bool isAdding;
+    static bool isSelecting;
     cocos2d::Vec2 location_;
 };
 

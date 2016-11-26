@@ -9,6 +9,8 @@
 TreeNode::TreeNode() {
     index_ = curr_max_index_++;
     selected = false;
+    isAdding = false;
+    isSelecting = false;
 };
 
 TreeNode::~TreeNode() {};
@@ -42,8 +44,11 @@ void TreeNode::addForce(cocos2d::EventMouse* event, TreeNode* tree_node_ptr) {
 }
 
 void TreeNode::addTreeNode(cocos2d::EventMouse* event, TreeNode* tree_node_ptr) {
+    isAdding = false;
     cocos2d::Vec2 event_point = event->getLocation();
     std::cout << event_point.x << "\t" << event_point.y << std::endl;
+    auto e = tree_events::TreeNodeCreationEvent(event_point, tree_node_ptr->getScene());
+    tree_node_ptr->_eventDispatcher->dispatchEvent(&e);
 
 }
 
@@ -52,21 +57,23 @@ void TreeNode::selectTreeNode(cocos2d::EventMouse* event, TreeNode* tree_node_pt
     cocos2d::Rect bounding_box = tree_node_ptr->getBoundingBox();
 
     if (bounding_box.containsPoint(event_point)) {
-        //tree_node_ptr->setScale(0.5);
+
         if (tree_node_ptr->isSelected()) {
             std::cout << "Node deselected!" << std::endl;
             tree_node_ptr -> selected = false;
+            auto event = tree_events::TreeNodeDeselectionEvent(tree_node_ptr);
+            tree_node_ptr->_eventDispatcher->dispatchEvent(&event);
         } else {
             std::cout << "Node selected!" << std::endl;
             tree_node_ptr -> selected = true;
-            auto e = tree_events::TreeNodeSelectionEvent(tree_node_ptr);
-            tree_node_ptr->_eventDispatcher->dispatchEvent(&e);
+            auto event = tree_events::TreeNodeSelectionEvent(tree_node_ptr);
+            tree_node_ptr->_eventDispatcher->dispatchEvent(&event);
         }
-
-        auto select_event = TreeNodeSelectedEvent(100);
-        tree_node_ptr->_eventDispatcher->dispatchEvent(&select_event);
+        //isSelecting = true;
+        //auto select_event = TreeNodeSelectedEvent(100);
+        //tree_node_ptr->_eventDispatcher->dispatchEvent(&select_event);
     }
-    //else {
+    //else if (!isAdding && !isSelecting) {
     //    addTreeNode(event, tree_node_ptr);
     //}
 }
@@ -126,6 +133,8 @@ TreeNode* TreeNode::createAttachedTreeNode(const std::vector<TreeNode*>& nodes, 
 }
 
 int TreeNode::curr_max_index_ = 0;
+bool TreeNode::isAdding = false;
+bool TreeNode::isSelecting = false;
 const std::string TreeNode::kSpritePath = "circle_blue.png";
 
 
