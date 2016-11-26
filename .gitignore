@@ -40,3 +40,11 @@ Thumbs.db
 # Cocos project details #
 cocos2d/*
 linux-build/*
+proj.android/*
+proj.android-studio/*
+proj.ios_mac/*
+proj.tizen/*
+proj.win8.1-universal/*
+proj.win10/*
+proj.win32/*
+

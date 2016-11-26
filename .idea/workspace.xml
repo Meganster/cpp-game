@@ -2,17 +2,17 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" buildAllGenerated="true">
     <generated>
-      <config projectName="MyGame" targetName="MyGame" />
-      <config projectName="MyGame" targetName="tinyxml2" />
-      <config projectName="MyGame" targetName="MyGame_PRE_BUILD" />
-      <config projectName="MyGame" targetName="xxhash" />
-      <config projectName="MyGame" targetName="recast" />
-      <config projectName="MyGame" targetName="flatbuffers" />
+      <config projectName="MyGame" targetName="unzip" />
       <config projectName="MyGame" targetName="cocos2d" />
-      <config projectName="MyGame" targetName="MyGame_CORE_PRE_BUILD" />
       <config projectName="MyGame" targetName="bullet" />
       <config projectName="MyGame" targetName="cocos2dInternal" />
-      <config projectName="MyGame" targetName="unzip" />
+      <config projectName="MyGame" targetName="MyGame" />
+      <config projectName="MyGame" targetName="xxhash" />
+      <config projectName="MyGame" targetName="recast" />
+      <config projectName="MyGame" targetName="tinyxml2" />
+      <config projectName="MyGame" targetName="MyGame_CORE_PRE_BUILD" />
+      <config projectName="MyGame" targetName="flatbuffers" />
+      <config projectName="MyGame" targetName="MyGame_PRE_BUILD" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -22,19 +22,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="28a8ec56-e9d5-473f-ba90-b49cf199fad7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Classes/managers/TreeManagement/TreeEvents.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Classes/managers/TreeManagement/TreeEvents.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Classes/managers/TreeManagement/TreePartsCreation.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Classes/managers/TreeManagement/TreePartsInterfaces.h" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Classes/managers/TreeManagement/TreeObjectInterfaces.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Classes/managers/TreeManagement/TreeObjectInterfaces.h" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/build_and_destroy.iml" afterPath="$PROJECT_DIR$/.idea/build_and_destroy.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/TreeScene.cpp" afterPath="$PROJECT_DIR$/Classes/TreeScene.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/TreeScene.h" afterPath="$PROJECT_DIR$/Classes/TreeScene.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/managers/TreeManagement/TreeManager.h" afterPath="$PROJECT_DIR$/Classes/managers/TreeManagement/TreeManager.h" />
     </list>
     <ignored path="build_and_destroy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -57,7 +46,7 @@
       <file leaf-file-name="TreeNode.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Classes/TreeNode.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
+            <state relative-caret-position="868">
               <caret line="31" column="8" lean-forward="false" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
               <folding />
             </state>
@@ -108,7 +97,7 @@
       <file leaf-file-name="TreePartsInterfaces.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Classes/managers/TreeManagement/TreePartsInterfaces.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
+            <state relative-caret-position="812">
               <caret line="29" column="6" lean-forward="false" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
               <folding>
                 <element signature="e#117#137#0" expanded="true" />
@@ -129,7 +118,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AppDelegate.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AppDelegate.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Classes/AppDelegate.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="448">
@@ -137,6 +126,16 @@
               <folding>
                 <element signature="e#0#24#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="538">
+              <caret line="41" column="7" lean-forward="false" selection-start-line="41" selection-start-column="7" selection-end-line="41" selection-end-column="7" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -206,6 +205,7 @@
         <option value="$PROJECT_DIR$/Classes/managers/TreeManagement/TreeManager.h" />
         <option value="$PROJECT_DIR$/Classes/managers/TreeManagement/TreePartsInterfaces.h" />
         <option value="$PROJECT_DIR$/Classes/managers/TreeManagement/TreePartsCreation.h" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -613,35 +613,36 @@
       <workItem from="1480149677617" duration="679000" />
       <workItem from="1480151571971" duration="23000" />
       <workItem from="1480179952663" duration="34000" />
-      <workItem from="1480180946002" duration="3069000" />
+      <workItem from="1480180946002" duration="3689000" />
+      <workItem from="1480184666965" duration="20000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83731000" />
+    <option name="totallyTimeSpent" value="84371000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="2562" height="1396" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20831683" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32692307" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17628205" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32772437" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21846661" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39823717" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32692307" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32772437" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17628205" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39823717" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -685,7 +686,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Classes/HelloWorldScene.cpp" />
     <entry file="file://$PROJECT_DIR$/Classes/TreeNode.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -885,7 +885,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Classes/TreeNode.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="868">
           <caret line="31" column="8" lean-forward="false" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
           <folding />
         </state>
@@ -920,14 +920,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/managers/TreeManagement/TreeObjectInterfaces.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Classes/managers/TreeManagement/TreeObjectInterfaces.cpp" />
     <entry file="file://$PROJECT_DIR$/Classes/managers/TreeManagement/TreeManager.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
@@ -942,14 +935,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
           <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <element signature="e#97#117#0" expanded="false" />
-            <element signature="e#181#714#1" expanded="false" />
-            <element signature="e#721#1031#1" expanded="false" />
-            <element signature="e#1038#1404#1" expanded="false" />
-            <element signature="e#1411#1672#1" expanded="false" />
-            <element signature="e#1679#1946#1" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -957,7 +942,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
           <caret line="7" column="32" lean-forward="false" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -965,13 +949,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="9" column="6" lean-forward="false" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Classes/managers/TreeManagement/TreePartsInterfaces.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
+        <state relative-caret-position="812">
           <caret line="29" column="6" lean-forward="false" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
           <folding>
             <element signature="e#117#137#0" expanded="true" />
@@ -996,6 +979,14 @@
           <folding>
             <element signature="e#0#24#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="538">
+          <caret line="41" column="7" lean-forward="false" selection-start-line="41" selection-start-column="7" selection-end-line="41" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
