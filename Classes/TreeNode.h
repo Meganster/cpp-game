@@ -8,6 +8,7 @@
 #include "cocos2d.h"
 #include <vector>
 #include <string>
+#include "event_system/EventWrappers.h"
 
 class TreeNode : public cocos2d::Sprite {
 public:
@@ -34,14 +35,16 @@ private:
 };
 
 
-class TreeNodeSelectedEvent : public cocos2d::EventCustom {
+class TreeNodeSelectedEvent : public event_wrappers::MyEventCustom {
 public:
-    TreeNodeSelectedEvent() : cocos2d::EventCustom(kEventName) {};
-    TreeNodeSelectedEvent(TreeNode* tree_node_ptr) : cocos2d::EventCustom(kEventName) {
-        setUserData(tree_node_ptr);
-    }
+    //TreeNodeSelectedEvent() : event_wrappers::MyEventCustom(kEventName) {};
+    TreeNodeSelectedEvent() : event_wrappers::MyEventCustom(this) {};
+    TreeNodeSelectedEvent(int val) : event_wrappers::MyEventCustom(this), someVar(val) {};
 
     static const std::string kEventName;
+
+    int someVar;
+
 };
 
 

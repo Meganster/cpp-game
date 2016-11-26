@@ -4,6 +4,9 @@
 
 #include "TreeScene.h"
 #include "TreeNode.h"
+#include <iostream>
+#include "event_system/EventWrappers.h"
+#include "managers/TreeManagement/TreeManager.h"
 USING_NS_CC;
 
 Scene* TreeScene::createScene() {
@@ -15,7 +18,7 @@ Scene* TreeScene::createScene() {
 }
 
 bool TreeScene::init() {
-    if (!Layer::init()) {
+    if (!Scene::init()) {
         return false;
     }
 
@@ -49,12 +52,6 @@ bool TreeScene::init() {
 }
 
 void TreeScene::addEvents() {
-    auto callback = [this](EventCustom* event) {
-        //TreeScene::treeNodeSelectedCallback(event, this);
-    };
-    auto custom_listener = cocos2d::EventListenerCustom::create(TreeNodeSelectedEvent::kEventName, callback);
-    //_eventDispatcher->addEventListenerWithFixedPriority(custom_listener, 0);
-
 }
 
 void TreeScene::treeNodeSelectedCallback(TreeNodeSelectedEvent* event, TreeScene* tree_scene) {

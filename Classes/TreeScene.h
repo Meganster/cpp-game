@@ -9,7 +9,7 @@
 #include "TreeNode.h"
 #include <set>
 
-class TreeScene : public cocos2d::Layer {
+class TreeScene : public cocos2d::Scene {
 public:
     static cocos2d::Scene* createScene();
 
