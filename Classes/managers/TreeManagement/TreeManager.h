@@ -9,6 +9,7 @@
 #include "../../event_system/EventWrappers.h"
 #include "TreePartsInterfaces.h"
 #include "TreeEvents.h"
+#include "TreePartsCreation.h"
 #include <set>
 #include <memory>
 
@@ -31,7 +32,7 @@ namespace tree_management {
     public:
         TreeManager();
 
-        TreeManager(bool, std::shared_ptr<tree_interfaces::EdgeFactoryInterface>);
+        TreeManager(bool, std::shared_ptr<tree_part_creation::EdgeFactoryInterface>);
 
         void switchState();
 

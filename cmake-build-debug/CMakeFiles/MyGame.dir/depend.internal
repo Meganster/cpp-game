@@ -779,7 +779,8 @@ CMakeFiles/MyGame.dir/Classes/TreeScene.cpp.o
  /home/artem/Clion/build-and-destroy/Classes/managers/ScoreManagement/Scorable.h
  /home/artem/Clion/build-and-destroy/Classes/managers/TreeManagement/TreeEvents.h
  /home/artem/Clion/build-and-destroy/Classes/managers/TreeManagement/TreeManager.h
- /home/artem/Clion/build-and-destroy/Classes/managers/TreeManagement/TreeObjectInterfaces.h
+ /home/artem/Clion/build-and-destroy/Classes/managers/TreeManagement/TreePartsCreation.h
+ /home/artem/Clion/build-and-destroy/Classes/managers/TreeManagement/TreePartsInterfaces.h
  /usr/local/include/GLFW/glfw3.h
  /usr/local/include/GLFW/glfw3native.h
 CMakeFiles/MyGame.dir/Classes/event_system/EventWrappers.cpp.o
@@ -1300,7 +1301,8 @@ CMakeFiles/MyGame.dir/Classes/managers/TreeManagement/TreeEvents.cpp.o
  /home/artem/Clion/build-and-destroy/Classes/managers/ScoreManagement/Scorable.h
  /home/artem/Clion/build-and-destroy/Classes/managers/TreeManagement/TreeEvents.cpp
  /home/artem/Clion/build-and-destroy/Classes/managers/TreeManagement/TreeEvents.h
- /home/artem/Clion/build-and-destroy/Classes/managers/TreeManagement/TreeObjectInterfaces.h
+ /home/artem/Clion/build-and-destroy/Classes/managers/TreeManagement/TreePartsCreation.h
+ /home/artem/Clion/build-and-destroy/Classes/managers/TreeManagement/TreePartsInterfaces.h
  /usr/local/include/GLFW/glfw3.h
  /usr/local/include/GLFW/glfw3native.h
 CMakeFiles/MyGame.dir/Classes/managers/TreeManagement/TreeManager.cpp.o
@@ -1562,7 +1564,8 @@ CMakeFiles/MyGame.dir/Classes/managers/TreeManagement/TreeManager.cpp.o
  /home/artem/Clion/build-and-destroy/Classes/managers/TreeManagement/TreeEvents.h
  /home/artem/Clion/build-and-destroy/Classes/managers/TreeManagement/TreeManager.cpp
  /home/artem/Clion/build-and-destroy/Classes/managers/TreeManagement/TreeManager.h
- /home/artem/Clion/build-and-destroy/Classes/managers/TreeManagement/TreeObjectInterfaces.h
+ /home/artem/Clion/build-and-destroy/Classes/managers/TreeManagement/TreePartsCreation.h
+ /home/artem/Clion/build-and-destroy/Classes/managers/TreeManagement/TreePartsInterfaces.h
  /usr/local/include/GLFW/glfw3.h
  /usr/local/include/GLFW/glfw3native.h
 CMakeFiles/MyGame.dir/Classes/managers/TurnManagement/TurnManager.cpp.o

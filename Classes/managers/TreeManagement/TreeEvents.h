@@ -7,18 +7,20 @@
 
 #include "cocos2d.h"
 #include "TreePartsInterfaces.h"
+#include "TreePartsCreation.h"
+
 
 namespace tree_events {
 
     class TreeEdgeCreationEvent: public event_wrappers::MyEventCustom {
     public:
         TreeEdgeCreationEvent(tree_interfaces::TreeNodeInterface *, tree_interfaces::TreeNodeInterface *,
-                              tree_interfaces::EdgeFactoryInterface*, cocos2d::Scene *);
+                              tree_part_creation::EdgeFactoryInterface*, cocos2d::Scene *);
 
         static const std::string kEventName;
 
         cocos2d::Scene* scene;
-        tree_interfaces::EdgeFactoryInterface* edge_factory;
+        tree_part_creation::EdgeFactoryInterface* edge_factory;
         tree_interfaces::TreeNodeInterface* tree_node_1;
         tree_interfaces::TreeNodeInterface* tree_node_2;
     };
@@ -35,12 +37,12 @@ namespace tree_events {
 
     class TreeNodeCreationEvent: public event_wrappers::MyEventCustom {
     public:
-        TreeNodeCreationEvent(cocos2d::Vec2, tree_interfaces::EdgeFactoryInterface*, cocos2d::Scene *);
+        TreeNodeCreationEvent(cocos2d::Vec2, tree_part_creation::EdgeFactoryInterface*, cocos2d::Scene *);
 
         static const std::string kEventName;
 
         cocos2d::Scene* scene;
-        tree_interfaces::EdgeFactoryInterface* edge_factory;
+        tree_part_creation::EdgeFactoryInterface* edge_factory;
         cocos2d::Vec2 new_node_coord;
     };
 

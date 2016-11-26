@@ -6,6 +6,7 @@
 
 using namespace tree_events;
 using namespace tree_interfaces;
+using namespace tree_part_creation;
 
 
 TreeEdgeCreationEvent::TreeEdgeCreationEvent(TreeNodeInterface *tree_node_1, TreeNodeInterface *tree_node_2,

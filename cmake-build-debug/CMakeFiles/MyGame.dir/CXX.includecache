@@ -3083,8 +3083,10 @@ TreeEvents.h
 /home/artem/Clion/build-and-destroy/Classes/managers/TreeManagement/TreeEvents.h
 cocos2d.h
 /home/artem/Clion/build-and-destroy/Classes/managers/TreeManagement/cocos2d.h
-TreeObjectInterfaces.h
-/home/artem/Clion/build-and-destroy/Classes/managers/TreeManagement/TreeObjectInterfaces.h
+TreePartsInterfaces.h
+/home/artem/Clion/build-and-destroy/Classes/managers/TreeManagement/TreePartsInterfaces.h
+TreePartsCreation.h
+/home/artem/Clion/build-and-destroy/Classes/managers/TreeManagement/TreePartsCreation.h
 
 /home/artem/Clion/build-and-destroy/Classes/managers/TreeManagement/TreeManager.cpp
 TreeManager.h
@@ -3101,16 +3103,22 @@ cocos2d.h
 /home/artem/Clion/build-and-destroy/Classes/managers/TreeManagement/cocos2d.h
 ../../event_system/EventWrappers.h
 /home/artem/Clion/build-and-destroy/Classes/event_system/EventWrappers.h
-TreeObjectInterfaces.h
-/home/artem/Clion/build-and-destroy/Classes/managers/TreeManagement/TreeObjectInterfaces.h
+TreePartsInterfaces.h
+/home/artem/Clion/build-and-destroy/Classes/managers/TreeManagement/TreePartsInterfaces.h
 TreeEvents.h
 /home/artem/Clion/build-and-destroy/Classes/managers/TreeManagement/TreeEvents.h
+TreePartsCreation.h
+/home/artem/Clion/build-and-destroy/Classes/managers/TreeManagement/TreePartsCreation.h
 set
 -
 memory
 -
 
-/home/artem/Clion/build-and-destroy/Classes/managers/TreeManagement/TreeObjectInterfaces.h
+/home/artem/Clion/build-and-destroy/Classes/managers/TreeManagement/TreePartsCreation.h
+TreePartsInterfaces.h
+/home/artem/Clion/build-and-destroy/Classes/managers/TreeManagement/TreePartsInterfaces.h
+
+/home/artem/Clion/build-and-destroy/Classes/managers/TreeManagement/TreePartsInterfaces.h
 cocos2d.h
 /home/artem/Clion/build-and-destroy/Classes/managers/TreeManagement/cocos2d.h
 ../ScoreManagement/Scorable.h

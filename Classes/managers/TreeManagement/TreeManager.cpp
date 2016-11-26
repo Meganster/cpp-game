@@ -29,7 +29,7 @@ TreeManager::TreeManager(): is_active{false}{
     addEvents();
 };
 
-TreeManager::TreeManager(bool is_active, std::shared_ptr<tree_interfaces::EdgeFactoryInterface> edge_factory):
+TreeManager::TreeManager(bool is_active, std::shared_ptr<tree_part_creation::EdgeFactoryInterface> edge_factory):
         is_active{is_active} {};
 
 void TreeManager::switchState() {

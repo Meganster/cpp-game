@@ -778,7 +778,8 @@ CMakeFiles/MyGame.dir/Classes/TreeScene.cpp.o: ../Classes/event_system/EventWrap
 CMakeFiles/MyGame.dir/Classes/TreeScene.cpp.o: ../Classes/managers/ScoreManagement/Scorable.h
 CMakeFiles/MyGame.dir/Classes/TreeScene.cpp.o: ../Classes/managers/TreeManagement/TreeEvents.h
 CMakeFiles/MyGame.dir/Classes/TreeScene.cpp.o: ../Classes/managers/TreeManagement/TreeManager.h
-CMakeFiles/MyGame.dir/Classes/TreeScene.cpp.o: ../Classes/managers/TreeManagement/TreeObjectInterfaces.h
+CMakeFiles/MyGame.dir/Classes/TreeScene.cpp.o: ../Classes/managers/TreeManagement/TreePartsCreation.h
+CMakeFiles/MyGame.dir/Classes/TreeScene.cpp.o: ../Classes/managers/TreeManagement/TreePartsInterfaces.h
 CMakeFiles/MyGame.dir/Classes/TreeScene.cpp.o: /usr/local/include/GLFW/glfw3.h
 CMakeFiles/MyGame.dir/Classes/TreeScene.cpp.o: /usr/local/include/GLFW/glfw3native.h
 
@@ -1299,7 +1300,8 @@ CMakeFiles/MyGame.dir/Classes/managers/TreeManagement/TreeEvents.cpp.o: ../Class
 CMakeFiles/MyGame.dir/Classes/managers/TreeManagement/TreeEvents.cpp.o: ../Classes/managers/ScoreManagement/Scorable.h
 CMakeFiles/MyGame.dir/Classes/managers/TreeManagement/TreeEvents.cpp.o: ../Classes/managers/TreeManagement/TreeEvents.cpp
 CMakeFiles/MyGame.dir/Classes/managers/TreeManagement/TreeEvents.cpp.o: ../Classes/managers/TreeManagement/TreeEvents.h
-CMakeFiles/MyGame.dir/Classes/managers/TreeManagement/TreeEvents.cpp.o: ../Classes/managers/TreeManagement/TreeObjectInterfaces.h
+CMakeFiles/MyGame.dir/Classes/managers/TreeManagement/TreeEvents.cpp.o: ../Classes/managers/TreeManagement/TreePartsCreation.h
+CMakeFiles/MyGame.dir/Classes/managers/TreeManagement/TreeEvents.cpp.o: ../Classes/managers/TreeManagement/TreePartsInterfaces.h
 CMakeFiles/MyGame.dir/Classes/managers/TreeManagement/TreeEvents.cpp.o: /usr/local/include/GLFW/glfw3.h
 CMakeFiles/MyGame.dir/Classes/managers/TreeManagement/TreeEvents.cpp.o: /usr/local/include/GLFW/glfw3native.h
 
@@ -1561,7 +1563,8 @@ CMakeFiles/MyGame.dir/Classes/managers/TreeManagement/TreeManager.cpp.o: ../Clas
 CMakeFiles/MyGame.dir/Classes/managers/TreeManagement/TreeManager.cpp.o: ../Classes/managers/TreeManagement/TreeEvents.h
 CMakeFiles/MyGame.dir/Classes/managers/TreeManagement/TreeManager.cpp.o: ../Classes/managers/TreeManagement/TreeManager.cpp
 CMakeFiles/MyGame.dir/Classes/managers/TreeManagement/TreeManager.cpp.o: ../Classes/managers/TreeManagement/TreeManager.h
-CMakeFiles/MyGame.dir/Classes/managers/TreeManagement/TreeManager.cpp.o: ../Classes/managers/TreeManagement/TreeObjectInterfaces.h
+CMakeFiles/MyGame.dir/Classes/managers/TreeManagement/TreeManager.cpp.o: ../Classes/managers/TreeManagement/TreePartsCreation.h
+CMakeFiles/MyGame.dir/Classes/managers/TreeManagement/TreeManager.cpp.o: ../Classes/managers/TreeManagement/TreePartsInterfaces.h
 CMakeFiles/MyGame.dir/Classes/managers/TreeManagement/TreeManager.cpp.o: /usr/local/include/GLFW/glfw3.h
 CMakeFiles/MyGame.dir/Classes/managers/TreeManagement/TreeManager.cpp.o: /usr/local/include/GLFW/glfw3native.h
 
