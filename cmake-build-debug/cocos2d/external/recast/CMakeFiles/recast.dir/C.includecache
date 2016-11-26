@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/artem/Clion/build-and-destroy/cocos2d/external/recast/fastlz/fastlz.c
+fastlz.c
+/home/artem/Clion/build-and-destroy/cocos2d/external/recast/fastlz/fastlz.c
+fastlz.c
+/home/artem/Clion/build-and-destroy/cocos2d/external/recast/fastlz/fastlz.c
+

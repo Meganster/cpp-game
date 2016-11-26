@@ -7,7 +7,8 @@
 
 #include "cocos2d.h"
 #include "../../event_system/EventWrappers.h"
-#include "TreeObjectInterfaces.h"
+#include "TreePartsInterfaces.h"
+#include "TreeEvents.h"
 #include <set>
 #include <memory>
 
