@@ -7,9 +7,10 @@
 
 #include "cocos2d.h"
 #include "TreeNode.h"
-#include <set>
+#include "managers/TreeManagement/TreeManager.h"
 
-class TreeScene : public cocos2d::Layer {
+
+class TreeScene : public cocos2d::Scene {
 public:
     static cocos2d::Scene* createScene();
 
@@ -20,6 +21,8 @@ public:
 
 private:
     void addEvents();
+
+    tree_management::TreeManager manager;
 
     static void treeNodeSelectedCallback(TreeNodeSelectedEvent*, TreeScene*);
     std::set<TreeNode*> chosen_tree_nodes;

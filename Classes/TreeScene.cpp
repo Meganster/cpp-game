@@ -10,15 +10,11 @@
 USING_NS_CC;
 
 Scene* TreeScene::createScene() {
-    auto scene = cocos2d::Scene::create();
-    auto layer = TreeScene::create();
-    scene->addChild(layer);
-
-    return scene;
+    return TreeScene::create();
 }
 
 bool TreeScene::init() {
-    if (!Layer::init()) {
+    if (!Scene::init()) {
         return false;
     }
 
@@ -51,7 +47,33 @@ bool TreeScene::init() {
     return true;
 }
 
+/*void TreeScene::addNode(cocos2d::EventMouse* event, cocos2d::Scene* scene_ptr) {
+    cocos2d::Vec2 event_point = event->getLocation();
+    auto e = tree_events::TreeNodeCreationEvent(event_point, scene_ptr);
+    //scene_ptr->_eventDispatcher->dispatchEvent(&e);
+}*/
+
+
 void TreeScene::addEvents() {
+    /*auto mouse_listener = cocos2d::EventListenerMouse::create();
+
+    mouse_listener->onMouseUp = [this] (cocos2d::EventMouse* event) {
+        if (event->getMouseButton() == MOUSE_BUTTON_LEFT) {
+            this->addNode(event, this);
+        }
+    };*/
+
+    auto listenerSelect = event_wrappers::create_listener<tree_events::TreeNodeSelectionEvent>\
+([](tree_events::TreeNodeSelectionEvent* event) -> void {event->selected_node->setScale(0.12);});
+    _eventDispatcher->addEventListenerWithSceneGraphPriority(listenerSelect, this);
+
+    auto listenerDeselect = event_wrappers::create_listener<tree_events::TreeNodeDeselectionEvent>\
+([](tree_events::TreeNodeDeselectionEvent* event) -> void {event->deselected_node->setScale(0.1);});
+    _eventDispatcher->addEventListenerWithSceneGraphPriority(listenerDeselect, this);
+
+    auto listenerAdd = event_wrappers::create_listener<tree_events::TreeNodeCreationEvent>\
+([](tree_events::TreeNodeCreationEvent* event) -> void { std::cout << "Nodes creation!" << std::endl;});
+    _eventDispatcher->addEventListenerWithSceneGraphPriority(listenerAdd, this);
 }
 
 void TreeScene::treeNodeSelectedCallback(TreeNodeSelectedEvent* event, TreeScene* tree_scene) {

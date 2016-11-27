@@ -1,3 +1,20 @@
+Skip to content
+This repository
+Search
+Pull requests
+Issues
+Gist
+ @Meganster
+ Unwatch 2
+  Star 0
+  Fork 0 Sovianum/cpp-game
+ Code  Issues 0  Pull requests 0  Projects 0  Wiki  Pulse  Graphs
+Branch: edge Find file Copy pathcpp-game/CMakeLists.txt
+4cbfe53  a day ago
+@Meganster Meganster Start branch Edge
+2 contributors @Sovianum @Meganster
+RawBlameHistory    
+169 lines (144 sloc)  5.99 KB
 #/****************************************************************************
 # Copyright (c) 2013-2014 cocos2d-x.org
 # Copyright (c) 2015 Chukong Technologies Inc.
@@ -166,3 +183,5 @@ else()
     )
 
 endif()
+Contact GitHub API Training Shop Blog About
+© 2016 GitHub, Inc. Terms Privacy Security Status Help
