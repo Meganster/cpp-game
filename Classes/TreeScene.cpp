@@ -49,8 +49,8 @@ bool TreeScene::init() {
     node_2->setPosition(start_point.x + 250, start_point.y - 80);
     this->addChild(node_2, 10);
 
-    //auto edge = TreeEdge::create(node_1, node_2);
-    //this->addChild(edge, 8);
+    auto edge = TreeEdge::create(node_1, node_2);
+    this->addChild(edge, 8);
 
     return true;
 }
