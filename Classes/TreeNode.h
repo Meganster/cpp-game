@@ -24,7 +24,6 @@ public:
 
     void setPhantom();
     void setReal();
-    tree_interfaces::TreePart* getClone();
 
     int getIndex() { return index_;};
     bool isSelected() { return selected;};

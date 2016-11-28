@@ -19,8 +19,6 @@ namespace tree_interfaces {
 
         virtual void setReal() = 0;
 
-        virtual TreePart* getClone() = 0;
-
         virtual TreeEdge* getClone() = 0;
     };
 

@@ -135,9 +135,6 @@ void TreeNode::setPhantom() {}
 
 void TreeNode::setReal() {}
 
-tree_interfaces::TreePart* TreeNode::getClone() {
-    return nullptr;
-}
 
 int TreeNode::curr_max_index_ = 0;
 bool TreeNode::isAdding = false;

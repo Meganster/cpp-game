@@ -27,13 +27,14 @@ struct Cost {
 class TreeEdge : public tree_interfaces::TreeEdgeInterface {
 public:
     TreeEdge(TreeNode* node1, TreeNode* node2);
+    TreeEdge(cocos2d::Vec2 coordinate_of_begin, cocos2d::Vec2 coordinate_of_end);
     ~TreeEdge();
 
     std::vector<TreeNode*> getNodes();
     void setPhantom();
     void setReal();
+    TreeEdge* getClone();
     tree_interfaces::TreePart* getClone();
-
 
     const static std::string kSpritePath;
     const static std::map<int, Cost> runningMeter;

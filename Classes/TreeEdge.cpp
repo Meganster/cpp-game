@@ -10,7 +10,7 @@ const std::string TreeEdge::kSpritePath = "plank.png";
 //const std::map<int, Cost> TreeEdge::runningMeter; // need to record runningMeter!
 
 TreeEdge::TreeEdge(TreeNode* node1, TreeNode* node2){
-    if(node1->x < node2->x) {
+    if(node1->getPosition().x < node2->getPosition().x) {
         leftNode_ = node1;
         rightNode_ = node2;
     } else{
@@ -18,7 +18,29 @@ TreeEdge::TreeEdge(TreeNode* node1, TreeNode* node2){
         rightNode_ = node1;
     }
 
-    lenght_ = sqrt((node1->x - node2->x)^2 + (node1->y - node2->y)^2);
+    lenght_ = sqrt((node1->getPosition().x - node2->getPosition().x)^2 + (node1->getPosition().y - node2->getPosition().y)^2);
+    rigidity_ = 0;
+
+    if( createAttachedTreeEdge() ){
+        std::cout<<"Edge created!"<<std::endl;
+    } else{
+        std::cout<<"Error with creating sprite!"<<std::endl;
+    }
+}
+
+TreeEdge::TreeEdge(cocos2d::Vec2 coordinate_of_begin, cocos2d::Vec2 coordinate_of_end){
+    leftNode_ = new TreeNode();
+    rightNode_ = new TreeNode();
+
+    if(coordinate_of_begin.x < coordinate_of_end.x) {
+        leftNode_->setPosition(coordinate_of_begin);
+        rightNode_->setPosition(coordinate_of_end);
+    } else{
+        leftNode_->setPosition(coordinate_of_end);
+        rightNode_->setPosition(coordinate_of_begin);
+    }
+
+    lenght_ = sqrt((coordinate_of_begin.x - coordinate_of_end.x)^2 + (coordinate_of_begin.y - coordinate_of_end.y)^2);
     rigidity_ = 0;
 
     if( createAttachedTreeEdge() ){
@@ -48,10 +70,6 @@ void TreeEdge::setPhantom() {
 void TreeEdge::setReal() {
     kSpritePath = "plank_clear1.png";
     // need to change here sprite
-}
-
-tree_interfaces::TreePart* TreeEdge::getClone() {
-    return nullptr;
 }
 //
 

@@ -15,7 +15,7 @@ namespace tree_part_creation {
         /**
          * Through this method you set edge sample to factory
          */
-        virtual void setPrototype(TreeEdgeInterface *) = 0;
+        virtual void setPrototype(TreeEdge*) = 0;
 
         /**
          * Through this method you set request to create one edge
@@ -30,7 +30,7 @@ namespace tree_part_creation {
         /**
          * This method returns the clone of sample edge
          */
-        virtual std::vector<TreeEdgeInterface*> getEdges() = 0;
+        virtual std::vector<TreeEdge*> getEdges() = 0;
 
         /**
          * This method flushes all inner request structures
