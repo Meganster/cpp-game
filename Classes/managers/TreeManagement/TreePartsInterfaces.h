@@ -7,8 +7,6 @@
 
 #include "cocos2d.h"
 #include "../ScoreManagement/Scorable.h"
-#include "../../event_system/EventWrappers.h"
-#include "../../TreeEdge.h"
 #include <vector>
 
 namespace tree_interfaces {
@@ -18,10 +16,6 @@ namespace tree_interfaces {
         virtual void setPhantom() = 0;
 
         virtual void setReal() = 0;
-
-        virtual TreePart* getClone() = 0;
-
-        virtual TreeEdge* getClone() = 0;
     };
 
 
@@ -29,7 +23,9 @@ namespace tree_interfaces {
 
     class TreeEdgeInterface: public TreePart {
     public:
-        virtual std::vector<TreeNode*> getNodes() = 0;
+        virtual std::vector<TreeNodeInterface*> getNodes() = 0;
+
+        virtual TreeEdgeInterface* getClone(TreeNodeInterface*, TreeNodeInterface*) = 0;
     };
 }
 

@@ -1,20 +1,20 @@
-Skip to content
-This repository
-Search
-Pull requests
-Issues
-Gist
- @Meganster
- Unwatch 2
-  Star 0
-  Fork 0 Sovianum/cpp-game
- Code  Issues 0  Pull requests 0  Projects 0  Wiki  Pulse  Graphs
-Branch: edge Find file Copy pathcpp-game/CMakeLists.txt
-4cbfe53  a day ago
-@Meganster Meganster Start branch Edge
-2 contributors @Sovianum @Meganster
-RawBlameHistory    
-169 lines (144 sloc)  5.99 KB
+#Skip to content
+#This repository
+#Search
+#Pull requests
+#Issues
+#Gist
+# @Meganster
+# Unwatch 2
+#  Star 0
+#  Fork 0 Sovianum/cpp-game
+# Code  Issues 0  Pull requests 0  Projects 0  Wiki  Pulse  Graphs
+#Branch: edge Find file Copy pathcpp-game/CMakeLists.txt
+#4cbfe53  a day ago
+#@Meganster Meganster Start branch Edge
+#2 contributors @Sovianum @Meganster
+#RawBlameHistory
+#169 lines (144 sloc)  5.99 KB
 #/****************************************************************************
 # Copyright (c) 2013-2014 cocos2d-x.org
 # Copyright (c) 2015 Chukong Technologies Inc.
@@ -147,8 +147,16 @@ set(GAME_SRC
 set(GAME_HEADERS
   Classes/AppDelegate.h
         ${PLATFORM_SPECIFIC_HEADERS}
-        Classes/TreeNode.cpp Classes/TreeNode.h Classes/TreeScene.cpp Classes/TreeScene.h
-        Classes/event_system/EventWrappers.cpp Classes/event_system/EventWrappers.h Classes/managers/TreeManagement/TreeManager.cpp Classes/managers/TreeManagement/TreeManager.h Classes/managers/ScoreManagement/ScoreManagement.cpp Classes/managers/ScoreManagement/ScoreManagement.h Classes/managers/TurnManagement.cpp Classes/managers/TurnManagement.h Classes/managers/ScoreManagement/Scorable.h Classes/managers/TreeManagement/TreeObjectInterfaces.h Classes/managers/TreeManagement/TreeObjectInterfaces.cpp Classes/TreeParts/Edges/EdgeFactory.cpp Classes/TreeParts/Edges/EdgeFactory.h)
+        Classes/TreeParts/NodeFunctionality/TreeNode.cpp Classes/TreeParts/NodeFunctionality/TreeNode.h Classes/TreeScene.cpp Classes/TreeScene.h
+        Classes/TreeParts/EdgeFunctionality/TreeEdge.h Classes/TreeParts/EdgeFunctionality/TreeEdge.cpp Classes/managers/TurnManagement/TurnManager.h
+        Classes/managers/TurnManagement/TurnManager.cpp Classes/managers/TreeManagement/TreeEvents.h
+        Classes/managers/TreeManagement/TreeEvents.cpp Classes/managers/TreeManagement/TreePartsInterfaces.h
+        Classes/event_system/EventWrappers.cpp Classes/event_system/EventWrappers.h
+        Classes/managers/TreeManagement/TreeManager.cpp Classes/managers/TreeManagement/TreeManager.h
+        Classes/managers/ScoreManagement/ScoreManagement.cpp Classes/managers/ScoreManagement/ScoreManagement.h
+        Classes/managers/ScoreManagement/Scorable.h Classes/managers/TreeManagement/TreePartsCreation.h
+        Classes/TreeParts/EdgeFunctionality/EdgeFactory.cpp
+        Classes/TreeParts/EdgeFunctionality/EdgeFactory.h)
 
 if( ANDROID )
     add_library(${APP_NAME} SHARED ${GAME_SRC} ${GAME_HEADERS})
@@ -183,5 +191,5 @@ else()
     )
 
 endif()
-Contact GitHub API Training Shop Blog About
-© 2016 GitHub, Inc. Terms Privacy Security Status Help
+#Contact GitHub API Training Shop Blog About
+#© 2016 GitHub, Inc. Terms Privacy Security Status Help

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="CMakeRunConfigurationManager" shouldGenerate="true" assignedExecutableTargets="true" buildAllGenerated="true">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" buildAllGenerated="true">
     <generated>
       <config projectName="MyGame" targetName="MyGame" />
       <config projectName="MyGame" targetName="tinyxml2" />
@@ -15,361 +15,42 @@
       <config projectName="MyGame" targetName="unzip" />
     </generated>
   </component>
-  <component name="CMakeSettings" AUTO_RELOAD="false" GENERATION_PASS_SYSTEM_ENVIRONMENT="true">
-    <ADDITIONAL_GENERATION_ENVIRONMENT>
-      <envs />
-    </ADDITIONAL_GENERATION_ENVIRONMENT>
+  <component name="CMakeSettings" AUTO_RELOAD="true">
+    <configurations>
+      <configuration CONFIG_NAME="Debug" />
+    </configurations>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="28a8ec56-e9d5-473f-ba90-b49cf199fad7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/debug/linux/MyGame" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/debug/linux/Resources/CloseNormal.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/debug/linux/Resources/CloseSelected.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/debug/linux/Resources/HelloWorld.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/debug/linux/Resources/fonts/Marker Felt.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/debug/linux/Resources/fonts/arial.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.6.2/CMakeDetermineCompilerABI_C.bin" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.6.2/CMakeDetermineCompilerABI_CXX.bin" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.6.2/CompilerIdC/a.out" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.6.2/CompilerIdCXX/a.out" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/bin/MyGame" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/bin/Resources/CloseNormal.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/bin/Resources/CloseSelected.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/bin/Resources/HelloWorld.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/bin/Resources/circle_blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/bin/Resources/fonts/Marker Felt.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/bin/Resources/fonts/arial.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/bin/Resources/res/.gitkeep" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Classes/managers/TreeManagement/TreeEvents.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Classes/managers/TreeManagement/TreePartsCreation.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Classes/managers/TreeManagement/TreePartsInterfaces.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.6.2/CMakeCCompiler.cmake" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.6.2/CMakeCXXCompiler.cmake" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.6.2/CMakeSystem.cmake" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.6.2/CompilerIdC/CMakeCCompilerId.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.6.2/CompilerIdCXX/CMakeCXXCompilerId.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/MyGame.dir/CXX.includecache" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/MyGame.dir/DependInfo.cmake" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/MyGame.dir/build.make" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/MyGame.dir/cmake_clean.cmake" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/MyGame.dir/depend.internal" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/MyGame.dir/depend.make" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/MyGame.dir/flags.make" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/MyGame.dir/link.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/MyGame.dir/progress.make" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/MyGame_CORE_PRE_BUILD.dir/DependInfo.cmake" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/MyGame_CORE_PRE_BUILD.dir/build.make" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/MyGame_CORE_PRE_BUILD.dir/cmake_clean.cmake" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/MyGame_CORE_PRE_BUILD.dir/depend.internal" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/MyGame_CORE_PRE_BUILD.dir/depend.make" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/MyGame_CORE_PRE_BUILD.dir/progress.make" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/MyGame_PRE_BUILD.dir/DependInfo.cmake" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/MyGame_PRE_BUILD.dir/build.make" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/MyGame_PRE_BUILD.dir/cmake_clean.cmake" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/MyGame_PRE_BUILD.dir/depend.internal" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/MyGame_PRE_BUILD.dir/depend.make" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/MyGame_PRE_BUILD.dir/progress.make" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cmake.check_cache" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.cxx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/MyGame.cbp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/CMakeFiles/CMakeDirectoryInformation.cmake" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/CMakeFiles/progress.marks" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/Cocos2d-X.cbp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/Makefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/cmake_install.cmake" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/cocos/CMakeFiles/CMakeDirectoryInformation.cmake" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/cocos/CMakeFiles/cocos2d.dir/C.includecache" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/cocos/CMakeFiles/cocos2d.dir/DependInfo.cmake" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/cocos/CMakeFiles/cocos2d.dir/build.make" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/cocos/CMakeFiles/cocos2d.dir/cmake_clean.cmake" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/cocos/CMakeFiles/cocos2d.dir/cmake_clean_target.cmake" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/cocos/CMakeFiles/cocos2d.dir/depend.internal" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/cocos/CMakeFiles/cocos2d.dir/depend.make" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/cocos/CMakeFiles/cocos2d.dir/flags.make" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/cocos/CMakeFiles/cocos2d.dir/link.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/cocos/CMakeFiles/cocos2d.dir/progress.make" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/cocos/CMakeFiles/cocos2dInternal.dir/C.includecache" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/cocos/CMakeFiles/cocos2dInternal.dir/CXX.includecache" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/cocos/CMakeFiles/cocos2dInternal.dir/DependInfo.cmake" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/cocos/CMakeFiles/cocos2dInternal.dir/build.make" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/cocos/CMakeFiles/cocos2dInternal.dir/cmake_clean.cmake" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/cocos/CMakeFiles/cocos2dInternal.dir/cmake_clean_target.cmake" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/cocos/CMakeFiles/cocos2dInternal.dir/depend.internal" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/cocos/CMakeFiles/cocos2dInternal.dir/depend.make" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/cocos/CMakeFiles/cocos2dInternal.dir/flags.make" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/cocos/CMakeFiles/cocos2dInternal.dir/link.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/cocos/CMakeFiles/cocos2dInternal.dir/progress.make" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/cocos/CMakeFiles/progress.marks" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/cocos/Makefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/cocos/cmake_install.cmake" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/external/bullet/CMakeFiles/CMakeDirectoryInformation.cmake" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/external/bullet/CMakeFiles/bullet.dir/CXX.includecache" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/external/bullet/CMakeFiles/bullet.dir/DependInfo.cmake" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/external/bullet/CMakeFiles/bullet.dir/build.make" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/external/bullet/CMakeFiles/bullet.dir/cmake_clean.cmake" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/external/bullet/CMakeFiles/bullet.dir/cmake_clean_target.cmake" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/external/bullet/CMakeFiles/bullet.dir/depend.internal" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/external/bullet/CMakeFiles/bullet.dir/depend.make" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/external/bullet/CMakeFiles/bullet.dir/flags.make" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/external/bullet/CMakeFiles/bullet.dir/link.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/external/bullet/CMakeFiles/bullet.dir/progress.make" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/external/bullet/CMakeFiles/progress.marks" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/external/bullet/Makefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/external/bullet/cmake_install.cmake" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/external/flatbuffers/CMakeFiles/CMakeDirectoryInformation.cmake" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/external/flatbuffers/CMakeFiles/flatbuffers.dir/DependInfo.cmake" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/external/flatbuffers/CMakeFiles/flatbuffers.dir/build.make" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/external/flatbuffers/CMakeFiles/flatbuffers.dir/cmake_clean.cmake" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/external/flatbuffers/CMakeFiles/flatbuffers.dir/cmake_clean_target.cmake" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/external/flatbuffers/CMakeFiles/flatbuffers.dir/depend.make" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/external/flatbuffers/CMakeFiles/flatbuffers.dir/flags.make" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/external/flatbuffers/CMakeFiles/flatbuffers.dir/link.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/external/flatbuffers/CMakeFiles/flatbuffers.dir/progress.make" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/external/flatbuffers/CMakeFiles/progress.marks" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/external/flatbuffers/Makefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/external/flatbuffers/cmake_install.cmake" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/external/recast/CMakeFiles/CMakeDirectoryInformation.cmake" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/external/recast/CMakeFiles/progress.marks" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/external/recast/CMakeFiles/recast.dir/C.includecache" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/external/recast/CMakeFiles/recast.dir/CXX.includecache" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/external/recast/CMakeFiles/recast.dir/DependInfo.cmake" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/external/recast/CMakeFiles/recast.dir/build.make" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/external/recast/CMakeFiles/recast.dir/cmake_clean.cmake" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/external/recast/CMakeFiles/recast.dir/cmake_clean_target.cmake" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/external/recast/CMakeFiles/recast.dir/depend.internal" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/external/recast/CMakeFiles/recast.dir/depend.make" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/external/recast/CMakeFiles/recast.dir/flags.make" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/external/recast/CMakeFiles/recast.dir/link.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/external/recast/CMakeFiles/recast.dir/progress.make" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/external/recast/Makefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/external/recast/cmake_install.cmake" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/external/tinyxml2/CMakeFiles/CMakeDirectoryInformation.cmake" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/external/tinyxml2/CMakeFiles/progress.marks" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/external/tinyxml2/CMakeFiles/tinyxml2.dir/CXX.includecache" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/external/tinyxml2/CMakeFiles/tinyxml2.dir/DependInfo.cmake" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/external/tinyxml2/CMakeFiles/tinyxml2.dir/build.make" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/external/tinyxml2/CMakeFiles/tinyxml2.dir/cmake_clean.cmake" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/external/tinyxml2/CMakeFiles/tinyxml2.dir/cmake_clean_target.cmake" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/external/tinyxml2/CMakeFiles/tinyxml2.dir/depend.internal" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/external/tinyxml2/CMakeFiles/tinyxml2.dir/depend.make" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/external/tinyxml2/CMakeFiles/tinyxml2.dir/flags.make" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/external/tinyxml2/CMakeFiles/tinyxml2.dir/link.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/external/tinyxml2/CMakeFiles/tinyxml2.dir/progress.make" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/external/tinyxml2/Makefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/external/tinyxml2/cmake_install.cmake" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/external/unzip/CMakeFiles/CMakeDirectoryInformation.cmake" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/external/unzip/CMakeFiles/progress.marks" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/external/unzip/CMakeFiles/unzip.dir/CXX.includecache" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/external/unzip/CMakeFiles/unzip.dir/DependInfo.cmake" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/external/unzip/CMakeFiles/unzip.dir/build.make" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/external/unzip/CMakeFiles/unzip.dir/cmake_clean.cmake" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/external/unzip/CMakeFiles/unzip.dir/cmake_clean_target.cmake" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/external/unzip/CMakeFiles/unzip.dir/depend.internal" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/external/unzip/CMakeFiles/unzip.dir/depend.make" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/external/unzip/CMakeFiles/unzip.dir/flags.make" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/external/unzip/CMakeFiles/unzip.dir/link.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/external/unzip/CMakeFiles/unzip.dir/progress.make" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/external/unzip/Makefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/external/unzip/cmake_install.cmake" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/external/xxhash/CMakeFiles/CMakeDirectoryInformation.cmake" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/external/xxhash/CMakeFiles/progress.marks" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/external/xxhash/CMakeFiles/xxhash.dir/C.includecache" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/external/xxhash/CMakeFiles/xxhash.dir/DependInfo.cmake" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/external/xxhash/CMakeFiles/xxhash.dir/build.make" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/external/xxhash/CMakeFiles/xxhash.dir/cmake_clean.cmake" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/external/xxhash/CMakeFiles/xxhash.dir/cmake_clean_target.cmake" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/external/xxhash/CMakeFiles/xxhash.dir/depend.internal" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/external/xxhash/CMakeFiles/xxhash.dir/depend.make" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/external/xxhash/CMakeFiles/xxhash.dir/flags.make" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/external/xxhash/CMakeFiles/xxhash.dir/link.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/external/xxhash/CMakeFiles/xxhash.dir/progress.make" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/external/xxhash/Makefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/external/xxhash/cmake_install.cmake" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Classes/managers/TreeManagement/TreeObjectInterfaces.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.android-studio/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.android-studio/app/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.android-studio/app/AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.android-studio/app/build.gradle" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.android-studio/app/jni/Android.mk" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.android-studio/app/jni/Application.mk" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.android-studio/app/jni/hellocpp/main.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.android-studio/app/proguard-rules.pro" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.android-studio/app/project.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.android-studio/app/res/mipmap-hdpi/ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.android-studio/app/res/mipmap-mdpi/ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.android-studio/app/res/mipmap-xhdpi/ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.android-studio/app/res/mipmap-xxhdpi/ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.android-studio/app/res/values/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.android-studio/app/src/org/cocos2dx/cpp/AppActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.android-studio/build-cfg.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.android-studio/build.gradle" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.android-studio/gradle.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.android-studio/gradle/wrapper/gradle-wrapper.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.android-studio/gradlew" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.android-studio/gradlew.bat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.android-studio/settings.gradle" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.android/.classpath" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.android/.cproject" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.android/.externalToolBuilders/org.eclipse.cdt.managedbuilder.core.genmakebuilder.launch" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.android/.project" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.android/.settings/org.eclipse.cdt.codan.core.prefs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.android/.settings/org.eclipse.cdt.core.prefs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.android/.settings/org.eclipse.ltk.core.refactoring.prefs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.android/AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.android/ant.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.android/build-cfg.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.android/build.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.android/jni/Android.mk" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.android/jni/Application.mk" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.android/jni/hellocpp/main.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.android/proguard-project.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.android/project.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.android/res/drawable-hdpi/icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.android/res/drawable-ldpi/icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.android/res/drawable-mdpi/icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.android/res/values/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.android/src/org/cocos2dx/cpp/AppActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.ios_mac/build_and_destroy.xcodeproj/project.pbxproj" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.ios_mac/ios/AppController.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.ios_mac/ios/AppController.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.ios_mac/ios/Default-568h@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.ios_mac/ios/Default-667h@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.ios_mac/ios/Default-736h@3x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.ios_mac/ios/Default-Landscape~ipad.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.ios_mac/ios/Default.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.ios_mac/ios/Default@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.ios_mac/ios/Icon-100.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.ios_mac/ios/Icon-114.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.ios_mac/ios/Icon-120.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.ios_mac/ios/Icon-144.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.ios_mac/ios/Icon-152.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.ios_mac/ios/Icon-180.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.ios_mac/ios/Icon-29.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.ios_mac/ios/Icon-40.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.ios_mac/ios/Icon-50.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.ios_mac/ios/Icon-57.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.ios_mac/ios/Icon-58.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.ios_mac/ios/Icon-72.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.ios_mac/ios/Icon-76.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.ios_mac/ios/Icon-80.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.ios_mac/ios/Icon-87.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.ios_mac/ios/Info.plist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.ios_mac/ios/Prefix.pch" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.ios_mac/ios/RootViewController.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.ios_mac/ios/RootViewController.mm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.ios_mac/ios/main.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.ios_mac/mac/Icon.icns" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.ios_mac/mac/Info.plist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.ios_mac/mac/Prefix.pch" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.ios_mac/mac/main.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.tizen/.cproject" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.tizen/.exportMap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.tizen/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.tizen/.project" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.tizen/.tproject" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.tizen/copy_resource.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.tizen/shared/res/build_and_destroy.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.tizen/src/main.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.tizen/tizen-manifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.win10/App/App.xaml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.win10/App/App.xaml.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.win10/App/App.xaml.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.win10/App/Assets/LockScreenLogo.scale-200.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.win10/App/Assets/SplashScreen.scale-200.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.win10/App/Assets/Square150x150Logo.scale-200.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.win10/App/Assets/Square44x44Logo.scale-200.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.win10/App/Assets/Square44x44Logo.targetsize-24_altform-unplated.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.win10/App/Assets/StoreLogo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.win10/App/Assets/Wide310x150Logo.scale-200.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.win10/App/Cocos2dEngine/Cocos2dRenderer.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.win10/App/Cocos2dEngine/Cocos2dRenderer.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.win10/App/Cocos2dEngine/OpenGLES.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.win10/App/Cocos2dEngine/OpenGLES.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.win10/App/Cocos2dEngine/OpenGLESPage.xaml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.win10/App/Cocos2dEngine/OpenGLESPage.xaml.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.win10/App/Cocos2dEngine/OpenGLESPage.xaml.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.win10/App/Package.appxmanifest" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.win10/App/build_and_destroy.vcxproj" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.win10/App/build_and_destroy.vcxproj.filters" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.win10/App/build_and_destroy_TemporaryKey.pfx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.win10/App/pch.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.win10/App/pch.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.win10/App/resources.props" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.win10/build_and_destroy.sln" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.win32/build-cfg.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.win32/build_and_destroy.sln" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.win32/build_and_destroy.vcxproj" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.win32/build_and_destroy.vcxproj.filters" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.win32/build_and_destroy.vcxproj.user" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.win32/game.rc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.win32/main.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.win32/main.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.win32/res/game.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.win32/resource.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.win8.1-universal/App.Shared/App.xaml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.win8.1-universal/App.Shared/App.xaml.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.win8.1-universal/App.Shared/App.xaml.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.win8.1-universal/App.Shared/Cocos2dRenderer.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.win8.1-universal/App.Shared/Cocos2dRenderer.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.win8.1-universal/App.Shared/OpenGLES.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.win8.1-universal/App.Shared/OpenGLES.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.win8.1-universal/App.Shared/OpenGLESPage.xaml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.win8.1-universal/App.Shared/OpenGLESPage.xaml.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.win8.1-universal/App.Shared/OpenGLESPage.xaml.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.win8.1-universal/App.Shared/build_and_destroy.Shared.vcxitems" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.win8.1-universal/App.Shared/build_and_destroy.Shared.vcxitems.filters" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.win8.1-universal/App.Shared/pch.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.win8.1-universal/App.Shared/pch.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.win8.1-universal/App.Windows/Assets/Logo.scale-100.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.win8.1-universal/App.Windows/Assets/SmallLogo.scale-100.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.win8.1-universal/App.Windows/Assets/SplashScreen.scale-100.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.win8.1-universal/App.Windows/Assets/StoreLogo.scale-100.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.win8.1-universal/App.Windows/Package.appxmanifest" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.win8.1-universal/App.Windows/build_and_destroy.Windows.vcxproj" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.win8.1-universal/App.Windows/build_and_destroy.Windows.vcxproj.filters" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.win8.1-universal/App.Windows/build_and_destroy.Windows_TemporaryKey.pfx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.win8.1-universal/App.WindowsPhone/Assets/Logo.scale-240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.win8.1-universal/App.WindowsPhone/Assets/SmallLogo.scale-240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.win8.1-universal/App.WindowsPhone/Assets/SplashScreen.scale-240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.win8.1-universal/App.WindowsPhone/Assets/Square71x71Logo.scale-240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.win8.1-universal/App.WindowsPhone/Assets/StoreLogo.scale-240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.win8.1-universal/App.WindowsPhone/Assets/WideLogo.scale-240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.win8.1-universal/App.WindowsPhone/Package.appxmanifest" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.win8.1-universal/App.WindowsPhone/build_and_destroy.WindowsPhone.vcxproj" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.win8.1-universal/App.WindowsPhone/build_and_destroy.WindowsPhone.vcxproj.filters" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.win8.1-universal/build_and_destroy.sln" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Classes/managers/TreeManagement/TreeObjectInterfaces.h" afterPath="$PROJECT_DIR$/Classes/managers/TreeManagement/TreeEvents.h" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Classes/managers/TurnManagement.cpp" afterPath="$PROJECT_DIR$/Classes/managers/TurnManagement/TurnManager.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Classes/managers/TurnManagement.h" afterPath="$PROJECT_DIR$/Classes/managers/TurnManagement/TurnManager.h" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/proj.tizen/res/.gitkeep" afterPath="$PROJECT_DIR$/bin/debug/linux/Resources/res/.gitkeep" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/build_and_destroy.iml" afterPath="$PROJECT_DIR$/.idea/build_and_destroy.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Classes/TreeParts/EdgeFunctionality/TreeEdge.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Classes/TreeParts/EdgeFunctionality/TreeEdge.h" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Classes/TreeEdge.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Classes/TreeEdge.h" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Classes/TreeNode.cpp" afterPath="$PROJECT_DIR$/Classes/TreeParts/NodeFunctionality/TreeNode.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Classes/TreeNode.h" afterPath="$PROJECT_DIR$/Classes/TreeParts/NodeFunctionality/TreeNode.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Classes/TreeParts/Edges/EdgeFactory.cpp" afterPath="$PROJECT_DIR$/Classes/TreeParts/EdgeFunctionality/EdgeFactory.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Classes/TreeParts/Edges/EdgeFactory.h" afterPath="$PROJECT_DIR$/Classes/TreeParts/EdgeFunctionality/EdgeFactory.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/bin/MyGame" afterPath="$PROJECT_DIR$/cmake-build-debug/bin/MyGame" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/TreeEdge.cpp" afterPath="$PROJECT_DIR$/Classes/TreeEdge.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/TreeEdge.h" afterPath="$PROJECT_DIR$/Classes/TreeEdge.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/TreeNode.cpp" afterPath="$PROJECT_DIR$/Classes/TreeNode.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/TreeNode.h" afterPath="$PROJECT_DIR$/Classes/TreeNode.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/TreeParts/Edges/EdgeFactory.h" afterPath="$PROJECT_DIR$/Classes/TreeParts/Edges/EdgeFactory.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/TreeScene.cpp" afterPath="$PROJECT_DIR$/Classes/TreeScene.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/TreeScene.h" afterPath="$PROJECT_DIR$/Classes/TreeScene.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/managers/ScoreManagement/ScoreManagement.cpp" afterPath="$PROJECT_DIR$/Classes/managers/ScoreManagement/ScoreManagement.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/managers/ScoreManagement/ScoreManagement.h" afterPath="$PROJECT_DIR$/Classes/managers/ScoreManagement/ScoreManagement.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/managers/TreeManagement/TreeEvents.h" afterPath="$PROJECT_DIR$/Classes/managers/TreeManagement/TreeEvents.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/managers/TreeManagement/TreeManager.cpp" afterPath="$PROJECT_DIR$/Classes/managers/TreeManagement/TreeManager.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/managers/TreeManagement/TreeManager.h" afterPath="$PROJECT_DIR$/Classes/managers/TreeManagement/TreeManager.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/managers/TreeManagement/TreePartsInterfaces.h" afterPath="$PROJECT_DIR$/Classes/managers/TreeManagement/TreePartsInterfaces.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/MyGame.dir/CXX.includecache" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/MyGame.dir/CXX.includecache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/MyGame.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/MyGame.dir/DependInfo.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/MyGame.dir/build.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/MyGame.dir/build.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/MyGame.dir/cmake_clean.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/MyGame.dir/cmake_clean.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/MyGame.dir/depend.internal" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/MyGame.dir/depend.internal" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/MyGame.dir/depend.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/MyGame.dir/depend.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/MyGame.dir/link.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/MyGame.dir/link.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/MyGame.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/MyGame.dir/progress.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/MyGame.cbp" afterPath="$PROJECT_DIR$/cmake-build-debug/MyGame.cbp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/cocos2d/cocos/CMakeFiles/cocos2d.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/cocos/CMakeFiles/cocos2d.dir/progress.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/cocos2d/cocos/CMakeFiles/cocos2dInternal.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/cocos/CMakeFiles/cocos2dInternal.dir/progress.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/cocos2d/external/bullet/CMakeFiles/bullet.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/cocos2d/external/bullet/CMakeFiles/bullet.dir/progress.make" />
     </list>
     <ignored path="build_and_destroy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -390,25 +71,45 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="TreeEdge.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Classes/TreeEdge.h">
+        <entry file="file://$PROJECT_DIR$/Classes/TreeParts/EdgeFunctionality/TreeEdge.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+            <state relative-caret-position="500">
+              <caret line="47" column="24" lean-forward="true" selection-start-line="47" selection-start-column="24" selection-end-line="47" selection-end-column="24" />
               <folding>
                 <element signature="e#92#112#0" expanded="true" />
+                <element signature="e#224#404#1" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TreeEdge.cpp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Classes/TreeEdge.cpp">
+      <file leaf-file-name="TreeEdge.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Classes/TreeParts/EdgeFunctionality/TreeEdge.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+            <state relative-caret-position="444">
+              <caret line="71" column="59" lean-forward="false" selection-start-line="71" selection-start-column="59" selection-end-line="71" selection-end-column="59" />
               <folding>
-                <element signature="e#39#60#0" expanded="true" />
-                <element signature="e#1655#2115#0" expanded="false" />
+                <element signature="e#846#1085#0" expanded="false" />
+                <element signature="e#1089#1211#0" expanded="false" />
+                <element signature="e#1213#1313#0" expanded="false" />
+                <element signature="e#1316#1619#0" expanded="false" />
+                <element signature="e#1621#1679#0" expanded="false" />
+                <element signature="e#1681#1740#0" expanded="false" />
+                <element signature="e#1954#2138#0" expanded="false" />
+                <element signature="e#2140#2401#0" expanded="false" />
+                <element signature="e#2403#2614#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TreeScene.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Classes/TreeScene.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="722">
+              <caret line="52" column="6" lean-forward="false" selection-start-line="52" selection-start-column="6" selection-end-line="52" selection-end-column="6" />
+              <folding>
+                <element signature="e#40#62#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -421,6 +122,9 @@
       <find>node</find>
       <find>liste</find>
       <find>cout</find>
+      <find>Classes/managers/TurnManagement.cpp</find>
+      <find>length</find>
+      <find>rotation</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -429,9 +133,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/Classes/CustomEvents.h" />
-        <option value="$PROJECT_DIR$/Classes/MyCustomEvent.h" />
         <option value="$PROJECT_DIR$/Classes/my_event_classes.h" />
         <option value="$PROJECT_DIR$/Classes/event_wrappers.cpp" />
         <option value="$PROJECT_DIR$/Classes/event_wrappers.h" />
@@ -464,21 +165,25 @@
         <option value="$PROJECT_DIR$/Classes/managers/TreeManagement/TreeObjectInterfaces.h" />
         <option value="$PROJECT_DIR$/Classes/managers/TreeManagement/TreeObjectInterfaces.cpp" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/Classes/managers/TreeManagement/TreePartsCreation.h" />
         <option value="$PROJECT_DIR$/Classes/managers/TreeManagement/TreeEvents.cpp" />
-        <option value="$PROJECT_DIR$/Classes/managers/TreeManagement/TreeEvents.h" />
         <option value="$PROJECT_DIR$/Classes/TreeNode.h" />
         <option value="$PROJECT_DIR$/Classes/managers/TreeManagement/TreePartsInterfaces.cpp" />
         <option value="$PROJECT_DIR$/Classes/managers/TreeManagement/TreeManager.h" />
-        <option value="$PROJECT_DIR$/Classes/TreeScene.h" />
-        <option value="$PROJECT_DIR$/Classes/TreeScene.cpp" />
         <option value="$PROJECT_DIR$/Classes/TreeNode.cpp" />
-        <option value="$PROJECT_DIR$/Classes/managers/TreeManagement/TreeManager.cpp" />
+        <option value="$PROJECT_DIR$/Classes/TreeParts/Edges/EdgeFactory.h" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/Classes/managers/TreeManagement/TreePartsCreation.h" />
+        <option value="$PROJECT_DIR$/Classes/managers/TreeManagement/TreeEvents.h" />
         <option value="$PROJECT_DIR$/Classes/TreeEdge.h" />
         <option value="$PROJECT_DIR$/Classes/TreeEdge.cpp" />
+        <option value="$PROJECT_DIR$/Classes/managers/TreeManagement/TreeManager.cpp" />
+        <option value="$PROJECT_DIR$/Classes/TreeParts/NodeFunctionality/TreeNode.h" />
         <option value="$PROJECT_DIR$/Classes/managers/TreeManagement/TreePartsInterfaces.h" />
-        <option value="$PROJECT_DIR$/Classes/TreeParts/Edges/EdgeFactory.h" />
+        <option value="$PROJECT_DIR$/Classes/TreeScene.h" />
+        <option value="$PROJECT_DIR$/Classes/TreeParts/NodeFunctionality/TreeNode.cpp" />
+        <option value="$PROJECT_DIR$/Classes/TreeParts/EdgeFunctionality/TreeEdge.h" />
+        <option value="$PROJECT_DIR$/Classes/TreeParts/EdgeFunctionality/TreeEdge.cpp" />
+        <option value="$PROJECT_DIR$/Classes/TreeScene.cpp" />
       </list>
     </option>
   </component>
@@ -489,20 +194,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="65" />
-    <option name="y" value="24" />
-    <option name="width" value="1301" />
-    <option name="height" value="744" />
-  </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
-    <OptionsSetting value="true" id="Add" />
-    <OptionsSetting value="true" id="Remove" />
-    <OptionsSetting value="true" id="Checkout" />
-    <OptionsSetting value="true" id="Update" />
-    <OptionsSetting value="true" id="Status" />
-    <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
-    <ConfirmationsSetting value="0" id="Remove" />
+    <option name="x" value="-1" />
+    <option name="width" value="2562" />
+    <option name="height" value="1396" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -523,27 +217,49 @@
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="topical_ver" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="topical_ver" />
+              <option name="myItemId" value="build-and-destroy" />
               <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="topical_ver" />
+              <option name="myItemId" value="build-and-destroy" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="topical_ver" />
+              <option name="myItemId" value="build-and-destroy" />
               <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="topical_ver" />
+              <option name="myItemId" value="build-and-destroy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="build-and-destroy" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="build-and-destroy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cocos2d" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="build-and-destroy" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="build-and-destroy" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -553,11 +269,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="topical_ver" />
+              <option name="myItemId" value="build-and-destroy" />
               <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="topical_ver" />
+              <option name="myItemId" value="build-and-destroy" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -569,17 +285,35 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Edges" />
+              <option name="myItemId" value="NodeFunctionality" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="topical_ver" />
+              <option name="myItemId" value="build-and-destroy" />
               <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="topical_ver" />
+              <option name="myItemId" value="build-and-destroy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Classes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TreeParts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="build-and-destroy" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="build-and-destroy" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -593,11 +327,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="topical_ver" />
+              <option name="myItemId" value="build-and-destroy" />
               <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="topical_ver" />
+              <option name="myItemId" value="build-and-destroy" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -622,12 +356,24 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.eslint.eslintPackage" value="" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Classes/TreeParts/NodeFunctionality" />
+      <recent name="$PROJECT_DIR$/Classes/TreeParts/EdgeFunctionality" />
+    </key>
+  </component>
   <component name="RunManager" selected="Application.MyGame">
     <configuration default="true" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MyGame" TARGET_NAME="MyGame" CONFIG_NAME="Debug" TEST_MODE="SUITE_TEST">
       <envs />
       <method />
     </configuration>
     <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MyGame" TARGET_NAME="MyGame" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
       <envs />
       <method />
     </configuration>
@@ -886,33 +632,34 @@
       <workItem from="1480187336059" duration="5454000" />
       <workItem from="1480192918255" duration="4063000" />
       <workItem from="1480284325092" duration="4950000" />
+      <workItem from="1480321446343" duration="10771000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="100082000" />
+    <option name="totallyTimeSpent" value="110853000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="24" width="1301" height="744" extended-state="6" />
-    <editor active="false" />
+    <frame x="-1" y="0" width="2562" height="1396" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24596465" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2459406" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2316891" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884902" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3866447" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32811213" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1755977" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3258595" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32563892" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21846661" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.426216" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45754328" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17628205" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -932,76 +679,32 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Classes/TreeNode.cpp</url>
-          <line>144</line>
-          <option name="timeStamp" value="57" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="59" />
+      <option name="time" value="66" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Classes/MyCustomEvent.cpp" />
-    <entry file="file://$PROJECT_DIR$/Classes/MyCustomEvent.h" />
-    <entry file="file://$PROJECT_DIR$/cocos2d/cocos/base/CCEventListenerCustom.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-251">
-          <caret line="59" column="13" selection-start-line="59" selection-start-column="13" selection-end-line="59" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cocos2d/cocos/base/CCEventCustom.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cocos2d/cocos/base/CCEventCustom.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="48" column="8" selection-start-line="48" selection-start-column="4" selection-end-line="48" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/include/c++/4.9/functional">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="2438" column="0" selection-start-line="2438" selection-start-column="0" selection-end-line="2438" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Classes/event_system/temp.h" />
     <entry file="file://$PROJECT_DIR$/proj.linux/test.cpp" />
     <entry file="file://$PROJECT_DIR$/proj.linux/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="256">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="32">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TODO.md" />
-    <entry file="file://$PROJECT_DIR$/cocos2d/cocos/2d/CCSprite.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="178" column="10" selection-start-line="178" selection-start-column="10" selection-end-line="178" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Classes/event_system/EventWrappers.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
-          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+          <caret line="4" column="26" lean-forward="false" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -1009,14 +712,14 @@
     <entry file="file://$PROJECT_DIR$/cocos2d/cocos/2d/CCNode.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
-          <caret line="1939" column="34" selection-start-line="1939" selection-start-column="34" selection-end-line="1939" selection-end-column="34" />
+          <caret line="1939" column="34" lean-forward="false" selection-start-line="1939" selection-start-column="34" selection-end-line="1939" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cocos2d/cocos/base/CCEventDispatcher.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3068">
-          <caret line="61" column="13" selection-start-line="61" selection-start-column="13" selection-end-line="61" selection-end-column="13" />
+          <caret line="61" column="13" lean-forward="false" selection-start-line="61" selection-start-column="13" selection-end-line="61" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1029,21 +732,21 @@
     <entry file="file://$PROJECT_DIR$/Classes/managers/ScoreManagement/ScoreManagement.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1188">
-          <caret line="68" column="71" selection-start-line="68" selection-start-column="71" selection-end-line="68" selection-end-column="71" />
+          <caret line="68" column="71" lean-forward="false" selection-start-line="68" selection-start-column="71" selection-end-line="68" selection-end-column="71" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cocos2d/cocos/base/CCEventListenerMouse.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="237">
-          <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+          <caret line="84" column="0" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Classes/managers/ScoreManagement/ScoreManagement.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2548">
-          <caret line="91" column="1" selection-start-line="91" selection-start-column="1" selection-end-line="91" selection-end-column="1" />
+          <caret line="91" column="1" lean-forward="false" selection-start-line="91" selection-start-column="1" selection-end-line="91" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -1051,28 +754,21 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-137">
-          <caret line="33" column="3" selection-start-line="33" selection-start-column="3" selection-end-line="33" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/managers/ScoreManagement/Scorable.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="47" />
+          <caret line="33" column="3" lean-forward="false" selection-start-line="33" selection-start-column="3" selection-end-line="33" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Classes/managers/TreeManagement/TreeEvents.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
-          <caret line="20" column="79" selection-start-line="20" selection-start-column="79" selection-end-line="20" selection-end-column="79" />
+          <caret line="20" column="79" lean-forward="false" selection-start-line="20" selection-start-column="79" selection-end-line="20" selection-end-column="79" />
         </state>
       </provider>
     </entry>
     <entry file="file:///usr/include/c++/4.9/bits/stl_set.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
-          <caret line="501" column="0" selection-start-line="501" selection-start-column="0" selection-end-line="501" selection-end-column="0" />
+          <caret line="501" column="0" lean-forward="false" selection-start-line="501" selection-start-column="0" selection-end-line="501" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1080,21 +776,21 @@
     <entry file="file:///usr/include/c++/4.9/bits/stl_tree.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="28">
-          <caret line="552" column="0" selection-start-line="552" selection-start-column="0" selection-end-line="552" selection-end-column="0" />
+          <caret line="552" column="0" lean-forward="false" selection-start-line="552" selection-start-column="0" selection-end-line="552" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cocos2d/cocos/base/CCEventDispatcher.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
-          <caret line="930" column="0" selection-start-line="930" selection-start-column="0" selection-end-line="930" selection-end-column="0" />
+          <caret line="930" column="0" lean-forward="false" selection-start-line="930" selection-start-column="0" selection-end-line="930" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Classes/event_system/EventWrappers.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="337">
-          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1102,14 +798,14 @@
     <entry file="file://$PROJECT_DIR$/cocos2d/cocos/base/CCEventListenerCustom.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="169">
-          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+          <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cocos2d/cocos/platform/linux/CCApplication-linux.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="99">
-          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1117,47 +813,29 @@
     <entry file="file://$PROJECT_DIR$/Classes/AppDelegate.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1597">
-          <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+          <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file:///usr/include/c++/4.9/bits/stl_function.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
-          <caret line="370" column="0" selection-start-line="370" selection-start-column="0" selection-end-line="370" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/TreeScene.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="581">
-          <caret line="24" column="41" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
-          <folding>
-            <element signature="e#95#115#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/TreeScene.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1197">
-          <caret line="70" column="95" selection-start-line="70" selection-start-column="95" selection-end-line="70" selection-end-column="95" />
-          <folding />
+          <caret line="370" column="0" lean-forward="false" selection-start-line="370" selection-start-column="0" selection-end-line="370" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="134" column="12" selection-start-line="134" selection-start-column="8" selection-end-line="134" selection-end-column="12" />
+        <state relative-caret-position="306">
+          <caret line="152" column="108" lean-forward="false" selection-start-line="152" selection-start-column="108" selection-end-line="152" selection-end-column="108" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Classes/managers/TreeManagement/TreeManager.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="885">
-          <caret line="93" column="0" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
+        <state relative-caret-position="1652">
+          <caret line="93" column="0" lean-forward="false" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
           <folding>
             <element signature="e#327#571#1" expanded="false" />
             <element signature="e#1573#2077#1" expanded="false" />
@@ -1167,16 +845,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Classes/managers/TreeManagement/TreeEvents.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="40" column="64" selection-start-line="40" selection-start-column="64" selection-end-line="40" selection-end-column="64" />
+        <state relative-caret-position="-388">
+          <caret line="13" column="23" lean-forward="true" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+          <folding>
+            <element signature="e#97#117#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classes/managers/TreeManagement/TreePartsCreation.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classes/managers/ScoreManagement/Scorable.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="11" column="12" lean-forward="false" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="47" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Classes/managers/TreeManagement/TreeManager.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="129" column="89" selection-start-line="129" selection-start-column="89" selection-end-line="129" selection-end-column="89" />
+        <state relative-caret-position="508">
+          <caret line="181" column="2" lean-forward="false" selection-start-line="181" selection-start-column="2" selection-end-line="181" selection-end-column="2" />
           <folding>
             <element signature="e#216#457#0" expanded="false" />
             <element signature="e#459#567#0" expanded="false" />
@@ -1190,32 +886,109 @@
             <element signature="e#1444#1551#0" expanded="false" />
             <element signature="e#1553#1709#0" expanded="false" />
             <element signature="e#1711#3740#0" expanded="false" />
-            <element signature="e#4317#5223#0" expanded="false" />
-            <element signature="e#5225#5504#0" expanded="false" />
-            <element signature="e#5506#6610#0" expanded="false" />
-            <element signature="e#6613#6974#0" expanded="false" />
-            <element signature="e#6977#7267#0" expanded="false" />
-            <element signature="e#7269#7560#0" expanded="false" />
-            <element signature="e#7562#7666#0" expanded="false" />
-            <element signature="e#7668#7759#0" expanded="false" />
-            <element signature="e#7761#7853#0" expanded="false" />
+            <element signature="e#5227#5506#0" expanded="false" />
+            <element signature="e#6617#6978#0" expanded="false" />
+            <element signature="e#6981#7271#0" expanded="false" />
+            <element signature="e#7273#7564#0" expanded="false" />
+            <element signature="e#7566#7670#0" expanded="false" />
+            <element signature="e#7672#7763#0" expanded="false" />
+            <element signature="e#7765#7857#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/TreeNode.cpp">
+    <entry file="file://$PROJECT_DIR$/Classes/TreeParts/EdgeFunctionality/EdgeFactory.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classes/TreeParts/EdgeFunctionality/EdgeFactory.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="22" column="19" lean-forward="false" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classes/managers/TreeManagement/TreePartsInterfaces.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="25" column="63" lean-forward="false" selection-start-line="25" selection-start-column="63" selection-end-line="25" selection-end-column="63" />
           <folding>
+            <element signature="e#117#137#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classes/TreeScene.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="10" column="50" lean-forward="false" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/plank.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classes/TreeParts/NodeFunctionality/TreeNode.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="582">
+          <caret line="33" column="23" lean-forward="true" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/plank_clear1.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/wooden_plank.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/circle_blue.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cocos2d/cocos/2d/CCSprite.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="867" column="13" lean-forward="false" selection-start-line="867" selection-start-column="13" selection-end-line="867" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cocos2d/cocos/2d/CCSprite.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="454" column="18" lean-forward="false" selection-start-line="454" selection-start-column="18" selection-end-line="454" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classes/TreeParts/NodeFunctionality/TreeNode.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1169">
+          <caret line="144" column="0" lean-forward="false" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
+          <folding>
+            <element signature="e#40#61#0" expanded="true" />
             <element signature="e#133#258#0" expanded="false" />
             <element signature="e#288#339#0" expanded="false" />
+            <element signature="e#342#588#0" expanded="false" />
             <element signature="e#590#911#0" expanded="false" />
             <element signature="e#913#1291#0" expanded="false" />
             <element signature="e#1293#1668#0" expanded="false" />
             <element signature="e#1670#2766#0" expanded="false" />
             <element signature="e#2768#3451#0" expanded="false" />
-            <element signature="e#3454#3762#0" expanded="false" />
             <element signature="e#3764#4073#0" expanded="false" />
             <element signature="e#4075#4133#0" expanded="false" />
             <element signature="e#4135#4194#0" expanded="false" />
@@ -1224,61 +997,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/TreeNode.h">
+    <entry file="file://$PROJECT_DIR$/Classes/TreeParts/EdgeFunctionality/TreeEdge.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-90">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding>
-            <element signature="e#93#113#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/TreeParts/Edges/EdgeFactory.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
-          <folding>
-            <element signature="e#98#118#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/managers/TreeManagement/TreePartsCreation.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="49">
-          <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/managers/TreeManagement/TreePartsInterfaces.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-          <folding>
-            <element signature="e#117#137#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/TreeEdge.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+        <state relative-caret-position="500">
+          <caret line="47" column="24" lean-forward="true" selection-start-line="47" selection-start-column="24" selection-end-line="47" selection-end-column="24" />
           <folding>
             <element signature="e#92#112#0" expanded="true" />
+            <element signature="e#224#404#1" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/TreeEdge.cpp">
+    <entry file="file://$PROJECT_DIR$/Classes/TreeParts/EdgeFunctionality/TreeEdge.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+        <state relative-caret-position="444">
+          <caret line="71" column="59" lean-forward="false" selection-start-line="71" selection-start-column="59" selection-end-line="71" selection-end-column="59" />
           <folding>
-            <element signature="e#39#60#0" expanded="true" />
-            <element signature="e#1655#2115#0" expanded="false" />
+            <element signature="e#846#1085#0" expanded="false" />
+            <element signature="e#1089#1211#0" expanded="false" />
+            <element signature="e#1213#1313#0" expanded="false" />
+            <element signature="e#1316#1619#0" expanded="false" />
+            <element signature="e#1621#1679#0" expanded="false" />
+            <element signature="e#1681#1740#0" expanded="false" />
+            <element signature="e#1954#2138#0" expanded="false" />
+            <element signature="e#2140#2401#0" expanded="false" />
+            <element signature="e#2403#2614#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classes/TreeScene.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="722">
+          <caret line="52" column="6" lean-forward="false" selection-start-line="52" selection-start-column="6" selection-end-line="52" selection-end-column="6" />
+          <folding>
+            <element signature="e#40#62#0" expanded="true" />
           </folding>
         </state>
       </provider>

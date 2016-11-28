@@ -5,7 +5,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/artem/Clion/build-and-destroy/Classes/AppDelegate.cpp" "/home/artem/Clion/build-and-destroy/cmake-build-debug/CMakeFiles/MyGame.dir/Classes/AppDelegate.cpp.o"
-  "/home/artem/Clion/build-and-destroy/Classes/TreeNode.cpp" "/home/artem/Clion/build-and-destroy/cmake-build-debug/CMakeFiles/MyGame.dir/Classes/TreeNode.cpp.o"
+  "/home/artem/Clion/build-and-destroy/Classes/TreeParts/EdgeFunctionality/EdgeFactory.cpp" "/home/artem/Clion/build-and-destroy/cmake-build-debug/CMakeFiles/MyGame.dir/Classes/TreeParts/EdgeFunctionality/EdgeFactory.cpp.o"
+  "/home/artem/Clion/build-and-destroy/Classes/TreeParts/EdgeFunctionality/TreeEdge.cpp" "/home/artem/Clion/build-and-destroy/cmake-build-debug/CMakeFiles/MyGame.dir/Classes/TreeParts/EdgeFunctionality/TreeEdge.cpp.o"
+  "/home/artem/Clion/build-and-destroy/Classes/TreeParts/NodeFunctionality/TreeNode.cpp" "/home/artem/Clion/build-and-destroy/cmake-build-debug/CMakeFiles/MyGame.dir/Classes/TreeParts/NodeFunctionality/TreeNode.cpp.o"
   "/home/artem/Clion/build-and-destroy/Classes/TreeScene.cpp" "/home/artem/Clion/build-and-destroy/cmake-build-debug/CMakeFiles/MyGame.dir/Classes/TreeScene.cpp.o"
   "/home/artem/Clion/build-and-destroy/Classes/event_system/EventWrappers.cpp" "/home/artem/Clion/build-and-destroy/cmake-build-debug/CMakeFiles/MyGame.dir/Classes/event_system/EventWrappers.cpp.o"
   "/home/artem/Clion/build-and-destroy/Classes/managers/ScoreManagement/ScoreManagement.cpp" "/home/artem/Clion/build-and-destroy/cmake-build-debug/CMakeFiles/MyGame.dir/Classes/managers/ScoreManagement/ScoreManagement.cpp.o"

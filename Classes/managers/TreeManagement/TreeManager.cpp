@@ -142,7 +142,7 @@ void TreeManager::manageTreeEdgeCreationEvent(tree_events::TreeEdgeCreationEvent
 
         score_manager.buy(edge);
 
-        edge->setPosition(point_1, point_2);
+//        edge->setPosition(point_1, point_2);
         scene->addChild(edge);
 
         edge_factory->closeRequest();
@@ -179,7 +179,7 @@ void TreeManager::manageTreeNodeCreationEvent(tree_events::TreeNodeCreationEvent
         auto edges = edge_factory->getEdges();
 
         for (size_t i = 0; i != attach_nodes_coords.size(); ++i) {
-            edges[i]->setPosition(new_node_coord, attach_nodes_coords[i]);
+//            edges[i]->setPosition(new_node_coord, attach_nodes_coords[i]);
             scene->addChild(edges[i]);
         }
 

@@ -914,10 +914,22 @@
 		<Unit filename="/home/artem/Clion/build-and-destroy/Classes/AppDelegate.h">
 			<Option target="MyGame"/>
 		</Unit>
-		<Unit filename="/home/artem/Clion/build-and-destroy/Classes/TreeNode.cpp">
+		<Unit filename="/home/artem/Clion/build-and-destroy/Classes/TreeParts/EdgeFunctionality/EdgeFactory.cpp">
 			<Option target="MyGame"/>
 		</Unit>
-		<Unit filename="/home/artem/Clion/build-and-destroy/Classes/TreeNode.h">
+		<Unit filename="/home/artem/Clion/build-and-destroy/Classes/TreeParts/EdgeFunctionality/EdgeFactory.h">
+			<Option target="MyGame"/>
+		</Unit>
+		<Unit filename="/home/artem/Clion/build-and-destroy/Classes/TreeParts/EdgeFunctionality/TreeEdge.cpp">
+			<Option target="MyGame"/>
+		</Unit>
+		<Unit filename="/home/artem/Clion/build-and-destroy/Classes/TreeParts/EdgeFunctionality/TreeEdge.h">
+			<Option target="MyGame"/>
+		</Unit>
+		<Unit filename="/home/artem/Clion/build-and-destroy/Classes/TreeParts/NodeFunctionality/TreeNode.cpp">
+			<Option target="MyGame"/>
+		</Unit>
+		<Unit filename="/home/artem/Clion/build-and-destroy/Classes/TreeParts/NodeFunctionality/TreeNode.h">
 			<Option target="MyGame"/>
 		</Unit>
 		<Unit filename="/home/artem/Clion/build-and-destroy/Classes/TreeScene.cpp">

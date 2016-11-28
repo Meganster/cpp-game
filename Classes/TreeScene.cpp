@@ -3,10 +3,7 @@
 //
 
 #include "TreeScene.h"
-#include "TreeNode.h"
 #include <iostream>
-#include "event_system/EventWrappers.h"
-#include "managers/TreeManagement/TreeManager.h"
 USING_NS_CC;
 
 Scene* TreeScene::createScene() {
@@ -44,6 +41,17 @@ bool TreeScene::init() {
         }
     }
 
+    auto node_1 = TreeNode::create();
+    node_1->setPosition(start_point.x + 150, start_point.y - 30);
+    this->addChild(node_1, 10);
+
+    auto node_2 = TreeNode::create();
+    node_2->setPosition(start_point.x + 250, start_point.y - 80);
+    this->addChild(node_2, 10);
+
+    //auto edge = TreeEdge::create(node_1, node_2);
+    //this->addChild(edge, 8);
+
     return true;
 }
 
@@ -55,13 +63,6 @@ bool TreeScene::init() {
 
 
 void TreeScene::addEvents() {
-    /*auto mouse_listener = cocos2d::EventListenerMouse::create();
-
-    mouse_listener->onMouseUp = [this] (cocos2d::EventMouse* event) {
-        if (event->getMouseButton() == MOUSE_BUTTON_LEFT) {
-            this->addNode(event, this);
-        }
-    };*/
 
     auto listenerSelect = event_wrappers::create_listener<tree_events::TreeNodeSelectionEvent>\
 ([](tree_events::TreeNodeSelectionEvent* event) -> void {event->selected_node->setScale(0.12);});
@@ -74,9 +75,4 @@ void TreeScene::addEvents() {
     auto listenerAdd = event_wrappers::create_listener<tree_events::TreeNodeCreationEvent>\
 ([](tree_events::TreeNodeCreationEvent* event) -> void { std::cout << "Nodes creation!" << std::endl;});
     _eventDispatcher->addEventListenerWithSceneGraphPriority(listenerAdd, this);
-}
-
-void TreeScene::treeNodeSelectedCallback(TreeNodeSelectedEvent* event, TreeScene* tree_scene) {
-    TreeNode* tree_node_ptr = (TreeNode*)event->getUserData();
-    tree_node_ptr->setScale(0.25);
 }

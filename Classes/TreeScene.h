@@ -6,8 +6,9 @@
 #define MYGAME_TREESCENE_H
 
 #include "cocos2d.h"
-#include "TreeNode.h"
+#include "TreeParts/NodeFunctionality/TreeNode.h"
 #include "managers/TreeManagement/TreeManager.h"
+#include "./TreeParts/EdgeFunctionality/TreeEdge.h"
 
 
 class TreeScene : public cocos2d::Scene {
@@ -23,8 +24,6 @@ private:
     void addEvents();
 
     tree_management::TreeManager manager;
-
-    static void treeNodeSelectedCallback(TreeNodeSelectedEvent*, TreeScene*);
     std::set<TreeNode*> chosen_tree_nodes;
 };
 

@@ -105,28 +105,28 @@ CMakeFiles/MyGame.dir/proj.linux/main.cpp.o.provides: CMakeFiles/MyGame.dir/proj
 CMakeFiles/MyGame.dir/proj.linux/main.cpp.o.provides.build: CMakeFiles/MyGame.dir/proj.linux/main.cpp.o
 
 
-CMakeFiles/MyGame.dir/Classes/TreeNode.cpp.o: CMakeFiles/MyGame.dir/flags.make
-CMakeFiles/MyGame.dir/Classes/TreeNode.cpp.o: ../Classes/TreeNode.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/artem/Clion/build-and-destroy/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/MyGame.dir/Classes/TreeNode.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MyGame.dir/Classes/TreeNode.cpp.o -c /home/artem/Clion/build-and-destroy/Classes/TreeNode.cpp
+CMakeFiles/MyGame.dir/Classes/TreeParts/NodeFunctionality/TreeNode.cpp.o: CMakeFiles/MyGame.dir/flags.make
+CMakeFiles/MyGame.dir/Classes/TreeParts/NodeFunctionality/TreeNode.cpp.o: ../Classes/TreeParts/NodeFunctionality/TreeNode.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/artem/Clion/build-and-destroy/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/MyGame.dir/Classes/TreeParts/NodeFunctionality/TreeNode.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MyGame.dir/Classes/TreeParts/NodeFunctionality/TreeNode.cpp.o -c /home/artem/Clion/build-and-destroy/Classes/TreeParts/NodeFunctionality/TreeNode.cpp
 
-CMakeFiles/MyGame.dir/Classes/TreeNode.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyGame.dir/Classes/TreeNode.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/artem/Clion/build-and-destroy/Classes/TreeNode.cpp > CMakeFiles/MyGame.dir/Classes/TreeNode.cpp.i
+CMakeFiles/MyGame.dir/Classes/TreeParts/NodeFunctionality/TreeNode.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyGame.dir/Classes/TreeParts/NodeFunctionality/TreeNode.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/artem/Clion/build-and-destroy/Classes/TreeParts/NodeFunctionality/TreeNode.cpp > CMakeFiles/MyGame.dir/Classes/TreeParts/NodeFunctionality/TreeNode.cpp.i
 
-CMakeFiles/MyGame.dir/Classes/TreeNode.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyGame.dir/Classes/TreeNode.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/artem/Clion/build-and-destroy/Classes/TreeNode.cpp -o CMakeFiles/MyGame.dir/Classes/TreeNode.cpp.s
+CMakeFiles/MyGame.dir/Classes/TreeParts/NodeFunctionality/TreeNode.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyGame.dir/Classes/TreeParts/NodeFunctionality/TreeNode.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/artem/Clion/build-and-destroy/Classes/TreeParts/NodeFunctionality/TreeNode.cpp -o CMakeFiles/MyGame.dir/Classes/TreeParts/NodeFunctionality/TreeNode.cpp.s
 
-CMakeFiles/MyGame.dir/Classes/TreeNode.cpp.o.requires:
+CMakeFiles/MyGame.dir/Classes/TreeParts/NodeFunctionality/TreeNode.cpp.o.requires:
 
-.PHONY : CMakeFiles/MyGame.dir/Classes/TreeNode.cpp.o.requires
+.PHONY : CMakeFiles/MyGame.dir/Classes/TreeParts/NodeFunctionality/TreeNode.cpp.o.requires
 
-CMakeFiles/MyGame.dir/Classes/TreeNode.cpp.o.provides: CMakeFiles/MyGame.dir/Classes/TreeNode.cpp.o.requires
-	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/TreeNode.cpp.o.provides.build
-.PHONY : CMakeFiles/MyGame.dir/Classes/TreeNode.cpp.o.provides
+CMakeFiles/MyGame.dir/Classes/TreeParts/NodeFunctionality/TreeNode.cpp.o.provides: CMakeFiles/MyGame.dir/Classes/TreeParts/NodeFunctionality/TreeNode.cpp.o.requires
+	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/TreeParts/NodeFunctionality/TreeNode.cpp.o.provides.build
+.PHONY : CMakeFiles/MyGame.dir/Classes/TreeParts/NodeFunctionality/TreeNode.cpp.o.provides
 
-CMakeFiles/MyGame.dir/Classes/TreeNode.cpp.o.provides.build: CMakeFiles/MyGame.dir/Classes/TreeNode.cpp.o
+CMakeFiles/MyGame.dir/Classes/TreeParts/NodeFunctionality/TreeNode.cpp.o.provides.build: CMakeFiles/MyGame.dir/Classes/TreeParts/NodeFunctionality/TreeNode.cpp.o
 
 
 CMakeFiles/MyGame.dir/Classes/TreeScene.cpp.o: CMakeFiles/MyGame.dir/flags.make
@@ -153,81 +153,33 @@ CMakeFiles/MyGame.dir/Classes/TreeScene.cpp.o.provides: CMakeFiles/MyGame.dir/Cl
 CMakeFiles/MyGame.dir/Classes/TreeScene.cpp.o.provides.build: CMakeFiles/MyGame.dir/Classes/TreeScene.cpp.o
 
 
-CMakeFiles/MyGame.dir/Classes/event_system/EventWrappers.cpp.o: CMakeFiles/MyGame.dir/flags.make
-CMakeFiles/MyGame.dir/Classes/event_system/EventWrappers.cpp.o: ../Classes/event_system/EventWrappers.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/artem/Clion/build-and-destroy/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/MyGame.dir/Classes/event_system/EventWrappers.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MyGame.dir/Classes/event_system/EventWrappers.cpp.o -c /home/artem/Clion/build-and-destroy/Classes/event_system/EventWrappers.cpp
+CMakeFiles/MyGame.dir/Classes/TreeParts/EdgeFunctionality/TreeEdge.cpp.o: CMakeFiles/MyGame.dir/flags.make
+CMakeFiles/MyGame.dir/Classes/TreeParts/EdgeFunctionality/TreeEdge.cpp.o: ../Classes/TreeParts/EdgeFunctionality/TreeEdge.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/artem/Clion/build-and-destroy/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/MyGame.dir/Classes/TreeParts/EdgeFunctionality/TreeEdge.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MyGame.dir/Classes/TreeParts/EdgeFunctionality/TreeEdge.cpp.o -c /home/artem/Clion/build-and-destroy/Classes/TreeParts/EdgeFunctionality/TreeEdge.cpp
 
-CMakeFiles/MyGame.dir/Classes/event_system/EventWrappers.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyGame.dir/Classes/event_system/EventWrappers.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/artem/Clion/build-and-destroy/Classes/event_system/EventWrappers.cpp > CMakeFiles/MyGame.dir/Classes/event_system/EventWrappers.cpp.i
+CMakeFiles/MyGame.dir/Classes/TreeParts/EdgeFunctionality/TreeEdge.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyGame.dir/Classes/TreeParts/EdgeFunctionality/TreeEdge.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/artem/Clion/build-and-destroy/Classes/TreeParts/EdgeFunctionality/TreeEdge.cpp > CMakeFiles/MyGame.dir/Classes/TreeParts/EdgeFunctionality/TreeEdge.cpp.i
 
-CMakeFiles/MyGame.dir/Classes/event_system/EventWrappers.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyGame.dir/Classes/event_system/EventWrappers.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/artem/Clion/build-and-destroy/Classes/event_system/EventWrappers.cpp -o CMakeFiles/MyGame.dir/Classes/event_system/EventWrappers.cpp.s
+CMakeFiles/MyGame.dir/Classes/TreeParts/EdgeFunctionality/TreeEdge.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyGame.dir/Classes/TreeParts/EdgeFunctionality/TreeEdge.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/artem/Clion/build-and-destroy/Classes/TreeParts/EdgeFunctionality/TreeEdge.cpp -o CMakeFiles/MyGame.dir/Classes/TreeParts/EdgeFunctionality/TreeEdge.cpp.s
 
-CMakeFiles/MyGame.dir/Classes/event_system/EventWrappers.cpp.o.requires:
+CMakeFiles/MyGame.dir/Classes/TreeParts/EdgeFunctionality/TreeEdge.cpp.o.requires:
 
-.PHONY : CMakeFiles/MyGame.dir/Classes/event_system/EventWrappers.cpp.o.requires
+.PHONY : CMakeFiles/MyGame.dir/Classes/TreeParts/EdgeFunctionality/TreeEdge.cpp.o.requires
 
-CMakeFiles/MyGame.dir/Classes/event_system/EventWrappers.cpp.o.provides: CMakeFiles/MyGame.dir/Classes/event_system/EventWrappers.cpp.o.requires
-	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/event_system/EventWrappers.cpp.o.provides.build
-.PHONY : CMakeFiles/MyGame.dir/Classes/event_system/EventWrappers.cpp.o.provides
+CMakeFiles/MyGame.dir/Classes/TreeParts/EdgeFunctionality/TreeEdge.cpp.o.provides: CMakeFiles/MyGame.dir/Classes/TreeParts/EdgeFunctionality/TreeEdge.cpp.o.requires
+	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/TreeParts/EdgeFunctionality/TreeEdge.cpp.o.provides.build
+.PHONY : CMakeFiles/MyGame.dir/Classes/TreeParts/EdgeFunctionality/TreeEdge.cpp.o.provides
 
-CMakeFiles/MyGame.dir/Classes/event_system/EventWrappers.cpp.o.provides.build: CMakeFiles/MyGame.dir/Classes/event_system/EventWrappers.cpp.o
-
-
-CMakeFiles/MyGame.dir/Classes/managers/TreeManagement/TreeManager.cpp.o: CMakeFiles/MyGame.dir/flags.make
-CMakeFiles/MyGame.dir/Classes/managers/TreeManagement/TreeManager.cpp.o: ../Classes/managers/TreeManagement/TreeManager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/artem/Clion/build-and-destroy/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/MyGame.dir/Classes/managers/TreeManagement/TreeManager.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MyGame.dir/Classes/managers/TreeManagement/TreeManager.cpp.o -c /home/artem/Clion/build-and-destroy/Classes/managers/TreeManagement/TreeManager.cpp
-
-CMakeFiles/MyGame.dir/Classes/managers/TreeManagement/TreeManager.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyGame.dir/Classes/managers/TreeManagement/TreeManager.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/artem/Clion/build-and-destroy/Classes/managers/TreeManagement/TreeManager.cpp > CMakeFiles/MyGame.dir/Classes/managers/TreeManagement/TreeManager.cpp.i
-
-CMakeFiles/MyGame.dir/Classes/managers/TreeManagement/TreeManager.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyGame.dir/Classes/managers/TreeManagement/TreeManager.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/artem/Clion/build-and-destroy/Classes/managers/TreeManagement/TreeManager.cpp -o CMakeFiles/MyGame.dir/Classes/managers/TreeManagement/TreeManager.cpp.s
-
-CMakeFiles/MyGame.dir/Classes/managers/TreeManagement/TreeManager.cpp.o.requires:
-
-.PHONY : CMakeFiles/MyGame.dir/Classes/managers/TreeManagement/TreeManager.cpp.o.requires
-
-CMakeFiles/MyGame.dir/Classes/managers/TreeManagement/TreeManager.cpp.o.provides: CMakeFiles/MyGame.dir/Classes/managers/TreeManagement/TreeManager.cpp.o.requires
-	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/managers/TreeManagement/TreeManager.cpp.o.provides.build
-.PHONY : CMakeFiles/MyGame.dir/Classes/managers/TreeManagement/TreeManager.cpp.o.provides
-
-CMakeFiles/MyGame.dir/Classes/managers/TreeManagement/TreeManager.cpp.o.provides.build: CMakeFiles/MyGame.dir/Classes/managers/TreeManagement/TreeManager.cpp.o
-
-
-CMakeFiles/MyGame.dir/Classes/managers/ScoreManagement/ScoreManagement.cpp.o: CMakeFiles/MyGame.dir/flags.make
-CMakeFiles/MyGame.dir/Classes/managers/ScoreManagement/ScoreManagement.cpp.o: ../Classes/managers/ScoreManagement/ScoreManagement.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/artem/Clion/build-and-destroy/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/MyGame.dir/Classes/managers/ScoreManagement/ScoreManagement.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MyGame.dir/Classes/managers/ScoreManagement/ScoreManagement.cpp.o -c /home/artem/Clion/build-and-destroy/Classes/managers/ScoreManagement/ScoreManagement.cpp
-
-CMakeFiles/MyGame.dir/Classes/managers/ScoreManagement/ScoreManagement.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyGame.dir/Classes/managers/ScoreManagement/ScoreManagement.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/artem/Clion/build-and-destroy/Classes/managers/ScoreManagement/ScoreManagement.cpp > CMakeFiles/MyGame.dir/Classes/managers/ScoreManagement/ScoreManagement.cpp.i
-
-CMakeFiles/MyGame.dir/Classes/managers/ScoreManagement/ScoreManagement.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyGame.dir/Classes/managers/ScoreManagement/ScoreManagement.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/artem/Clion/build-and-destroy/Classes/managers/ScoreManagement/ScoreManagement.cpp -o CMakeFiles/MyGame.dir/Classes/managers/ScoreManagement/ScoreManagement.cpp.s
-
-CMakeFiles/MyGame.dir/Classes/managers/ScoreManagement/ScoreManagement.cpp.o.requires:
-
-.PHONY : CMakeFiles/MyGame.dir/Classes/managers/ScoreManagement/ScoreManagement.cpp.o.requires
-
-CMakeFiles/MyGame.dir/Classes/managers/ScoreManagement/ScoreManagement.cpp.o.provides: CMakeFiles/MyGame.dir/Classes/managers/ScoreManagement/ScoreManagement.cpp.o.requires
-	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/managers/ScoreManagement/ScoreManagement.cpp.o.provides.build
-.PHONY : CMakeFiles/MyGame.dir/Classes/managers/ScoreManagement/ScoreManagement.cpp.o.provides
-
-CMakeFiles/MyGame.dir/Classes/managers/ScoreManagement/ScoreManagement.cpp.o.provides.build: CMakeFiles/MyGame.dir/Classes/managers/ScoreManagement/ScoreManagement.cpp.o
+CMakeFiles/MyGame.dir/Classes/TreeParts/EdgeFunctionality/TreeEdge.cpp.o.provides.build: CMakeFiles/MyGame.dir/Classes/TreeParts/EdgeFunctionality/TreeEdge.cpp.o
 
 
 CMakeFiles/MyGame.dir/Classes/managers/TurnManagement/TurnManager.cpp.o: CMakeFiles/MyGame.dir/flags.make
 CMakeFiles/MyGame.dir/Classes/managers/TurnManagement/TurnManager.cpp.o: ../Classes/managers/TurnManagement/TurnManager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/artem/Clion/build-and-destroy/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/MyGame.dir/Classes/managers/TurnManagement/TurnManager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/artem/Clion/build-and-destroy/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/MyGame.dir/Classes/managers/TurnManagement/TurnManager.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MyGame.dir/Classes/managers/TurnManagement/TurnManager.cpp.o -c /home/artem/Clion/build-and-destroy/Classes/managers/TurnManagement/TurnManager.cpp
 
 CMakeFiles/MyGame.dir/Classes/managers/TurnManagement/TurnManager.cpp.i: cmake_force
@@ -251,7 +203,7 @@ CMakeFiles/MyGame.dir/Classes/managers/TurnManagement/TurnManager.cpp.o.provides
 
 CMakeFiles/MyGame.dir/Classes/managers/TreeManagement/TreeEvents.cpp.o: CMakeFiles/MyGame.dir/flags.make
 CMakeFiles/MyGame.dir/Classes/managers/TreeManagement/TreeEvents.cpp.o: ../Classes/managers/TreeManagement/TreeEvents.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/artem/Clion/build-and-destroy/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/MyGame.dir/Classes/managers/TreeManagement/TreeEvents.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/artem/Clion/build-and-destroy/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/MyGame.dir/Classes/managers/TreeManagement/TreeEvents.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MyGame.dir/Classes/managers/TreeManagement/TreeEvents.cpp.o -c /home/artem/Clion/build-and-destroy/Classes/managers/TreeManagement/TreeEvents.cpp
 
 CMakeFiles/MyGame.dir/Classes/managers/TreeManagement/TreeEvents.cpp.i: cmake_force
@@ -273,30 +225,130 @@ CMakeFiles/MyGame.dir/Classes/managers/TreeManagement/TreeEvents.cpp.o.provides:
 CMakeFiles/MyGame.dir/Classes/managers/TreeManagement/TreeEvents.cpp.o.provides.build: CMakeFiles/MyGame.dir/Classes/managers/TreeManagement/TreeEvents.cpp.o
 
 
+CMakeFiles/MyGame.dir/Classes/event_system/EventWrappers.cpp.o: CMakeFiles/MyGame.dir/flags.make
+CMakeFiles/MyGame.dir/Classes/event_system/EventWrappers.cpp.o: ../Classes/event_system/EventWrappers.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/artem/Clion/build-and-destroy/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/MyGame.dir/Classes/event_system/EventWrappers.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MyGame.dir/Classes/event_system/EventWrappers.cpp.o -c /home/artem/Clion/build-and-destroy/Classes/event_system/EventWrappers.cpp
+
+CMakeFiles/MyGame.dir/Classes/event_system/EventWrappers.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyGame.dir/Classes/event_system/EventWrappers.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/artem/Clion/build-and-destroy/Classes/event_system/EventWrappers.cpp > CMakeFiles/MyGame.dir/Classes/event_system/EventWrappers.cpp.i
+
+CMakeFiles/MyGame.dir/Classes/event_system/EventWrappers.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyGame.dir/Classes/event_system/EventWrappers.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/artem/Clion/build-and-destroy/Classes/event_system/EventWrappers.cpp -o CMakeFiles/MyGame.dir/Classes/event_system/EventWrappers.cpp.s
+
+CMakeFiles/MyGame.dir/Classes/event_system/EventWrappers.cpp.o.requires:
+
+.PHONY : CMakeFiles/MyGame.dir/Classes/event_system/EventWrappers.cpp.o.requires
+
+CMakeFiles/MyGame.dir/Classes/event_system/EventWrappers.cpp.o.provides: CMakeFiles/MyGame.dir/Classes/event_system/EventWrappers.cpp.o.requires
+	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/event_system/EventWrappers.cpp.o.provides.build
+.PHONY : CMakeFiles/MyGame.dir/Classes/event_system/EventWrappers.cpp.o.provides
+
+CMakeFiles/MyGame.dir/Classes/event_system/EventWrappers.cpp.o.provides.build: CMakeFiles/MyGame.dir/Classes/event_system/EventWrappers.cpp.o
+
+
+CMakeFiles/MyGame.dir/Classes/managers/TreeManagement/TreeManager.cpp.o: CMakeFiles/MyGame.dir/flags.make
+CMakeFiles/MyGame.dir/Classes/managers/TreeManagement/TreeManager.cpp.o: ../Classes/managers/TreeManagement/TreeManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/artem/Clion/build-and-destroy/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/MyGame.dir/Classes/managers/TreeManagement/TreeManager.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MyGame.dir/Classes/managers/TreeManagement/TreeManager.cpp.o -c /home/artem/Clion/build-and-destroy/Classes/managers/TreeManagement/TreeManager.cpp
+
+CMakeFiles/MyGame.dir/Classes/managers/TreeManagement/TreeManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyGame.dir/Classes/managers/TreeManagement/TreeManager.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/artem/Clion/build-and-destroy/Classes/managers/TreeManagement/TreeManager.cpp > CMakeFiles/MyGame.dir/Classes/managers/TreeManagement/TreeManager.cpp.i
+
+CMakeFiles/MyGame.dir/Classes/managers/TreeManagement/TreeManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyGame.dir/Classes/managers/TreeManagement/TreeManager.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/artem/Clion/build-and-destroy/Classes/managers/TreeManagement/TreeManager.cpp -o CMakeFiles/MyGame.dir/Classes/managers/TreeManagement/TreeManager.cpp.s
+
+CMakeFiles/MyGame.dir/Classes/managers/TreeManagement/TreeManager.cpp.o.requires:
+
+.PHONY : CMakeFiles/MyGame.dir/Classes/managers/TreeManagement/TreeManager.cpp.o.requires
+
+CMakeFiles/MyGame.dir/Classes/managers/TreeManagement/TreeManager.cpp.o.provides: CMakeFiles/MyGame.dir/Classes/managers/TreeManagement/TreeManager.cpp.o.requires
+	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/managers/TreeManagement/TreeManager.cpp.o.provides.build
+.PHONY : CMakeFiles/MyGame.dir/Classes/managers/TreeManagement/TreeManager.cpp.o.provides
+
+CMakeFiles/MyGame.dir/Classes/managers/TreeManagement/TreeManager.cpp.o.provides.build: CMakeFiles/MyGame.dir/Classes/managers/TreeManagement/TreeManager.cpp.o
+
+
+CMakeFiles/MyGame.dir/Classes/managers/ScoreManagement/ScoreManagement.cpp.o: CMakeFiles/MyGame.dir/flags.make
+CMakeFiles/MyGame.dir/Classes/managers/ScoreManagement/ScoreManagement.cpp.o: ../Classes/managers/ScoreManagement/ScoreManagement.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/artem/Clion/build-and-destroy/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/MyGame.dir/Classes/managers/ScoreManagement/ScoreManagement.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MyGame.dir/Classes/managers/ScoreManagement/ScoreManagement.cpp.o -c /home/artem/Clion/build-and-destroy/Classes/managers/ScoreManagement/ScoreManagement.cpp
+
+CMakeFiles/MyGame.dir/Classes/managers/ScoreManagement/ScoreManagement.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyGame.dir/Classes/managers/ScoreManagement/ScoreManagement.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/artem/Clion/build-and-destroy/Classes/managers/ScoreManagement/ScoreManagement.cpp > CMakeFiles/MyGame.dir/Classes/managers/ScoreManagement/ScoreManagement.cpp.i
+
+CMakeFiles/MyGame.dir/Classes/managers/ScoreManagement/ScoreManagement.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyGame.dir/Classes/managers/ScoreManagement/ScoreManagement.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/artem/Clion/build-and-destroy/Classes/managers/ScoreManagement/ScoreManagement.cpp -o CMakeFiles/MyGame.dir/Classes/managers/ScoreManagement/ScoreManagement.cpp.s
+
+CMakeFiles/MyGame.dir/Classes/managers/ScoreManagement/ScoreManagement.cpp.o.requires:
+
+.PHONY : CMakeFiles/MyGame.dir/Classes/managers/ScoreManagement/ScoreManagement.cpp.o.requires
+
+CMakeFiles/MyGame.dir/Classes/managers/ScoreManagement/ScoreManagement.cpp.o.provides: CMakeFiles/MyGame.dir/Classes/managers/ScoreManagement/ScoreManagement.cpp.o.requires
+	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/managers/ScoreManagement/ScoreManagement.cpp.o.provides.build
+.PHONY : CMakeFiles/MyGame.dir/Classes/managers/ScoreManagement/ScoreManagement.cpp.o.provides
+
+CMakeFiles/MyGame.dir/Classes/managers/ScoreManagement/ScoreManagement.cpp.o.provides.build: CMakeFiles/MyGame.dir/Classes/managers/ScoreManagement/ScoreManagement.cpp.o
+
+
+CMakeFiles/MyGame.dir/Classes/TreeParts/EdgeFunctionality/EdgeFactory.cpp.o: CMakeFiles/MyGame.dir/flags.make
+CMakeFiles/MyGame.dir/Classes/TreeParts/EdgeFunctionality/EdgeFactory.cpp.o: ../Classes/TreeParts/EdgeFunctionality/EdgeFactory.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/artem/Clion/build-and-destroy/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/MyGame.dir/Classes/TreeParts/EdgeFunctionality/EdgeFactory.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MyGame.dir/Classes/TreeParts/EdgeFunctionality/EdgeFactory.cpp.o -c /home/artem/Clion/build-and-destroy/Classes/TreeParts/EdgeFunctionality/EdgeFactory.cpp
+
+CMakeFiles/MyGame.dir/Classes/TreeParts/EdgeFunctionality/EdgeFactory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyGame.dir/Classes/TreeParts/EdgeFunctionality/EdgeFactory.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/artem/Clion/build-and-destroy/Classes/TreeParts/EdgeFunctionality/EdgeFactory.cpp > CMakeFiles/MyGame.dir/Classes/TreeParts/EdgeFunctionality/EdgeFactory.cpp.i
+
+CMakeFiles/MyGame.dir/Classes/TreeParts/EdgeFunctionality/EdgeFactory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyGame.dir/Classes/TreeParts/EdgeFunctionality/EdgeFactory.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/artem/Clion/build-and-destroy/Classes/TreeParts/EdgeFunctionality/EdgeFactory.cpp -o CMakeFiles/MyGame.dir/Classes/TreeParts/EdgeFunctionality/EdgeFactory.cpp.s
+
+CMakeFiles/MyGame.dir/Classes/TreeParts/EdgeFunctionality/EdgeFactory.cpp.o.requires:
+
+.PHONY : CMakeFiles/MyGame.dir/Classes/TreeParts/EdgeFunctionality/EdgeFactory.cpp.o.requires
+
+CMakeFiles/MyGame.dir/Classes/TreeParts/EdgeFunctionality/EdgeFactory.cpp.o.provides: CMakeFiles/MyGame.dir/Classes/TreeParts/EdgeFunctionality/EdgeFactory.cpp.o.requires
+	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/TreeParts/EdgeFunctionality/EdgeFactory.cpp.o.provides.build
+.PHONY : CMakeFiles/MyGame.dir/Classes/TreeParts/EdgeFunctionality/EdgeFactory.cpp.o.provides
+
+CMakeFiles/MyGame.dir/Classes/TreeParts/EdgeFunctionality/EdgeFactory.cpp.o.provides.build: CMakeFiles/MyGame.dir/Classes/TreeParts/EdgeFunctionality/EdgeFactory.cpp.o
+
+
 # Object files for target MyGame
 MyGame_OBJECTS = \
 "CMakeFiles/MyGame.dir/Classes/AppDelegate.cpp.o" \
 "CMakeFiles/MyGame.dir/proj.linux/main.cpp.o" \
-"CMakeFiles/MyGame.dir/Classes/TreeNode.cpp.o" \
+"CMakeFiles/MyGame.dir/Classes/TreeParts/NodeFunctionality/TreeNode.cpp.o" \
 "CMakeFiles/MyGame.dir/Classes/TreeScene.cpp.o" \
+"CMakeFiles/MyGame.dir/Classes/TreeParts/EdgeFunctionality/TreeEdge.cpp.o" \
+"CMakeFiles/MyGame.dir/Classes/managers/TurnManagement/TurnManager.cpp.o" \
+"CMakeFiles/MyGame.dir/Classes/managers/TreeManagement/TreeEvents.cpp.o" \
 "CMakeFiles/MyGame.dir/Classes/event_system/EventWrappers.cpp.o" \
 "CMakeFiles/MyGame.dir/Classes/managers/TreeManagement/TreeManager.cpp.o" \
 "CMakeFiles/MyGame.dir/Classes/managers/ScoreManagement/ScoreManagement.cpp.o" \
-"CMakeFiles/MyGame.dir/Classes/managers/TurnManagement/TurnManager.cpp.o" \
-"CMakeFiles/MyGame.dir/Classes/managers/TreeManagement/TreeEvents.cpp.o"
+"CMakeFiles/MyGame.dir/Classes/TreeParts/EdgeFunctionality/EdgeFactory.cpp.o"
 
 # External object files for target MyGame
 MyGame_EXTERNAL_OBJECTS =
 
 bin/MyGame: CMakeFiles/MyGame.dir/Classes/AppDelegate.cpp.o
 bin/MyGame: CMakeFiles/MyGame.dir/proj.linux/main.cpp.o
-bin/MyGame: CMakeFiles/MyGame.dir/Classes/TreeNode.cpp.o
+bin/MyGame: CMakeFiles/MyGame.dir/Classes/TreeParts/NodeFunctionality/TreeNode.cpp.o
 bin/MyGame: CMakeFiles/MyGame.dir/Classes/TreeScene.cpp.o
+bin/MyGame: CMakeFiles/MyGame.dir/Classes/TreeParts/EdgeFunctionality/TreeEdge.cpp.o
+bin/MyGame: CMakeFiles/MyGame.dir/Classes/managers/TurnManagement/TurnManager.cpp.o
+bin/MyGame: CMakeFiles/MyGame.dir/Classes/managers/TreeManagement/TreeEvents.cpp.o
 bin/MyGame: CMakeFiles/MyGame.dir/Classes/event_system/EventWrappers.cpp.o
 bin/MyGame: CMakeFiles/MyGame.dir/Classes/managers/TreeManagement/TreeManager.cpp.o
 bin/MyGame: CMakeFiles/MyGame.dir/Classes/managers/ScoreManagement/ScoreManagement.cpp.o
-bin/MyGame: CMakeFiles/MyGame.dir/Classes/managers/TurnManagement/TurnManager.cpp.o
-bin/MyGame: CMakeFiles/MyGame.dir/Classes/managers/TreeManagement/TreeEvents.cpp.o
+bin/MyGame: CMakeFiles/MyGame.dir/Classes/TreeParts/EdgeFunctionality/EdgeFactory.cpp.o
 bin/MyGame: CMakeFiles/MyGame.dir/build.make
 bin/MyGame: lib/libcocos2d.a
 bin/MyGame: lib/libcocos2dInternal.a
@@ -321,7 +373,7 @@ bin/MyGame: ../cocos2d/external/chipmunk/prebuilt/linux/64-bit/libchipmunk.a
 bin/MyGame: lib/libbullet.a
 bin/MyGame: lib/librecast.a
 bin/MyGame: CMakeFiles/MyGame.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/artem/Clion/build-and-destroy/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable bin/MyGame"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/artem/Clion/build-and-destroy/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable bin/MyGame"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MyGame.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -331,13 +383,15 @@ CMakeFiles/MyGame.dir/build: bin/MyGame
 
 CMakeFiles/MyGame.dir/requires: CMakeFiles/MyGame.dir/Classes/AppDelegate.cpp.o.requires
 CMakeFiles/MyGame.dir/requires: CMakeFiles/MyGame.dir/proj.linux/main.cpp.o.requires
-CMakeFiles/MyGame.dir/requires: CMakeFiles/MyGame.dir/Classes/TreeNode.cpp.o.requires
+CMakeFiles/MyGame.dir/requires: CMakeFiles/MyGame.dir/Classes/TreeParts/NodeFunctionality/TreeNode.cpp.o.requires
 CMakeFiles/MyGame.dir/requires: CMakeFiles/MyGame.dir/Classes/TreeScene.cpp.o.requires
+CMakeFiles/MyGame.dir/requires: CMakeFiles/MyGame.dir/Classes/TreeParts/EdgeFunctionality/TreeEdge.cpp.o.requires
+CMakeFiles/MyGame.dir/requires: CMakeFiles/MyGame.dir/Classes/managers/TurnManagement/TurnManager.cpp.o.requires
+CMakeFiles/MyGame.dir/requires: CMakeFiles/MyGame.dir/Classes/managers/TreeManagement/TreeEvents.cpp.o.requires
 CMakeFiles/MyGame.dir/requires: CMakeFiles/MyGame.dir/Classes/event_system/EventWrappers.cpp.o.requires
 CMakeFiles/MyGame.dir/requires: CMakeFiles/MyGame.dir/Classes/managers/TreeManagement/TreeManager.cpp.o.requires
 CMakeFiles/MyGame.dir/requires: CMakeFiles/MyGame.dir/Classes/managers/ScoreManagement/ScoreManagement.cpp.o.requires
-CMakeFiles/MyGame.dir/requires: CMakeFiles/MyGame.dir/Classes/managers/TurnManagement/TurnManager.cpp.o.requires
-CMakeFiles/MyGame.dir/requires: CMakeFiles/MyGame.dir/Classes/managers/TreeManagement/TreeEvents.cpp.o.requires
+CMakeFiles/MyGame.dir/requires: CMakeFiles/MyGame.dir/Classes/TreeParts/EdgeFunctionality/EdgeFactory.cpp.o.requires
 
 .PHONY : CMakeFiles/MyGame.dir/requires
 

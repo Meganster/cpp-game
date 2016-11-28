@@ -8,6 +8,7 @@
 #include "cocos2d.h"
 #include "TreePartsInterfaces.h"
 #include "TreePartsCreation.h"
+#include "../../event_system/EventWrappers.h"
 
 
 namespace tree_events {

@@ -280,32 +280,86 @@ Classes/AppDelegate.cpp.s:
 	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/AppDelegate.cpp.s
 .PHONY : Classes/AppDelegate.cpp.s
 
-Classes/TreeNode.o: Classes/TreeNode.cpp.o
+Classes/TreeParts/EdgeFunctionality/EdgeFactory.o: Classes/TreeParts/EdgeFunctionality/EdgeFactory.cpp.o
 
-.PHONY : Classes/TreeNode.o
+.PHONY : Classes/TreeParts/EdgeFunctionality/EdgeFactory.o
 
 # target to build an object file
-Classes/TreeNode.cpp.o:
-	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/TreeNode.cpp.o
-.PHONY : Classes/TreeNode.cpp.o
+Classes/TreeParts/EdgeFunctionality/EdgeFactory.cpp.o:
+	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/TreeParts/EdgeFunctionality/EdgeFactory.cpp.o
+.PHONY : Classes/TreeParts/EdgeFunctionality/EdgeFactory.cpp.o
 
-Classes/TreeNode.i: Classes/TreeNode.cpp.i
+Classes/TreeParts/EdgeFunctionality/EdgeFactory.i: Classes/TreeParts/EdgeFunctionality/EdgeFactory.cpp.i
 
-.PHONY : Classes/TreeNode.i
+.PHONY : Classes/TreeParts/EdgeFunctionality/EdgeFactory.i
 
 # target to preprocess a source file
-Classes/TreeNode.cpp.i:
-	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/TreeNode.cpp.i
-.PHONY : Classes/TreeNode.cpp.i
+Classes/TreeParts/EdgeFunctionality/EdgeFactory.cpp.i:
+	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/TreeParts/EdgeFunctionality/EdgeFactory.cpp.i
+.PHONY : Classes/TreeParts/EdgeFunctionality/EdgeFactory.cpp.i
 
-Classes/TreeNode.s: Classes/TreeNode.cpp.s
+Classes/TreeParts/EdgeFunctionality/EdgeFactory.s: Classes/TreeParts/EdgeFunctionality/EdgeFactory.cpp.s
 
-.PHONY : Classes/TreeNode.s
+.PHONY : Classes/TreeParts/EdgeFunctionality/EdgeFactory.s
 
 # target to generate assembly for a file
-Classes/TreeNode.cpp.s:
-	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/TreeNode.cpp.s
-.PHONY : Classes/TreeNode.cpp.s
+Classes/TreeParts/EdgeFunctionality/EdgeFactory.cpp.s:
+	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/TreeParts/EdgeFunctionality/EdgeFactory.cpp.s
+.PHONY : Classes/TreeParts/EdgeFunctionality/EdgeFactory.cpp.s
+
+Classes/TreeParts/EdgeFunctionality/TreeEdge.o: Classes/TreeParts/EdgeFunctionality/TreeEdge.cpp.o
+
+.PHONY : Classes/TreeParts/EdgeFunctionality/TreeEdge.o
+
+# target to build an object file
+Classes/TreeParts/EdgeFunctionality/TreeEdge.cpp.o:
+	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/TreeParts/EdgeFunctionality/TreeEdge.cpp.o
+.PHONY : Classes/TreeParts/EdgeFunctionality/TreeEdge.cpp.o
+
+Classes/TreeParts/EdgeFunctionality/TreeEdge.i: Classes/TreeParts/EdgeFunctionality/TreeEdge.cpp.i
+
+.PHONY : Classes/TreeParts/EdgeFunctionality/TreeEdge.i
+
+# target to preprocess a source file
+Classes/TreeParts/EdgeFunctionality/TreeEdge.cpp.i:
+	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/TreeParts/EdgeFunctionality/TreeEdge.cpp.i
+.PHONY : Classes/TreeParts/EdgeFunctionality/TreeEdge.cpp.i
+
+Classes/TreeParts/EdgeFunctionality/TreeEdge.s: Classes/TreeParts/EdgeFunctionality/TreeEdge.cpp.s
+
+.PHONY : Classes/TreeParts/EdgeFunctionality/TreeEdge.s
+
+# target to generate assembly for a file
+Classes/TreeParts/EdgeFunctionality/TreeEdge.cpp.s:
+	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/TreeParts/EdgeFunctionality/TreeEdge.cpp.s
+.PHONY : Classes/TreeParts/EdgeFunctionality/TreeEdge.cpp.s
+
+Classes/TreeParts/NodeFunctionality/TreeNode.o: Classes/TreeParts/NodeFunctionality/TreeNode.cpp.o
+
+.PHONY : Classes/TreeParts/NodeFunctionality/TreeNode.o
+
+# target to build an object file
+Classes/TreeParts/NodeFunctionality/TreeNode.cpp.o:
+	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/TreeParts/NodeFunctionality/TreeNode.cpp.o
+.PHONY : Classes/TreeParts/NodeFunctionality/TreeNode.cpp.o
+
+Classes/TreeParts/NodeFunctionality/TreeNode.i: Classes/TreeParts/NodeFunctionality/TreeNode.cpp.i
+
+.PHONY : Classes/TreeParts/NodeFunctionality/TreeNode.i
+
+# target to preprocess a source file
+Classes/TreeParts/NodeFunctionality/TreeNode.cpp.i:
+	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/TreeParts/NodeFunctionality/TreeNode.cpp.i
+.PHONY : Classes/TreeParts/NodeFunctionality/TreeNode.cpp.i
+
+Classes/TreeParts/NodeFunctionality/TreeNode.s: Classes/TreeParts/NodeFunctionality/TreeNode.cpp.s
+
+.PHONY : Classes/TreeParts/NodeFunctionality/TreeNode.s
+
+# target to generate assembly for a file
+Classes/TreeParts/NodeFunctionality/TreeNode.cpp.s:
+	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/TreeParts/NodeFunctionality/TreeNode.cpp.s
+.PHONY : Classes/TreeParts/NodeFunctionality/TreeNode.cpp.s
 
 Classes/TreeScene.o: Classes/TreeScene.cpp.o
 
@@ -518,9 +572,15 @@ help:
 	@echo "... Classes/AppDelegate.o"
 	@echo "... Classes/AppDelegate.i"
 	@echo "... Classes/AppDelegate.s"
-	@echo "... Classes/TreeNode.o"
-	@echo "... Classes/TreeNode.i"
-	@echo "... Classes/TreeNode.s"
+	@echo "... Classes/TreeParts/EdgeFunctionality/EdgeFactory.o"
+	@echo "... Classes/TreeParts/EdgeFunctionality/EdgeFactory.i"
+	@echo "... Classes/TreeParts/EdgeFunctionality/EdgeFactory.s"
+	@echo "... Classes/TreeParts/EdgeFunctionality/TreeEdge.o"
+	@echo "... Classes/TreeParts/EdgeFunctionality/TreeEdge.i"
+	@echo "... Classes/TreeParts/EdgeFunctionality/TreeEdge.s"
+	@echo "... Classes/TreeParts/NodeFunctionality/TreeNode.o"
+	@echo "... Classes/TreeParts/NodeFunctionality/TreeNode.i"
+	@echo "... Classes/TreeParts/NodeFunctionality/TreeNode.s"
 	@echo "... Classes/TreeScene.o"
 	@echo "... Classes/TreeScene.i"
 	@echo "... Classes/TreeScene.s"
