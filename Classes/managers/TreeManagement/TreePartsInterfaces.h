@@ -25,6 +25,8 @@ namespace tree_interfaces {
     public:
         virtual std::vector<TreeNodeInterface*> getNodes() = 0;
 
+        virtual void setNodes(TreeNodeInterface*, TreeNodeInterface*) = 0;
+
         virtual TreeEdgeInterface* getClone(TreeNodeInterface*, TreeNodeInterface*) = 0;
     };
 }

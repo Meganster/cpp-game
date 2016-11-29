@@ -38,14 +38,14 @@ namespace tree_events {
 
     class TreeNodeCreationEvent: public event_wrappers::MyEventCustom {
     public:
-        TreeNodeCreationEvent(cocos2d::Vec2, cocos2d::Scene *,
-                              tree_part_creation::EdgeFactoryInterface* factory = nullptr);
+        TreeNodeCreationEvent(TreeNodeInterface *, cocos2d::Scene *,
+                              tree_part_creation::EdgeFactoryInterface *factory = nullptr);
 
         static const std::string kEventName;
 
         cocos2d::Scene* scene;
         tree_part_creation::EdgeFactoryInterface* edge_factory;
-        cocos2d::Vec2 new_node_coord;
+        TreeNodeInterface* new_node;
     };
 
     class TreeNodeSelectionEvent: public event_wrappers::MyEventCustom {

@@ -26,8 +26,10 @@ public:
     ~TreeEdge();
 
     static TreeEdge* create(tree_interfaces::TreeNodeInterface*, tree_interfaces::TreeNodeInterface*);
+    static TreeEdge* create();
 
     std::vector<tree_interfaces::TreeNodeInterface*> getNodes();
+    void setNodes(tree_interfaces::TreeNodeInterface*, tree_interfaces::TreeNodeInterface*);
 
     void setPhantom();
     void setReal();

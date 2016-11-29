@@ -1056,6 +1056,7 @@ CMakeFiles/MyGame.dir/Classes/TreeScene.cpp.o
  ../Classes/./managers/ScoreManagement/Scorable.h
  ../Classes/./managers/TreeManagement/TreePartsInterfaces.h
  ../Classes/event_system/EventWrappers.h
+ ../Classes/managers/TreeManagement/TreePartsCreation.h
  ../cocos2d/cocos/2d/CCAction.h
  ../cocos2d/cocos/2d/CCActionCamera.h
  ../cocos2d/cocos/2d/CCActionCatmullRom.h
@@ -1309,6 +1310,7 @@ CMakeFiles/MyGame.dir/Classes/TreeScene.cpp.o
  ../cocos2d/cocos/vr/CCVRGenericRenderer.h
  ../cocos2d/cocos/vr/CCVRProtocol.h
  /home/artem/Clion/build-and-destroy/Classes/./TreeParts/EdgeFunctionality/TreeEdge.h
+ /home/artem/Clion/build-and-destroy/Classes/TreeParts/EdgeFunctionality/EdgeFactory.h
  /home/artem/Clion/build-and-destroy/Classes/TreeParts/NodeFunctionality/TreeNode.h
  /home/artem/Clion/build-and-destroy/Classes/TreeScene.cpp
  /home/artem/Clion/build-and-destroy/Classes/TreeScene.h

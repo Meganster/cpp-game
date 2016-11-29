@@ -14,25 +14,30 @@ using namespace tree_part_creation;
 
 class EdgeFactory : public  EdgeFactoryInterface{
 public:
+    static EdgeFactory& getInstance();
+
+    score_type getBuyPrice() const ;
+
+    score_type getSellPrice() const ;
+
+    void setPrototype(TreeEdgeInterface *);
+
+    void setRequest(TreeNodeInterface *, TreeNodeInterface *);
+
+    void setRequest(TreeNodeInterface *, std::set<TreeNodeInterface*> &);
+
+    std::vector<TreeEdgeInterface*> getEdges();
+
+    void closeRequest();
+
+private:
     EdgeFactory();
-    ~EdgeFactory();
 
-    void setSample(TreeEdgeInterface* );
+    bool hasRequest();
 
-    /**
-     * Through this method you set request to create one edge
-     */
-    void setRequest(cocos2d::Vec2, cocos2d::Vec2);
-
-    /**
-     * Through this method you set request to create multiple edges
-     */
-     void setRequest(std::vector<cocos2d::Vec2>&, std::vector<cocos2d::Vec2>&);
-
-    /**
-     * This method returns the clone of sample edge
-     */
-    TreeEdgeInterface* getNewEdge(TreeNodeInterface*, TreeNodeInterface*);
+    std::vector<TreeNodeInterface*> start_nodes_;
+    std::vector<TreeNodeInterface*> end_nodes_;
+    TreeEdgeInterface* prototype_;
 };
 
 

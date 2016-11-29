@@ -29,6 +29,10 @@ TreeEdge* TreeEdge::create(tree_interfaces::TreeNodeInterface* node_1, tree_inte
     return nullptr;
 }
 
+TreeEdge* TreeEdge::create() {
+    return TreeEdge::create(nullptr, nullptr);
+}
+
 std::vector<tree_interfaces::TreeNodeInterface*> TreeEdge::getNodes(){
     std::vector<tree_interfaces::TreeNodeInterface*> adjoinedNode;
     adjoinedNode.push_back(node_1_);
@@ -37,15 +41,20 @@ std::vector<tree_interfaces::TreeNodeInterface*> TreeEdge::getNodes(){
     return adjoinedNode;
 };
 
+void TreeEdge::setNodes(tree_interfaces::TreeNodeInterface * node_1, tree_interfaces::TreeNodeInterface * node_2) {
+    node_1_ = node_1;
+    node_2_ = node_2;
+
+    initOptions();
+}
+
 
 // need to work with this
 void TreeEdge::setPhantom() {
-    kSpritePath = "plank.png";
     // need to change here sprite
 }
 
 void TreeEdge::setReal() {
-    kSpritePath = "plank_clear1.png";
     // need to change here sprite
 }
 
@@ -67,17 +76,19 @@ score_type TreeEdge::getSellPrice() const {
 }
 
 void TreeEdge::initOptions() {
-    setRotation(countAngle());
-    setPosition(countPosition());
-    setScaleX(countLength() / getTexture()->getPixelsWide());
-    setScaleY(0.1);
+    if (node_1_ != nullptr && node_2_ != nullptr) {
+        setRotation(countAngle());
+        setPosition(countPosition());
+        setScaleX(countLength() / getTexture()->getPixelsWide());
+        setScaleY(0.1);
+    }
 }
 
 void TreeEdge::addEvents() {}
 
 float TreeEdge::countAngle(){
     // Need to check coordinate system
-    return -(float)(asin( (node_2_->getPosition().y - node_1_->getPosition().y) / countLength() ) * 180 / M_PI) ;
+    return (float)(asin( (node_2_->getPosition().y - node_1_->getPosition().y) / countLength() ) * 180 / M_PI) ;
 }
 
 float TreeEdge::countLength() {
@@ -87,7 +98,6 @@ float TreeEdge::countLength() {
 }
 
 cocos2d::Vec2 TreeEdge::countPosition(){
-    return cocos2d::Vec2((node_2_->getPosition().x + node_1_->getPosition().x) / 2,
-                         (node_2_->getPosition().y + node_1_->getPosition().y) / 2);
+    return (node_2_->getPosition() + node_1_->getPosition()) / 2;
 }
 

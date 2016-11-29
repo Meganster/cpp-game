@@ -47,7 +47,10 @@ void TreeNode::addTreeNode(cocos2d::EventMouse* event, TreeNode* tree_node_ptr) 
     isAdding = false;
     cocos2d::Vec2 event_point = event->getLocation();
     std::cout << event_point.x << "\t" << event_point.y << std::endl;
-    auto e = tree_events::TreeNodeCreationEvent(event_point, tree_node_ptr->getScene());
+
+    auto new_node = TreeNode::create();
+    new_node->setPosition(event_point);
+    auto e = tree_events::TreeNodeCreationEvent(new_node, tree_node_ptr->getScene());
     tree_node_ptr->_eventDispatcher->dispatchEvent(&e);
 
 }
@@ -69,6 +72,8 @@ void TreeNode::selectTreeNode(cocos2d::EventMouse* event, TreeNode* tree_node_pt
             auto event = tree_events::TreeNodeSelectionEvent(tree_node_ptr);
             tree_node_ptr->_eventDispatcher->dispatchEvent(&event);
         }
+
+        event->stopPropagation();
         //isSelecting = true;
         //auto select_event = TreeNodeSelectedEvent(100);
         //tree_node_ptr->_eventDispatcher->dispatchEvent(&select_event);
@@ -111,16 +116,6 @@ TreeNode* TreeNode::create() {
 
     CC_SAFE_DELETE(node_ptr);
     return NULL;
-}
-
-TreeNode* TreeNode::createAttachedTreeNode(const std::vector<TreeNode*>& nodes, const cocos2d::Vec2& position) {
-    TreeNode* TreeNode_ptr = TreeNode::create();
-    if (TreeNode_ptr == NULL) {
-        return NULL;
-    } else {
-        TreeNode_ptr->setPosition(position);
-        return TreeNode_ptr;
-    }
 }
 
 score_type TreeNode::getBuyPrice() const {

@@ -17,9 +17,9 @@ TreeEdgeCreationEvent::TreeEdgeCreationEvent(TreeNodeInterface *tree_node_1, Tre
 const std::string TreeEdgeCreationEvent::kEventName = "TreeEdgeCreationEvent";
 
 
-TreeNodeCreationEvent::TreeNodeCreationEvent(cocos2d::Vec2 new_node, cocos2d::Scene *parent_node,
-                                             EdgeFactoryInterface* edge_factory):
-        MyEventCustom{this}, new_node_coord{new_node}, edge_factory{edge_factory}, scene{parent_node} {};
+TreeNodeCreationEvent::TreeNodeCreationEvent(TreeNodeInterface *new_node, cocos2d::Scene *parent_node,
+                                             EdgeFactoryInterface *edge_factory):
+        MyEventCustom{this}, new_node{new_node}, edge_factory{edge_factory}, scene{parent_node} {};
 
 const std::string TreeNodeCreationEvent::kEventName = "TreeNodeCreationEvent";
 

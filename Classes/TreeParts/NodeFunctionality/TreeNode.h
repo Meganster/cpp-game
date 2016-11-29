@@ -17,7 +17,6 @@ public:
     ~TreeNode();
 
     static TreeNode* create();
-    static TreeNode* createAttachedTreeNode(const std::vector<TreeNode*>&, const cocos2d::Vec2&);
 
     score_type getBuyPrice() const;
     score_type getSellPrice() const;

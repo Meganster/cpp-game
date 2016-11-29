@@ -14,7 +14,7 @@
 class TreeScene : public cocos2d::Scene {
 public:
     static cocos2d::Scene* createScene();
-
+    void Add() { adding = false; };
 
     virtual bool init();
 
@@ -23,8 +23,11 @@ public:
 private:
     void addEvents();
 
+    static void addNode(cocos2d::EventMouse*, cocos2d::Scene*);
+
     tree_management::TreeManager manager;
-    std::set<TreeNode*> chosen_tree_nodes;
+
+    bool adding;
 };
 
 

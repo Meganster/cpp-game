@@ -128,12 +128,10 @@ void TreeManager::manageTreeNodeDeselectionEvent(tree_events::TreeNodeDeselectio
 }
 
 void TreeManager::manageTreeEdgeCreationEvent(tree_events::TreeEdgeCreationEvent* event) {
-    cocos2d::Vec2 point_1 = event->tree_node_1->getPosition();
-    cocos2d::Vec2 point_2 = event->tree_node_2->getPosition();
     auto edge_factory = event->edge_factory;
     auto scene = event->scene;
 
-    edge_factory->setRequest(point_1, point_2);
+    edge_factory->setRequest(event->tree_node_1, event->tree_node_2);
 
     auto score_manager = score_management::ScoreManager::getInstance();
 
@@ -142,7 +140,6 @@ void TreeManager::manageTreeEdgeCreationEvent(tree_events::TreeEdgeCreationEvent
 
         score_manager.buy(edge);
 
-//        edge->setPosition(point_1, point_2);
         scene->addChild(edge);
 
         edge_factory->closeRequest();
@@ -163,27 +160,35 @@ void TreeManager::manageTreeEdgeDeletionEvent(tree_events::TreeEdgeDeletionEvent
 }
 
 void TreeManager::manageTreeNodeCreationEvent(tree_events::TreeNodeCreationEvent* event) {
-    cocos2d::Vec2 new_node_coord = event->new_node_coord;
     auto edge_factory = event->edge_factory;
     auto score_manager = score_management::ScoreManager::getInstance();
     auto scene = event->scene;
 
-    std::vector<cocos2d::Vec2> attach_nodes_coords;
-    for (auto tree_node: selected_nodes) {
-        attach_nodes_coords.push_back(tree_node->getPosition());
+    TreeNodeInterface* new_node = event->new_node;
+    edge_factory->setRequest(new_node, selected_nodes);
+
+    if (selected_nodes.size() == 0) {
+        return;
     }
 
-    edge_factory->setRequest(new_node_coord, attach_nodes_coords);
-
     if (score_manager.hasEnoughMoney(edge_factory)) {
+        scene->addChild(new_node);
+
         auto edges = edge_factory->getEdges();
 
-        for (size_t i = 0; i != attach_nodes_coords.size(); ++i) {
-//            edges[i]->setPosition(new_node_coord, attach_nodes_coords[i]);
-            scene->addChild(edges[i]);
+        auto edge_iter = edges.begin();
+        auto node_iter = selected_nodes.begin();
+        for (; edge_iter != edges.end() && node_iter != selected_nodes.end(); ++edge_iter, ++node_iter) {
+            auto edge = *edge_iter;
+            auto start_node = *node_iter;
+
+            edge->setNodes(start_node, new_node);
+
+            scene->addChild(edge);
         }
 
         edge_factory->closeRequest();
+        selected_nodes.clear();
 
         std::cout << "Tree manager: edge created" << std::endl;
     } else {

@@ -3,6 +3,7 @@
 //
 
 #include "TreeScene.h"
+#include "TreeParts/EdgeFunctionality/EdgeFactory.h"
 #include <iostream>
 USING_NS_CC;
 
@@ -55,11 +56,17 @@ bool TreeScene::init() {
     return true;
 }
 
-/*void TreeScene::addNode(cocos2d::EventMouse* event, cocos2d::Scene* scene_ptr) {
-    cocos2d::Vec2 event_point = event->getLocation();
-    auto e = tree_events::TreeNodeCreationEvent(event_point, scene_ptr);
-    //scene_ptr->_eventDispatcher->dispatchEvent(&e);
-}*/
+void TreeScene::addNode(cocos2d::EventMouse* event, cocos2d::Scene* scene_ptr) {
+    auto new_node = TreeNode::create();
+    new_node->setPosition(event->getLocation());
+
+    auto factory = EdgeFactory::getInstance();
+    factory.setPrototype(TreeEdge::create());
+
+    auto e = tree_events::TreeNodeCreationEvent(new_node, scene_ptr, &factory);
+
+    Director::getInstance()->getEventDispatcher()->dispatchEvent(&e);
+}
 
 
 void TreeScene::addEvents() {
@@ -75,4 +82,13 @@ void TreeScene::addEvents() {
     auto listenerAdd = event_wrappers::create_listener<tree_events::TreeNodeCreationEvent>\
 ([](tree_events::TreeNodeCreationEvent* event) -> void { std::cout << "Nodes creation!" << std::endl;});
     _eventDispatcher->addEventListenerWithSceneGraphPriority(listenerAdd, this);
+
+
+    auto mouse_listener = cocos2d::EventListenerMouse::create();
+    _eventDispatcher->addEventListenerWithSceneGraphPriority(mouse_listener, this);
+    mouse_listener->onMouseDown = [this] (cocos2d::EventMouse* event) {
+        if (event->getMouseButton() == MOUSE_BUTTON_LEFT) {
+            this->addNode(event, this);
+        };
+    };
 }

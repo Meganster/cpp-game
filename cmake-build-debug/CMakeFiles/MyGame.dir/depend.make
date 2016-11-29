@@ -1055,6 +1055,7 @@ CMakeFiles/MyGame.dir/Classes/TreeParts/NodeFunctionality/TreeNode.cpp.o: /usr/l
 CMakeFiles/MyGame.dir/Classes/TreeScene.cpp.o: ../Classes/./managers/ScoreManagement/Scorable.h
 CMakeFiles/MyGame.dir/Classes/TreeScene.cpp.o: ../Classes/./managers/TreeManagement/TreePartsInterfaces.h
 CMakeFiles/MyGame.dir/Classes/TreeScene.cpp.o: ../Classes/event_system/EventWrappers.h
+CMakeFiles/MyGame.dir/Classes/TreeScene.cpp.o: ../Classes/managers/TreeManagement/TreePartsCreation.h
 CMakeFiles/MyGame.dir/Classes/TreeScene.cpp.o: ../cocos2d/cocos/2d/CCAction.h
 CMakeFiles/MyGame.dir/Classes/TreeScene.cpp.o: ../cocos2d/cocos/2d/CCActionCamera.h
 CMakeFiles/MyGame.dir/Classes/TreeScene.cpp.o: ../cocos2d/cocos/2d/CCActionCatmullRom.h
@@ -1308,6 +1309,7 @@ CMakeFiles/MyGame.dir/Classes/TreeScene.cpp.o: ../cocos2d/cocos/renderer/ccShade
 CMakeFiles/MyGame.dir/Classes/TreeScene.cpp.o: ../cocos2d/cocos/vr/CCVRGenericRenderer.h
 CMakeFiles/MyGame.dir/Classes/TreeScene.cpp.o: ../cocos2d/cocos/vr/CCVRProtocol.h
 CMakeFiles/MyGame.dir/Classes/TreeScene.cpp.o: ../Classes/./TreeParts/EdgeFunctionality/TreeEdge.h
+CMakeFiles/MyGame.dir/Classes/TreeScene.cpp.o: ../Classes/TreeParts/EdgeFunctionality/EdgeFactory.h
 CMakeFiles/MyGame.dir/Classes/TreeScene.cpp.o: ../Classes/TreeParts/NodeFunctionality/TreeNode.h
 CMakeFiles/MyGame.dir/Classes/TreeScene.cpp.o: ../Classes/TreeScene.cpp
 CMakeFiles/MyGame.dir/Classes/TreeScene.cpp.o: ../Classes/TreeScene.h

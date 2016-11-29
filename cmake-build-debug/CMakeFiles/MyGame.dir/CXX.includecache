@@ -3081,6 +3081,8 @@ cocos2d.h
 /home/artem/Clion/build-and-destroy/Classes/TreeParts/EdgeFunctionality/EdgeFactory.cpp
 EdgeFactory.h
 /home/artem/Clion/build-and-destroy/Classes/TreeParts/EdgeFunctionality/EdgeFactory.h
+iostream
+-
 
 /home/artem/Clion/build-and-destroy/Classes/TreeParts/EdgeFunctionality/EdgeFactory.h
 cocos2d.h
@@ -3135,6 +3137,8 @@ event_system/EventWrappers.h
 /home/artem/Clion/build-and-destroy/Classes/TreeScene.cpp
 TreeScene.h
 /home/artem/Clion/build-and-destroy/Classes/TreeScene.h
+TreeParts/EdgeFunctionality/EdgeFactory.h
+/home/artem/Clion/build-and-destroy/Classes/TreeParts/EdgeFunctionality/EdgeFactory.h
 iostream
 -
 
