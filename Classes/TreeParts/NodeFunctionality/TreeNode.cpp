@@ -25,7 +25,7 @@ void TreeNode::rectScale(cocos2d::Rect* bound, int scale) {
 }
 
 void TreeNode::removeTreeNode(cocos2d::EventMouse* event, TreeNode* tree_node_ptr) {
-    cocos2d::Vec2 event_point = event->getLocation();
+    cocos2d::Vec2 event_point = event->getLocationInView();
     cocos2d::Rect bounding_box = tree_node_ptr->getBoundingBox();
 
     if (bounding_box.containsPoint(event_point)) {
@@ -34,7 +34,7 @@ void TreeNode::removeTreeNode(cocos2d::EventMouse* event, TreeNode* tree_node_pt
 }
 
 void TreeNode::addForce(cocos2d::EventMouse* event, TreeNode* tree_node_ptr) {
-    cocos2d::Vec2 event_point = event->getLocation();
+    cocos2d::Vec2 event_point = event->getLocationInView();
     cocos2d::Rect bounding_box = tree_node_ptr->getBoundingBox();
     //rectScale(&bounding_box, 2);
 
@@ -45,7 +45,7 @@ void TreeNode::addForce(cocos2d::EventMouse* event, TreeNode* tree_node_ptr) {
 
 void TreeNode::addTreeNode(cocos2d::EventMouse* event, TreeNode* tree_node_ptr) {
     isAdding = false;
-    cocos2d::Vec2 event_point = event->getLocation();
+    cocos2d::Vec2 event_point = event->getLocationInView();
     std::cout << event_point.x << "\t" << event_point.y << std::endl;
 
     auto new_node = TreeNode::create();
@@ -56,31 +56,23 @@ void TreeNode::addTreeNode(cocos2d::EventMouse* event, TreeNode* tree_node_ptr) 
 }
 
 void TreeNode::selectTreeNode(cocos2d::EventMouse* event, TreeNode* tree_node_ptr) {
-    cocos2d::Vec2 event_point = event->getLocation();
+    cocos2d::Vec2 event_point = event->getLocationInView();
     cocos2d::Rect bounding_box = tree_node_ptr->getBoundingBox();
 
     if (bounding_box.containsPoint(event_point)) {
 
         if (tree_node_ptr->isSelected()) {
-            //std::cout << "Node deselected!" << std::endl;
             tree_node_ptr -> selected = false;
             auto event = tree_events::TreeNodeDeselectionEvent(tree_node_ptr);
             tree_node_ptr->_eventDispatcher->dispatchEvent(&event);
         } else {
-            //std::cout << "Node selected!" << std::endl;
             tree_node_ptr -> selected = true;
             auto event = tree_events::TreeNodeSelectionEvent(tree_node_ptr);
             tree_node_ptr->_eventDispatcher->dispatchEvent(&event);
         }
 
         event->stopPropagation();
-        //isSelecting = true;
-        //auto select_event = TreeNodeSelectedEvent(100);
-        //tree_node_ptr->_eventDispatcher->dispatchEvent(&select_event);
     }
-    //else if (!isAdding && !isSelecting) {
-    //    addTreeNode(event, tree_node_ptr);
-    //}
 }
 
 void TreeNode::addEvents() {
@@ -94,7 +86,7 @@ void TreeNode::addEvents() {
 
     mouse_listener->onMouseDown = [this] (cocos2d::EventMouse* event) {
         if (event->getMouseButton() == MOUSE_BUTTON_RIGHT) {
-            this->removeTreeNode(event, this);
+            //this->removeTreeNode(event, this);
         } else if( event->getMouseButton() == MOUSE_BUTTON_LEFT) {
             this->selectTreeNode(event, this);
         }

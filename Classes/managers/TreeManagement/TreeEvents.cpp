@@ -9,6 +9,11 @@ using namespace tree_interfaces;
 using namespace tree_part_creation;
 
 
+RevertLastChangeEvent::RevertLastChangeEvent(): MyEventCustom(this) {};
+
+const std::string RevertLastChangeEvent::kEventName = "RevertLastChangeEvent";
+
+
 TreeEdgeCreationEvent::TreeEdgeCreationEvent(TreeNodeInterface *tree_node_1, TreeNodeInterface *tree_node_2,
                                              cocos2d::Scene *parent_node, EdgeFactoryInterface* edge_factory) :
         MyEventCustom{this}, tree_node_1{tree_node_1}, tree_node_2{tree_node_2},

@@ -139,8 +139,11 @@ void TreeManager::manageTreeEdgeCreationEvent(tree_events::TreeEdgeCreationEvent
         auto edge = edge_factory->getEdges()[0];
 
         score_manager.buy(edge);
-
         scene->addChild(edge);
+
+        auto tree_change = TreeChange();
+        tree_change.addTreePart(edge);
+        tree_changes.push(tree_change);
 
         edge_factory->closeRequest();
 
@@ -172,6 +175,9 @@ void TreeManager::manageTreeNodeCreationEvent(tree_events::TreeNodeCreationEvent
     }
 
     if (score_manager.hasEnoughMoney(edge_factory)) {
+        auto tree_change = TreeChange();
+        tree_change.addTreePart(new_node);
+
         scene->addChild(new_node);
 
         auto edges = edge_factory->getEdges();
@@ -181,13 +187,16 @@ void TreeManager::manageTreeNodeCreationEvent(tree_events::TreeNodeCreationEvent
         for (; edge_iter != edges.end() && node_iter != selected_nodes.end(); ++edge_iter, ++node_iter) {
             auto edge = *edge_iter;
             auto start_node = *node_iter;
+            start_node->setDeselected();
 
             edge->setNodes(start_node, new_node);
 
+            tree_change.addTreePart(edge);
             scene->addChild(edge);
         }
 
         edge_factory->closeRequest();
+        tree_changes.push(tree_change);
         selected_nodes.clear();
 
         std::cout << "Tree manager: edge created" << std::endl;

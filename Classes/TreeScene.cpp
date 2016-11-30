@@ -32,33 +32,20 @@ bool TreeScene::init() {
 
     auto start_point = Vec2(origin.x + 20, visibleSize.height/2 + origin.y);
 
-    std::vector<TreeNode*> node_ptr_vec;
     for (int i = 0; i != 10; ++i) {
         auto node_ptr =TreeNode::create();
         if (node_ptr != NULL) {
-            node_ptr->setPosition(start_point.x + 40 * i, start_point.y);
+            node_ptr->setPosition(start_point.x +80 * i, start_point.y + 20);
             this->addChild(node_ptr, 10);
-            node_ptr_vec.push_back(node_ptr);
         }
     }
-
-    auto node_1 = TreeNode::create();
-    node_1->setPosition(start_point.x + 150, start_point.y - 30);
-    this->addChild(node_1, 10);
-
-    auto node_2 = TreeNode::create();
-    node_2->setPosition(start_point.x + 250, start_point.y - 80);
-    this->addChild(node_2, 10);
-
-    auto edge = TreeEdge::create(node_1, node_2);
-    this->addChild(edge, 8);
 
     return true;
 }
 
 void TreeScene::addNode(cocos2d::EventMouse* event, cocos2d::Scene* scene_ptr) {
     auto new_node = TreeNode::create();
-    new_node->setPosition(event->getLocation());
+    new_node->setPosition(event->getLocationInView());
 
     auto factory = EdgeFactory::getInstance();
     factory.setPrototype(TreeEdge::create());

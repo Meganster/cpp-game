@@ -19,7 +19,11 @@ namespace tree_interfaces {
     };
 
 
-    class TreeNodeInterface: public TreePart {    };
+    class TreeNodeInterface: public TreePart {
+    public:
+        virtual void setSelected() = 0;
+        virtual void setDeselected() = 0;
+    };
 
     class TreeEdgeInterface: public TreePart {
     public:

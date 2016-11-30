@@ -13,6 +13,13 @@
 
 namespace tree_events {
 
+    class RevertLastChangeEvent: public event_wrappers::MyEventCustom {
+    public:
+        RevertLastChangeEvent();
+
+        static const std::string kEventName;
+    };
+
     class TreeEdgeCreationEvent: public event_wrappers::MyEventCustom {
     public:
         TreeEdgeCreationEvent(tree_interfaces::TreeNodeInterface *, tree_interfaces::TreeNodeInterface *,

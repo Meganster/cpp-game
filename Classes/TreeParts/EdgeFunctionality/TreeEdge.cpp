@@ -88,13 +88,13 @@ void TreeEdge::addEvents() {}
 
 float TreeEdge::countAngle(){
     // Need to check coordinate system
-    return (float)(asin( (node_2_->getPosition().y - node_1_->getPosition().y) / countLength() ) * 180 / M_PI) ;
+    auto dir = node_2_->getPosition() - node_1_->getPosition();
+    auto x_dir = cocos2d::Vec2(1, 0);
+    return dir.getAngle(x_dir) * 180 / M_PI;
 }
 
 float TreeEdge::countLength() {
-    double x_coord_dif = node_2_->getPosition().x - node_1_->getPosition().x;
-    double y_coord_dif = node_2_->getPosition().y - node_1_->getPosition().y;
-    return sqrt(x_coord_dif * x_coord_dif + y_coord_dif * y_coord_dif);
+    return (node_2_->getPosition() - node_1_->getPosition()).getLength();
 }
 
 cocos2d::Vec2 TreeEdge::countPosition(){
