@@ -207,6 +207,10 @@ void TreeManager::manageTreeNodeCreationEvent(tree_events::TreeNodeCreationEvent
 
 }
 
+void TreeManager::manageRevertChangeEvent(tree_events::RevertLastChangeEvent* event) {
+    revertLastChange();
+}
+
 
 TreeManagerHolder::TreeManagerHolder(std::shared_ptr<TreeManager> manager_1_, std::shared_ptr<TreeManager> manager_2_):
         manager_1{manager_1_}, manager_2{manager_2_} {

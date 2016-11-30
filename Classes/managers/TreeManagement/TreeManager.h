@@ -63,6 +63,8 @@ namespace tree_management {
 
         void manageTreeEdgeDeletionEvent(tree_events::TreeEdgeDeletionEvent*);
 
+        void manageRevertChangeEvent(tree_events::RevertLastChangeEvent*);
+
         bool is_active;
         std::set<tree_interfaces::TreeNodeInterface*> selected_nodes;
         std::stack<TreeChange> tree_changes;
