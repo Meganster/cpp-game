@@ -5,6 +5,7 @@
 #include "TreeScene.h"
 #include "TreeParts/EdgeFunctionality/EdgeFactory.h"
 #include <iostream>
+#include "ui/CocosGUI.h"
 USING_NS_CC;
 
 Scene* TreeScene::createScene() {
@@ -39,6 +40,13 @@ bool TreeScene::init() {
             this->addChild(node_ptr, 10);
         }
     }
+
+
+    auto button = ui::Button::create("button_cancel.png");
+    button->setPosition(Point(visibleSize.width - 50, visibleSize.height - 50));
+    button->setSwallowTouches(true);
+    button->addClickEventListener([this](Ref* pSender) -> void { tree_events::RevertLastChangeEvent(); std::cout<<"Cancel" << std::endl;});
+    this->addChild(button, 12);
 
     return true;
 }
