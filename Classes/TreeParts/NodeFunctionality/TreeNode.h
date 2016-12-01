@@ -30,7 +30,7 @@ public:
 
     int getIndex() { return index_;};
     bool isSelected() { return selected;};
-    void setSelected() {selected = true; setScale(0.25);};
+    void setSelected() {selected = true; setScale(0.12);};
     void setDeselected() {selected = false; setScale(0.1);};
 
     const static std::string kSpritePath;

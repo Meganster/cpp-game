@@ -25,10 +25,16 @@ void TreeChange::addTreePart(tree_interfaces::TreePart * tree_part) {
 }
 
 
-TreeManager::TreeManager(): is_active{false}{
+//TreeManager::TreeManager(): is_active{false}{
+//    selected_nodes = std::set<tree_interfaces::TreeNodeInterface*>();
+//    addEvents();
+//};
+
+TreeManager::TreeManager(cocos2d::Rect control_area) {
     selected_nodes = std::set<tree_interfaces::TreeNodeInterface*>();
-    addEvents();
-};
+    control_area_ = control_area;
+    is_active = false;
+}
 
 void TreeManager::switchState() {
     is_active = !is_active;
@@ -70,15 +76,18 @@ void TreeManager::addChange(TreeChange tree_change) {
 
 void TreeManager::selectNode(tree_interfaces::TreeNodeInterface* node) {
     selected_nodes.insert(node);
+    node->setSelected();
 }
 
 void TreeManager::deselectNode(tree_interfaces::TreeNodeInterface* node) {
     if (selected_nodes.count(node)) {
+        node->setDeselected();
         selected_nodes.erase(node);
     }
 }
 
 void TreeManager::addEvents() {
+    /*
     auto revert_change_call_back = [this](tree_events::RevertLastChangeEvent* event) -> void  {
         manageRevertChangeEvent(event);
     };
@@ -124,6 +133,7 @@ void TreeManager::addEvents() {
     };
     auto edge_deleted_listener = event_wrappers::create_listener<tree_events::TreeEdgeDeletionEvent>(edge_deleted_call_back);
     cocos2d::Director::getInstance()->getEventDispatcher()->addEventListenerWithFixedPriority(edge_deleted_listener, 1);
+     */
 }
 
 void TreeManager::manageTreeNodeSelectionEvent(tree_events::TreeNodeSelectionEvent* event) {
@@ -236,12 +246,14 @@ TreeManagerHolder::TreeManagerHolder(std::shared_ptr<TreeManager> manager_1_, st
         manager_1->setActive();
         manager_2->setPassive();
     }
+
+    addEvents();
 };
 
 std::shared_ptr<TreeManager> TreeManagerHolder::getActiveManager() {
     if (manager_1->isActive() && !manager_2->isActive()) {
         return manager_1;
-    } else if (manager_2->isActive() && !manager_2->isActive()) {
+    } else if (manager_2->isActive() && !manager_1->isActive()) {
         return manager_2;
     } else {
         return nullptr;

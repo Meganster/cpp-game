@@ -25,7 +25,7 @@ private:
 
     static void addNode(cocos2d::EventMouse*, cocos2d::Scene*);
 
-    tree_management::TreeManager manager;
+    tree_management::TreeManagerHolder holder;
 
     bool adding;
 };

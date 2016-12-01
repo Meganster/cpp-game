@@ -24,19 +24,11 @@
     <list default="true" id="28a8ec56-e9d5-473f-ba90-b49cf199fad7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/bin/MyGame" afterPath="$PROJECT_DIR$/cmake-build-debug/bin/MyGame" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/TreeParts/EdgeFunctionality/TreeEdge.cpp" afterPath="$PROJECT_DIR$/Classes/TreeParts/EdgeFunctionality/TreeEdge.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/TreeParts/EdgeFunctionality/TreeEdge.h" afterPath="$PROJECT_DIR$/Classes/TreeParts/EdgeFunctionality/TreeEdge.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/TreeParts/NodeFunctionality/TreeNode.h" afterPath="$PROJECT_DIR$/Classes/TreeParts/NodeFunctionality/TreeNode.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/TreeScene.cpp" afterPath="$PROJECT_DIR$/Classes/TreeScene.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/managers/ScoreManagement/ScoreManagement.cpp" afterPath="$PROJECT_DIR$/Classes/managers/ScoreManagement/ScoreManagement.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/managers/TreeManagement/TreeEvents.cpp" afterPath="$PROJECT_DIR$/Classes/managers/TreeManagement/TreeEvents.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/managers/TreeManagement/TreeEvents.h" afterPath="$PROJECT_DIR$/Classes/managers/TreeManagement/TreeEvents.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/TreeScene.h" afterPath="$PROJECT_DIR$/Classes/TreeScene.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/managers/TreeManagement/TreeManager.cpp" afterPath="$PROJECT_DIR$/Classes/managers/TreeManagement/TreeManager.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/managers/TreeManagement/TreeManager.h" afterPath="$PROJECT_DIR$/Classes/managers/TreeManagement/TreeManager.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/managers/TreeManagement/TreePartsInterfaces.h" afterPath="$PROJECT_DIR$/Classes/managers/TreeManagement/TreePartsInterfaces.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/MyGame.dir/CXX.includecache" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/MyGame.dir/CXX.includecache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/MyGame.dir/depend.internal" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/MyGame.dir/depend.internal" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/MyGame.dir/depend.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/MyGame.dir/depend.make" />
     </list>
     <ignored path="build_and_destroy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -59,8 +51,8 @@
       <file leaf-file-name="TreeEvents.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Classes/managers/TreeManagement/TreeEvents.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="22" column="28" lean-forward="false" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+            <state relative-caret-position="388">
+              <caret line="27" column="6" lean-forward="false" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
               <folding>
                 <element signature="e#259#423#1" expanded="false" />
                 <element signature="e#430#588#1" expanded="false" />
@@ -77,50 +69,85 @@
       <file leaf-file-name="TreePartsInterfaces.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Classes/managers/TreeManagement/TreePartsInterfaces.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="472">
-              <caret line="33" column="35" lean-forward="false" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
+            <state relative-caret-position="448">
+              <caret line="24" column="29" lean-forward="false" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TreeEdge.cpp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Classes/TreeParts/EdgeFunctionality/TreeEdge.cpp">
+      <file leaf-file-name="TreeManager.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Classes/managers/TreeManagement/TreeManager.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
-              <caret line="52" column="29" lean-forward="false" selection-start-line="52" selection-start-column="29" selection-end-line="52" selection-end-column="29" />
+            <state relative-caret-position="1846">
+              <caret line="158" column="3" lean-forward="true" selection-start-line="158" selection-start-column="3" selection-end-line="158" selection-end-column="3" />
               <folding>
-                <element signature="e#433#844#0" expanded="false" />
-                <element signature="e#846#925#0" expanded="false" />
-                <element signature="e#927#1166#0" expanded="false" />
-                <element signature="e#1169#1350#0" expanded="false" />
-                <element signature="e#1477#1780#0" expanded="false" />
-                <element signature="e#1782#1840#0" expanded="false" />
-                <element signature="e#1842#1901#0" expanded="false" />
-                <element signature="e#1903#2156#0" expanded="false" />
-                <element signature="e#2408#2515#0" expanded="false" />
-                <element signature="e#2517#2625#0" expanded="false" />
+                <element signature="e#327#571#1" expanded="false" />
+                <element signature="e#2124#2717#0" expanded="false" />
+                <element signature="e#3004#3308#0" expanded="false" />
+                <element signature="e#3319#3632#0" expanded="false" />
+                <element signature="e#4704#4880#0" expanded="false" />
+                <element signature="e#4891#7965#0" expanded="false" />
+                <marker date="1480603528606" expanded="false" signature="3725:3963" ph="{...}" />
+                <marker date="1480603528606" expanded="false" signature="4050:4369" ph="{...}" />
+                <marker date="1480603528606" expanded="false" signature="4456:4535" ph="{...}" />
+                <marker date="1480603528606" expanded="false" signature="4618:4693" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EdgeFactory.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Classes/TreeParts/EdgeFunctionality/EdgeFactory.h">
+      <file leaf-file-name="TreeManager.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Classes/managers/TreeManagement/TreeManager.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="403">
-              <caret line="28" column="38" lean-forward="true" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
-              <folding />
+            <state relative-caret-position="304">
+              <caret line="78" column="24" lean-forward="false" selection-start-line="78" selection-start-column="24" selection-end-line="78" selection-end-column="24" />
+              <folding>
+                <element signature="e#40#64#0" expanded="true" />
+                <element signature="e#216#457#0" expanded="false" />
+                <element signature="e#459#567#0" expanded="false" />
+                <element signature="e#715#898#0" expanded="false" />
+                <element signature="e#900#963#0" expanded="false" />
+                <element signature="e#965#1020#0" expanded="false" />
+                <element signature="e#1022#1079#0" expanded="false" />
+                <element signature="e#1085#1135#0" expanded="false" />
+                <element signature="e#1141#1366#0" expanded="false" />
+                <element signature="e#1368#1542#0" expanded="false" />
+                <element signature="e#1544#1635#0" expanded="false" />
+                <element signature="e#1960#4774#0" expanded="false" />
+                <element signature="e#1996#4772#0" expanded="false" />
+                <element signature="e#4776#5056#0" expanded="false" />
+                <element signature="e#5058#5349#0" expanded="false" />
+                <element signature="e#5351#6220#0" expanded="false" />
+                <element signature="e#6222#6501#0" expanded="false" />
+                <element signature="e#6503#7945#0" expanded="false" />
+                <element signature="e#7947#8100#0" expanded="false" />
+                <element signature="e#8102#8251#0" expanded="false" />
+                <element signature="e#8254#8633#0" expanded="false" />
+                <element signature="e#8636#8926#0" expanded="false" />
+                <element signature="e#8928#9219#0" expanded="false" />
+                <element signature="e#9221#9325#0" expanded="false" />
+                <element signature="e#9327#9418#0" expanded="false" />
+                <element signature="e#9420#9512#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EdgeFactory.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Classes/TreeParts/EdgeFunctionality/EdgeFactory.cpp">
+      <file leaf-file-name="TreeNode.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Classes/TreeParts/NodeFunctionality/TreeNode.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="56" column="43" lean-forward="false" selection-start-line="56" selection-start-column="43" selection-end-line="56" selection-end-column="43" />
-              <folding />
+            <state relative-caret-position="292">
+              <caret line="18" column="8" lean-forward="false" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+              <folding>
+                <element signature="e#342#588#0" expanded="false" />
+                <element signature="e#590#917#0" expanded="false" />
+                <element signature="e#919#1303#0" expanded="false" />
+                <element signature="e#3217#3525#0" expanded="false" />
+                <element signature="e#3527#3585#0" expanded="false" />
+                <element signature="e#3587#3646#0" expanded="false" />
+                <element signature="e#3709#3780#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -128,8 +155,8 @@
       <file leaf-file-name="TreeScene.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Classes/TreeScene.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1060">
-              <caret line="54" column="27" lean-forward="false" selection-start-line="54" selection-start-column="27" selection-end-line="54" selection-end-column="27" />
+            <state relative-caret-position="753">
+              <caret line="144" column="0" lean-forward="false" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
               <folding>
                 <element signature="e#40#62#0" expanded="true" />
               </folding>
@@ -153,6 +180,13 @@
       <find>get</find>
       <find>getLo</find>
       <find>addE</find>
+      <find>swi</find>
+      <find>100</find>
+      <find>scale</find>
+      <find>node_sel</find>
+      <find>setS</find>
+      <find>setsc</find>
+      <find>setSe</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -199,19 +233,19 @@
         <option value="$PROJECT_DIR$/Classes/TreeParts/EdgeFunctionality/EdgeFactory.cpp" />
         <option value="$PROJECT_DIR$/Classes/managers/TreeManagement/TreePartsCreation.h" />
         <option value="$PROJECT_DIR$/Classes/TreeParts/EdgeFunctionality/EdgeFactory.h" />
-        <option value="$PROJECT_DIR$/Classes/TreeScene.h" />
         <option value="$PROJECT_DIR$/Classes/AppDelegate.cpp" />
         <option value="$PROJECT_DIR$/Classes/TreeParts/NodeFunctionality/TreeNode.cpp" />
         <option value="$PROJECT_DIR$/Classes/managers/ScoreManagement/ScoreManagement.cpp" />
-        <option value="$PROJECT_DIR$/Classes/managers/TreeManagement/TreeEvents.h" />
         <option value="$PROJECT_DIR$/Classes/managers/TreeManagement/TreeEvents.cpp" />
-        <option value="$PROJECT_DIR$/Classes/managers/TreeManagement/TreeManager.h" />
-        <option value="$PROJECT_DIR$/Classes/managers/TreeManagement/TreeManager.cpp" />
-        <option value="$PROJECT_DIR$/Classes/TreeScene.cpp" />
         <option value="$PROJECT_DIR$/Classes/managers/TreeManagement/TreePartsInterfaces.h" />
         <option value="$PROJECT_DIR$/Classes/TreeParts/EdgeFunctionality/TreeEdge.h" />
-        <option value="$PROJECT_DIR$/Classes/TreeParts/NodeFunctionality/TreeNode.h" />
         <option value="$PROJECT_DIR$/Classes/TreeParts/EdgeFunctionality/TreeEdge.cpp" />
+        <option value="$PROJECT_DIR$/Classes/TreeScene.h" />
+        <option value="$PROJECT_DIR$/Classes/managers/TreeManagement/TreeEvents.h" />
+        <option value="$PROJECT_DIR$/Classes/managers/TreeManagement/TreeManager.h" />
+        <option value="$PROJECT_DIR$/Classes/TreeScene.cpp" />
+        <option value="$PROJECT_DIR$/Classes/TreeParts/NodeFunctionality/TreeNode.h" />
+        <option value="$PROJECT_DIR$/Classes/managers/TreeManagement/TreeManager.cpp" />
       </list>
     </option>
   </component>
@@ -305,10 +339,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="TreeParts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EdgeFunctionality" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -646,12 +676,13 @@
       <workItem from="1480542645583" duration="4147000" />
       <workItem from="1480575903021" duration="691000" />
       <workItem from="1480585282491" duration="2926000" />
-      <workItem from="1480593744295" duration="644000" />
+      <workItem from="1480593744295" duration="1899000" />
+      <workItem from="1480597880707" duration="7037000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="143313000" />
+    <option name="totallyTimeSpent" value="151605000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="2562" height="1396" extended-state="6" />
@@ -662,18 +693,18 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38582027" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32811213" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23330586" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3239901" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3239901" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21903199" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21846661" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4352844" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30090684" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.088211045" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -693,19 +724,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="97" />
+      <option name="time" value="107" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Classes/managers/ScoreManagement/Order.h" />
-    <entry file="file://$PROJECT_DIR$/cocos2d/cocos/base/CCEventListenerMouse.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="84" column="0" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Classes/managers/TreeManagement/TreeObjectInterfaces.cpp" />
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
@@ -857,14 +880,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/TreeScene.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-34">
-          <caret line="10" column="51" lean-forward="false" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Classes/managers/ScoreManagement/Scorable.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="364">
@@ -947,79 +962,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/managers/TreeManagement/TreeManager.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="67" column="72" lean-forward="false" selection-start-line="67" selection-start-column="72" selection-end-line="67" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/managers/TreeManagement/TreeManager.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="184" column="33" lean-forward="false" selection-start-line="184" selection-start-column="33" selection-end-line="184" selection-end-column="33" />
-          <folding>
-            <element signature="e#40#64#0" expanded="true" />
-            <element signature="e#216#457#0" expanded="false" />
-            <element signature="e#459#567#0" expanded="false" />
-            <element signature="e#570#704#0" expanded="false" />
-            <element signature="e#707#770#0" expanded="false" />
-            <element signature="e#772#827#0" expanded="false" />
-            <element signature="e#829#886#0" expanded="false" />
-            <element signature="e#892#942#0" expanded="false" />
-            <element signature="e#948#1173#0" expanded="false" />
-            <element signature="e#1175#1349#0" expanded="false" />
-            <element signature="e#1351#1442#0" expanded="false" />
-            <element signature="e#1444#1551#0" expanded="false" />
-            <element signature="e#1553#1709#0" expanded="false" />
-            <element signature="e#1711#4510#0" expanded="false" />
-            <element signature="e#4512#4792#0" expanded="false" />
-            <element signature="e#4794#5085#0" expanded="false" />
-            <element signature="e#5087#5956#0" expanded="false" />
-            <element signature="e#5958#6237#0" expanded="false" />
-            <element signature="e#7683#7836#0" expanded="false" />
-            <element signature="e#7838#7987#0" expanded="false" />
-            <element signature="e#7990#8351#0" expanded="false" />
-            <element signature="e#8354#8644#0" expanded="false" />
-            <element signature="e#8646#8937#0" expanded="false" />
-            <element signature="e#8939#9043#0" expanded="false" />
-            <element signature="e#9045#9136#0" expanded="false" />
-            <element signature="e#9138#9230#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Classes/managers/TreeManagement/TreeEvents.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
           <caret line="18" column="67" lean-forward="false" selection-start-line="18" selection-start-column="67" selection-end-line="18" selection-end-column="67" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/TreeParts/NodeFunctionality/TreeNode.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="649">
-          <caret line="73" column="33" lean-forward="true" selection-start-line="73" selection-start-column="33" selection-end-line="73" selection-end-column="33" />
-          <folding>
-            <element signature="e#288#339#0" expanded="false" />
-            <element signature="e#342#588#0" expanded="false" />
-            <element signature="e#3217#3525#0" expanded="false" />
-            <element signature="e#3527#3585#0" expanded="false" />
-            <element signature="e#3587#3646#0" expanded="false" />
-            <element signature="e#3709#3780#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/TreeParts/NodeFunctionality/TreeNode.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="13" column="59" lean-forward="false" selection-start-line="13" selection-start-column="59" selection-end-line="13" selection-end-column="59" />
-          <folding>
-            <element signature="e#250#1343#1" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1034,20 +981,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/TreeScene.cpp">
+    <entry file="file://$PROJECT_DIR$/Classes/TreeParts/EdgeFunctionality/EdgeFactory.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1060">
-          <caret line="54" column="27" lean-forward="false" selection-start-line="54" selection-start-column="27" selection-end-line="54" selection-end-column="27" />
+        <state relative-caret-position="904">
+          <caret line="56" column="43" lean-forward="false" selection-start-line="56" selection-start-column="43" selection-end-line="56" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classes/TreeParts/EdgeFunctionality/EdgeFactory.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="28" column="38" lean-forward="false" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classes/TreeParts/EdgeFunctionality/TreeEdge.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="488">
+          <caret line="87" column="28" lean-forward="false" selection-start-line="87" selection-start-column="28" selection-end-line="87" selection-end-column="28" />
           <folding>
-            <element signature="e#40#62#0" expanded="true" />
+            <element signature="e#433#844#0" expanded="false" />
+            <element signature="e#846#925#0" expanded="false" />
+            <element signature="e#927#1166#0" expanded="false" />
+            <element signature="e#1169#1350#0" expanded="false" />
+            <element signature="e#1353#1410#0" expanded="false" />
+            <element signature="e#1412#1474#0" expanded="false" />
+            <element signature="e#1477#1780#0" expanded="false" />
+            <element signature="e#1782#1840#0" expanded="false" />
+            <element signature="e#1842#1901#0" expanded="false" />
+            <element signature="e#1903#2156#0" expanded="false" />
+            <element signature="e#2189#2415#0" expanded="false" />
+            <element signature="e#2417#2524#0" expanded="false" />
+            <element signature="e#2526#2634#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classes/TreeScene.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="25" column="63" lean-forward="false" selection-start-line="25" selection-start-column="63" selection-end-line="25" selection-end-column="63" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Classes/managers/TreeManagement/TreeEvents.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="22" column="28" lean-forward="false" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+        <state relative-caret-position="388">
+          <caret line="27" column="6" lean-forward="false" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
           <folding>
             <element signature="e#259#423#1" expanded="false" />
             <element signature="e#430#588#1" expanded="false" />
@@ -1060,45 +1043,114 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/TreeParts/EdgeFunctionality/EdgeFactory.h">
+    <entry file="file://$PROJECT_DIR$/cocos2d/cocos/math/CCGeometry.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="28" column="38" lean-forward="true" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
+        <state relative-caret-position="206">
+          <caret line="156" column="0" lean-forward="false" selection-start-line="156" selection-start-column="0" selection-end-line="156" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/TreeParts/EdgeFunctionality/EdgeFactory.cpp">
+    <entry file="file:///usr/include/c++/4.9/functional">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="56" column="43" lean-forward="false" selection-start-line="56" selection-start-column="43" selection-end-line="56" selection-end-column="43" />
+        <state relative-caret-position="28">
+          <caret line="2040" column="0" lean-forward="false" selection-start-line="2040" selection-start-column="0" selection-end-line="2040" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classes/TreeScene.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="753">
+          <caret line="144" column="0" lean-forward="false" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
+          <folding>
+            <element signature="e#40#62#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classes/managers/TreeManagement/TreeManager.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1846">
+          <caret line="158" column="3" lean-forward="true" selection-start-line="158" selection-start-column="3" selection-end-line="158" selection-end-column="3" />
+          <folding>
+            <element signature="e#327#571#1" expanded="false" />
+            <element signature="e#2124#2717#0" expanded="false" />
+            <element signature="e#3004#3308#0" expanded="false" />
+            <element signature="e#3319#3632#0" expanded="false" />
+            <element signature="e#4704#4880#0" expanded="false" />
+            <element signature="e#4891#7965#0" expanded="false" />
+            <marker date="1480603528606" expanded="false" signature="3725:3963" ph="{...}" />
+            <marker date="1480603528606" expanded="false" signature="4050:4369" ph="{...}" />
+            <marker date="1480603528606" expanded="false" signature="4456:4535" ph="{...}" />
+            <marker date="1480603528606" expanded="false" signature="4618:4693" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Classes/managers/TreeManagement/TreePartsInterfaces.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="33" column="35" lean-forward="false" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
+        <state relative-caret-position="448">
+          <caret line="24" column="29" lean-forward="false" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/TreeParts/EdgeFunctionality/TreeEdge.cpp">
+    <entry file="file://$PROJECT_DIR$/Classes/TreeParts/NodeFunctionality/TreeNode.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="52" column="29" lean-forward="false" selection-start-line="52" selection-start-column="29" selection-end-line="52" selection-end-column="29" />
+        <state relative-caret-position="532">
+          <caret line="32" column="54" lean-forward="false" selection-start-line="32" selection-start-column="54" selection-end-line="32" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classes/TreeParts/NodeFunctionality/TreeNode.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="18" column="8" lean-forward="false" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
           <folding>
-            <element signature="e#433#844#0" expanded="false" />
-            <element signature="e#846#925#0" expanded="false" />
-            <element signature="e#927#1166#0" expanded="false" />
-            <element signature="e#1169#1350#0" expanded="false" />
-            <element signature="e#1477#1780#0" expanded="false" />
-            <element signature="e#1782#1840#0" expanded="false" />
-            <element signature="e#1842#1901#0" expanded="false" />
-            <element signature="e#1903#2156#0" expanded="false" />
-            <element signature="e#2408#2515#0" expanded="false" />
-            <element signature="e#2517#2625#0" expanded="false" />
+            <element signature="e#342#588#0" expanded="false" />
+            <element signature="e#590#917#0" expanded="false" />
+            <element signature="e#919#1303#0" expanded="false" />
+            <element signature="e#3217#3525#0" expanded="false" />
+            <element signature="e#3527#3585#0" expanded="false" />
+            <element signature="e#3587#3646#0" expanded="false" />
+            <element signature="e#3709#3780#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classes/managers/TreeManagement/TreeManager.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="78" column="24" lean-forward="false" selection-start-line="78" selection-start-column="24" selection-end-line="78" selection-end-column="24" />
+          <folding>
+            <element signature="e#40#64#0" expanded="true" />
+            <element signature="e#216#457#0" expanded="false" />
+            <element signature="e#459#567#0" expanded="false" />
+            <element signature="e#715#898#0" expanded="false" />
+            <element signature="e#900#963#0" expanded="false" />
+            <element signature="e#965#1020#0" expanded="false" />
+            <element signature="e#1022#1079#0" expanded="false" />
+            <element signature="e#1085#1135#0" expanded="false" />
+            <element signature="e#1141#1366#0" expanded="false" />
+            <element signature="e#1368#1542#0" expanded="false" />
+            <element signature="e#1544#1635#0" expanded="false" />
+            <element signature="e#1960#4774#0" expanded="false" />
+            <element signature="e#1996#4772#0" expanded="false" />
+            <element signature="e#4776#5056#0" expanded="false" />
+            <element signature="e#5058#5349#0" expanded="false" />
+            <element signature="e#5351#6220#0" expanded="false" />
+            <element signature="e#6222#6501#0" expanded="false" />
+            <element signature="e#6503#7945#0" expanded="false" />
+            <element signature="e#7947#8100#0" expanded="false" />
+            <element signature="e#8102#8251#0" expanded="false" />
+            <element signature="e#8254#8633#0" expanded="false" />
+            <element signature="e#8636#8926#0" expanded="false" />
+            <element signature="e#8928#9219#0" expanded="false" />
+            <element signature="e#9221#9325#0" expanded="false" />
+            <element signature="e#9327#9418#0" expanded="false" />
+            <element signature="e#9420#9512#0" expanded="false" />
           </folding>
         </state>
       </provider>
