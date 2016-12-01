@@ -65,6 +65,8 @@ namespace tree_management {
 
         void manageRevertChangeEvent(tree_events::RevertLastChangeEvent*);
 
+        void manageSubmitChangesEvent(tree_events::SubmitChangesEvent*);
+
         bool is_active;
         std::set<tree_interfaces::TreeNodeInterface*> selected_nodes;
         std::stack<TreeChange> tree_changes;

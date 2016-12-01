@@ -20,6 +20,13 @@ namespace tree_events {
         static const std::string kEventName;
     };
 
+    class SubmitChangesEvent: public event_wrappers::MyEventCustom {
+    public:
+        SubmitChangesEvent();
+
+        static const std::string kEventName;
+    };
+
     class TreeEdgeCreationEvent: public event_wrappers::MyEventCustom {
     public:
         TreeEdgeCreationEvent(tree_interfaces::TreeNodeInterface *, tree_interfaces::TreeNodeInterface *,

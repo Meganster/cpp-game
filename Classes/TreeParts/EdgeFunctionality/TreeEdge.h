@@ -25,6 +25,8 @@ public:
     TreeEdge(tree_interfaces::TreeNodeInterface*, tree_interfaces::TreeNodeInterface*);
     ~TreeEdge();
 
+    int getScenePriority() { return 8; };
+
     static TreeEdge* create(tree_interfaces::TreeNodeInterface*, tree_interfaces::TreeNodeInterface*);
     static TreeEdge* create();
 

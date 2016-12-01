@@ -13,6 +13,9 @@
 
 class TreeNode : public tree_interfaces::TreeNodeInterface {
 public:
+
+    int getScenePriority() { return 10; };
+
     TreeNode();
     ~TreeNode();
 

@@ -51,7 +51,6 @@ void TreeEdge::setNodes(tree_interfaces::TreeNodeInterface * node_1, tree_interf
 
 // need to work with this
 void TreeEdge::setPhantom() {
-    // need to change here sprite
 }
 
 void TreeEdge::setReal() {
@@ -90,7 +89,7 @@ float TreeEdge::countAngle(){
     // Need to check coordinate system
     auto dir = node_2_->getPosition() - node_1_->getPosition();
     auto x_dir = cocos2d::Vec2(1, 0);
-    return dir.getAngle(x_dir) * 180 / M_PI;
+    return (float)(dir.getAngle(x_dir) * 180 / M_PI);
 }
 
 float TreeEdge::countLength() {

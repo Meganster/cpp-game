@@ -79,6 +79,18 @@ void TreeManager::deselectNode(tree_interfaces::TreeNodeInterface* node) {
 }
 
 void TreeManager::addEvents() {
+    auto revert_change_call_back = [this](tree_events::RevertLastChangeEvent* event) -> void  {
+        manageRevertChangeEvent(event);
+    };
+    auto revert_change_listener = event_wrappers::create_listener<tree_events::RevertLastChangeEvent>(revert_change_call_back);
+    cocos2d::Director::getInstance()->getEventDispatcher()->addEventListenerWithFixedPriority(revert_change_listener, 1);
+
+    auto submit_call_back = [this](tree_events::SubmitChangesEvent* event) -> void {
+        manageSubmitChangesEvent(event);
+    };
+    auto submit_changes_listener = event_wrappers::create_listener<tree_events::SubmitChangesEvent>(submit_call_back);
+    cocos2d::Director::getInstance()->getEventDispatcher()->addEventListenerWithFixedPriority(submit_changes_listener, 1);
+
     auto node_selected_call_back = [this](tree_events::TreeNodeSelectionEvent* event) -> void {
         manageTreeNodeSelectionEvent(event);
     };
@@ -143,7 +155,7 @@ void TreeManager::manageTreeEdgeCreationEvent(tree_events::TreeEdgeCreationEvent
 
         auto tree_change = TreeChange();
         tree_change.addTreePart(edge);
-        tree_changes.push(tree_change);
+        addChange(tree_change);
 
         edge_factory->closeRequest();
 
@@ -170,7 +182,7 @@ void TreeManager::manageTreeNodeCreationEvent(tree_events::TreeNodeCreationEvent
     TreeNodeInterface* new_node = event->new_node;
     edge_factory->setRequest(new_node, selected_nodes);
 
-    if (selected_nodes.size() == 0) {
+    if (selected_nodes.size() < 2) {
         return;
     }
 
@@ -178,7 +190,7 @@ void TreeManager::manageTreeNodeCreationEvent(tree_events::TreeNodeCreationEvent
         auto tree_change = TreeChange();
         tree_change.addTreePart(new_node);
 
-        scene->addChild(new_node);
+        scene->addChild(new_node, 10);
 
         auto edges = edge_factory->getEdges();
 
@@ -192,14 +204,14 @@ void TreeManager::manageTreeNodeCreationEvent(tree_events::TreeNodeCreationEvent
             edge->setNodes(start_node, new_node);
 
             tree_change.addTreePart(edge);
-            scene->addChild(edge);
+            scene->addChild(edge, 8);
         }
 
         edge_factory->closeRequest();
         tree_changes.push(tree_change);
         selected_nodes.clear();
 
-        std::cout << "Tree manager: edge created" << std::endl;
+        std::cout << "Tree manager: node created" << std::endl;
     } else {
         std::cout << "Not enough money." << " Have: " << score_manager.getActivePlayerScore() << " Need: " << edge_factory->getBuyPrice() << std::endl;
     }
@@ -207,8 +219,14 @@ void TreeManager::manageTreeNodeCreationEvent(tree_events::TreeNodeCreationEvent
 
 }
 
-void TreeManager::manageRevertChangeEvent(tree_events::RevertLastChangeEvent* event) {
+void TreeManager::manageRevertChangeEvent(tree_events::RevertLastChangeEvent*) {
+    std::cout << "Change revert" << std::endl;
     revertLastChange();
+}
+
+void TreeManager::manageSubmitChangesEvent(tree_events::SubmitChangesEvent *) {
+    std::cout << "Change submit" << std::endl;
+    submitChanges();
 }
 
 

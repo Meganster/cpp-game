@@ -92,7 +92,7 @@ void score_management::ScoreManager::revert(const Scorable* scorable) {
 }
 
 bool score_management::ScoreManager::hasEnoughMoney(const Scorable *scorable) const {
-    return getBuyPrice(scorable) >= *active_score;
+    return getBuyPrice(scorable) <= *active_score;
 }
 
 score_type score_management::ScoreManager::getSellPrice(const Scorable *scorable) const {
