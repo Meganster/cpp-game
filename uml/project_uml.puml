@@ -1,0 +1,144 @@
+@startuml
+
+interface Scorable {
+    getSellPrice(): score_type
+    getBuyPrice(): score_type
+}
+
+class cocos2d::Sprite {
+}
+
+abstract class TreePart
+
+abstract class TreeNodeInterface
+abstract class TreeEdgeInterface {
+    getClone(): TreeEdgeInterface*
+}
+
+class TreeNode
+class TreeEdge
+
+abstract class EdgeFactoryInterface {
+    setPrototype(TreeEdgeInterface*): void
+    setRequest(TreeNodeInterface*,
+                TreeNodeInterface*): void
+    setRequest(TreeNodeInterface *,
+               std::set<TreeNodeInterface *> &): void
+    getEdges(): std::vector<TreeEdgeInterface*>
+}
+
+class EdgeFactory {
+}
+
+class cocos2d::EventDispatcher
+
+class TreeChange {
+    addTreePart(tree_interfaces::TreePart*): void
+    revert(): void
+    submit(): void
+}
+
+class TreeManager {
+    manageTreeNodeSelectionEvent(TreeNodeSelectionEvent*)
+    manageTreeNodeDeselectionEvent(TreeNodeDeselectionEvent*)
+    manageTreeNodeCreationEvent(TreeNodeCreationEvent*)
+    manageTreeChangeRevertEvent(TreeChangeRevertEvent*)
+    manageTreeChangesSubmitEvent(TreeChangesSubmitEvent*)
+}
+class TreeManagerHolder {
+    getActiveManager(): std::shared_ptr<TreeManager>
+    getPassiveManager(): std::shared_ptr<TreeManager>
+    switchManagers(): void
+}
+
+class ScoreManager {
+    getInstance(): ScoreManager&
+    getActivePlayerScore(): score_type
+    sell(Scorable*): void
+    buy(Scorable*): void
+    switchActivePlayer(): void
+}
+
+class cocos2d::EventCustom {
+}
+
+class TreeNodeSelectionEvent {
+    selected_node: tree_interfaces::TreeNodeInterface* selected_node
+}
+
+class TreeNodeDeselectionEvent {
+    selected_node: tree_interfaces::TreeNodeInterface* deselected_node
+}
+
+class TreeNodeCreationEvent {
+    scene: cocos2d::Scene*;
+    edge_factory: tree_part_creation::EdgeFactoryInterface*;
+    new_node: TreeNodeInterface*;
+}
+
+class RevertChangeEvent {
+}
+
+class SubmitChangesEvent {
+}
+
+
+
+Scorable <|-- TreePart
+cocos2d::Sprite <|-- TreePart
+
+TreePart <|-- TreeNodeInterface
+TreePart <|-- TreeEdgeInterface
+
+TreeNodeInterface <|-- TreeNode
+TreeEdgeInterface <|-- TreeEdge
+
+EdgeFactoryInterface <|-- EdgeFactory
+TreeEdgeInterface "1" *-- " 1" EdgeFactory : contains edge prototype
+
+TreeManager "  2" *-- " 1" TreeManagerHolder: contains
+TreeManager <.. TreeManagerHolder: proxy events
+
+ScoreManager " 1" *.. " 2" TreeManager: singleton
+
+cocos2d::EventCustom <|-- TreeNodeSelectionEvent
+cocos2d::EventCustom <|-- TreeNodeDeselectionEvent
+cocos2d::EventCustom <|-- TreeNodeCreationEvent
+cocos2d::EventCustom <|-- RevertChangeEvent
+cocos2d::EventCustom <|-- SubmitChangesEvent
+
+cocos2d::EventDispatcher ..> cocos2d::EventCustom: events \n to dispatch
+
+cocos2d::EventDispatcher ..> TreeManagerHolder: dispatch event
+TreeNode ..> cocos2d::EventDispatcher: sendEvent
+cocos2d::TreeScene ..> cocos2d::EventDispatcher: sendEvent
+
+TreePart "many" *-- "1" TreeChange
+TreeManager "1" --* "many" TreeChange
+
+
+@enduml
+
+
+abstract class AbstractList
+abstract AbstractCollection
+interface List
+interface Collection
+
+List <|-- AbstractList
+Collection <|-- AbstractCollection
+
+Collection <|- List
+AbstractCollection <|- AbstractList
+AbstractList <|-- ArrayList
+
+class ArrayList {
+Object[] elementData
+size()
+}
+
+enum TimeUnit {
+DAYS
+HOURS
+MINUTES
+}
