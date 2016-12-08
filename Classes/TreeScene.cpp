@@ -9,7 +9,17 @@
 USING_NS_CC;
 
 Scene* TreeScene::createScene() {
-    return TreeScene::create();
+    auto scene = new TreeScene();
+    if (scene && scene->initWithPhysics()) {
+        scene->autorelease();
+    } else {
+        CC_SAFE_DELETE(scene);
+        return nullptr;
+    }
+    scene->init();
+    scene->addEvents();
+
+    return scene;
 }
 
 bool TreeScene::init() {
@@ -33,20 +43,22 @@ bool TreeScene::init() {
 
     auto start_point = Vec2(visibleSize.width / 2, visibleSize.height/2);
 
-
     int start_length = 50;
 
     auto left_bottom_1 = TreeNode::create();
     left_bottom_1->setPosition(start_point.x - start_length - 300, start_point.y - start_length);
     this->addChild(left_bottom_1, left_bottom_1->getScenePriority());
+    left_bottom_1->getPhysicsBody()->setDynamic(false);
 
     auto right_bottom_1 = TreeNode::create();
     right_bottom_1->setPosition(start_point.x + start_length - 300, start_point.y - start_length);
     this->addChild(right_bottom_1, left_bottom_1->getScenePriority());
+    right_bottom_1->getPhysicsBody()->setDynamic(false);
 
     auto right_top_1 = TreeNode::create();
     right_top_1->setPosition(start_point.x + start_length - 300, start_point.y + start_length);
     this->addChild(right_top_1, left_bottom_1->getScenePriority());
+    right_top_1->getPhysicsBody()->setVelocity(cocos2d::Vec2(300, 300));
 
     auto left_top_1 = TreeNode::create();
     left_top_1->setPosition(start_point.x - start_length - 300, start_point.y + start_length);
@@ -55,21 +67,27 @@ bool TreeScene::init() {
 
     auto edge_1_1 = TreeEdge::create(left_bottom_1, right_bottom_1);
     this->addChild(edge_1_1, 5);
+    //this->_physicsWorld->addJoint(edge_1_1->getSpring());
 
     auto edge_2_1 = TreeEdge::create(right_bottom_1, right_top_1);
     this->addChild(edge_2_1, 5);
+    this->_physicsWorld->addJoint(edge_2_1->getSpring());
 
     auto edge_3_1 = TreeEdge::create(right_top_1, left_top_1);
     this->addChild(edge_3_1, 5);
+    this->_physicsWorld->addJoint(edge_3_1->getSpring());
 
     auto edge_4_1 = TreeEdge::create(left_top_1, left_bottom_1);
     this->addChild(edge_4_1, 5);
+    this->_physicsWorld->addJoint(edge_4_1->getSpring());
 
     auto edge_5_1 = TreeEdge::create(left_bottom_1, right_top_1);
     this->addChild(edge_5_1, 5);
+    this->_physicsWorld->addJoint(edge_5_1->getSpring());
 
     auto edge_6_1 = TreeEdge::create(right_bottom_1, left_top_1);
     this->addChild(edge_6_1, 5);
+    this->_physicsWorld->addJoint(edge_6_1->getSpring());
 
 
     auto left_bottom_2 = TreeNode::create();

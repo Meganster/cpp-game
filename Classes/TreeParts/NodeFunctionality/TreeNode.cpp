@@ -103,6 +103,9 @@ TreeNode* TreeNode::create() {
         node_ptr->initOptions();
         node_ptr->addEvents();
 
+        auto body = cocos2d::PhysicsBody::create(1);    // TODO Refactor (just a test)
+        node_ptr->setPhysicsBody(body);
+
         return node_ptr;
     }
 

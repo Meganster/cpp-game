@@ -33,8 +33,6 @@ namespace tree_management {
 
         friend class TreeManagerHolder;
 
-        //TreeManager();
-
         TreeManager(cocos2d::Rect);
 
         void switchState();

@@ -24,12 +24,6 @@ void TreeChange::addTreePart(tree_interfaces::TreePart * tree_part) {
     tree_parts.push_back(tree_part);
 }
 
-
-//TreeManager::TreeManager(): is_active{false}{
-//    selected_nodes = std::set<tree_interfaces::TreeNodeInterface*>();
-//    addEvents();
-//};
-
 TreeManager::TreeManager(cocos2d::Rect control_area) {
     selected_nodes = std::set<tree_interfaces::TreeNodeInterface*>();
     control_area_ = control_area;

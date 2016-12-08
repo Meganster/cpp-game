@@ -15,17 +15,25 @@ TreeEdge::TreeEdge(tree_interfaces::TreeNodeInterface* node_1, tree_interfaces::
 TreeEdge::~TreeEdge(){}
 
 TreeEdge* TreeEdge::create(tree_interfaces::TreeNodeInterface* node_1, tree_interfaces::TreeNodeInterface* node_2) {
-    TreeEdge* edge_ptr = new TreeEdge(node_1, node_2);
+    if (node_1 != nullptr && node_2 != nullptr) {
+        TreeEdge* edge_ptr = new TreeEdge(node_1, node_2);
 
-    if (edge_ptr->initWithFile(TreeEdge::kSpritePath)) {
-        edge_ptr->autorelease();
-        edge_ptr->initOptions();
-        edge_ptr->addEvents();
+        if (edge_ptr->initWithFile(TreeEdge::kSpritePath)) {
+            edge_ptr->autorelease();
+            edge_ptr->initOptions();
+            edge_ptr->addEvents();
 
-        return edge_ptr;
+            edge_ptr->setSpring(cocos2d::PhysicsJointSpring::construct(node_1->getPhysicsBody(), node_2->getPhysicsBody(),
+                                                                       node_1->getAnchorPoint(), node_2->getAnchorPoint(),
+                                                                       10, 1));  //TODO refactor (just test)
+
+            return edge_ptr;
+        } else {
+            CC_SAFE_DELETE(edge_ptr);
+            return nullptr;
+        }
     }
 
-    CC_SAFE_DELETE(edge_ptr);
     return nullptr;
 }
 

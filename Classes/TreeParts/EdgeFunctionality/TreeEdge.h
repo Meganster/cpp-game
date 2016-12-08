@@ -40,9 +40,16 @@ public:
     score_type getBuyPrice() const;
     score_type getSellPrice() const;
 
+    void setSpring(cocos2d::PhysicsJointSpring* spring) {
+        spring_ = spring;
+    }
+
+    cocos2d::PhysicsJointSpring* getSpring() {
+        return spring_;
+    }
+
 
     static std::string kSpritePath;
-    const static std::map<int, Cost> specificCost;
 
 private:
     void initOptions();
@@ -55,6 +62,8 @@ private:
     tree_interfaces::TreeNodeInterface* node_1_;
     tree_interfaces::TreeNodeInterface* node_2_;
     float rigidity_;   //parameter from physics
+
+    cocos2d::PhysicsJointSpring* spring_;
 };
 
 
