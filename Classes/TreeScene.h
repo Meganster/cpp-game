@@ -6,14 +6,15 @@
 #define MYGAME_TREESCENE_H
 
 #include "cocos2d.h"
-#include "TreeNode.h"
+#include "TreeParts/NodeFunctionality/TreeNode.h"
 #include "managers/TreeManagement/TreeManager.h"
+#include "./TreeParts/EdgeFunctionality/TreeEdge.h"
 
 
 class TreeScene : public cocos2d::Scene {
 public:
     static cocos2d::Scene* createScene();
-
+    void Add() { adding = false; };
 
     virtual bool init();
 
@@ -22,10 +23,11 @@ public:
 private:
     void addEvents();
 
-    tree_management::TreeManager manager;
+    static void addNode(cocos2d::EventMouse*, cocos2d::Scene*);
 
-    static void treeNodeSelectedCallback(TreeNodeSelectedEvent*, TreeScene*);
-    std::set<TreeNode*> chosen_tree_nodes;
+    tree_management::TreeManagerHolder holder;
+
+    bool adding;
 };
 
 

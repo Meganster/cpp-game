@@ -20,12 +20,12 @@ namespace tree_part_creation {
         /**
          * Through this method you set request to create one edge
          */
-        virtual void setRequest(cocos2d::Vec2, cocos2d::Vec2) = 0;
+        virtual void setRequest(TreeNodeInterface *, TreeNodeInterface *) = 0;
 
         /**
          * Through this method you set request to create multiple edges
          */
-        virtual void setRequest(cocos2d::Vec2, std::vector<cocos2d::Vec2>&) = 0;
+        virtual void setRequest(TreeNodeInterface *, std::set<TreeNodeInterface *> &) = 0;
 
         /**
          * This method returns the clone of sample edge

@@ -9,6 +9,16 @@ using namespace tree_interfaces;
 using namespace tree_part_creation;
 
 
+RevertLastChangeEvent::RevertLastChangeEvent(): MyEventCustom(this) {};
+
+const std::string RevertLastChangeEvent::kEventName = "RevertLastChangeEvent";
+
+
+SubmitChangesEvent::SubmitChangesEvent(): MyEventCustom(this) {};
+
+const std::string SubmitChangesEvent::kEventName = "SubmitChanges";
+
+
 TreeEdgeCreationEvent::TreeEdgeCreationEvent(TreeNodeInterface *tree_node_1, TreeNodeInterface *tree_node_2,
                                              cocos2d::Scene *parent_node, EdgeFactoryInterface* edge_factory) :
         MyEventCustom{this}, tree_node_1{tree_node_1}, tree_node_2{tree_node_2},
@@ -17,9 +27,9 @@ TreeEdgeCreationEvent::TreeEdgeCreationEvent(TreeNodeInterface *tree_node_1, Tre
 const std::string TreeEdgeCreationEvent::kEventName = "TreeEdgeCreationEvent";
 
 
-TreeNodeCreationEvent::TreeNodeCreationEvent(cocos2d::Vec2 new_node, cocos2d::Scene *parent_node,
-                                             EdgeFactoryInterface* edge_factory):
-        MyEventCustom{this}, new_node_coord{new_node}, edge_factory{edge_factory}, scene{parent_node} {};
+TreeNodeCreationEvent::TreeNodeCreationEvent(TreeNodeInterface *new_node, cocos2d::Scene *parent_node,
+                                             EdgeFactoryInterface *edge_factory):
+        MyEventCustom{this}, new_node{new_node}, edge_factory{edge_factory}, scene{parent_node} {};
 
 const std::string TreeNodeCreationEvent::kEventName = "TreeNodeCreationEvent";
 

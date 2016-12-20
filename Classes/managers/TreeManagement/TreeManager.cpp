@@ -24,11 +24,11 @@ void TreeChange::addTreePart(tree_interfaces::TreePart * tree_part) {
     tree_parts.push_back(tree_part);
 }
 
-
-TreeManager::TreeManager(): is_active{false}{
+TreeManager::TreeManager(cocos2d::Rect control_area) {
     selected_nodes = std::set<tree_interfaces::TreeNodeInterface*>();
-    addEvents();
-};
+    control_area_ = control_area;
+    is_active = false;
+}
 
 void TreeManager::switchState() {
     is_active = !is_active;
@@ -70,15 +70,30 @@ void TreeManager::addChange(TreeChange tree_change) {
 
 void TreeManager::selectNode(tree_interfaces::TreeNodeInterface* node) {
     selected_nodes.insert(node);
+    node->setSelected();
 }
 
 void TreeManager::deselectNode(tree_interfaces::TreeNodeInterface* node) {
     if (selected_nodes.count(node)) {
+        node->setDeselected();
         selected_nodes.erase(node);
     }
 }
 
 void TreeManager::addEvents() {
+    /*
+    auto revert_change_call_back = [this](tree_events::RevertLastChangeEvent* event) -> void  {
+        manageRevertChangeEvent(event);
+    };
+    auto revert_change_listener = event_wrappers::create_listener<tree_events::RevertLastChangeEvent>(revert_change_call_back);
+    cocos2d::Director::getInstance()->getEventDispatcher()->addEventListenerWithFixedPriority(revert_change_listener, 1);
+
+    auto submit_call_back = [this](tree_events::SubmitChangesEvent* event) -> void {
+        manageSubmitChangesEvent(event);
+    };
+    auto submit_changes_listener = event_wrappers::create_listener<tree_events::SubmitChangesEvent>(submit_call_back);
+    cocos2d::Director::getInstance()->getEventDispatcher()->addEventListenerWithFixedPriority(submit_changes_listener, 1);
+
     auto node_selected_call_back = [this](tree_events::TreeNodeSelectionEvent* event) -> void {
         manageTreeNodeSelectionEvent(event);
     };
@@ -112,6 +127,7 @@ void TreeManager::addEvents() {
     };
     auto edge_deleted_listener = event_wrappers::create_listener<tree_events::TreeEdgeDeletionEvent>(edge_deleted_call_back);
     cocos2d::Director::getInstance()->getEventDispatcher()->addEventListenerWithFixedPriority(edge_deleted_listener, 1);
+     */
 }
 
 void TreeManager::manageTreeNodeSelectionEvent(tree_events::TreeNodeSelectionEvent* event) {
@@ -128,12 +144,10 @@ void TreeManager::manageTreeNodeDeselectionEvent(tree_events::TreeNodeDeselectio
 }
 
 void TreeManager::manageTreeEdgeCreationEvent(tree_events::TreeEdgeCreationEvent* event) {
-    cocos2d::Vec2 point_1 = event->tree_node_1->getPosition();
-    cocos2d::Vec2 point_2 = event->tree_node_2->getPosition();
     auto edge_factory = event->edge_factory;
     auto scene = event->scene;
 
-    edge_factory->setRequest(point_1, point_2);
+    edge_factory->setRequest(event->tree_node_1, event->tree_node_2);
 
     auto score_manager = score_management::ScoreManager::getInstance();
 
@@ -141,9 +155,11 @@ void TreeManager::manageTreeEdgeCreationEvent(tree_events::TreeEdgeCreationEvent
         auto edge = edge_factory->getEdges()[0];
 
         score_manager.buy(edge);
-
-        edge->setPosition(point_1, point_2);
         scene->addChild(edge);
+
+        auto tree_change = TreeChange();
+        tree_change.addTreePart(edge);
+        addChange(tree_change);
 
         edge_factory->closeRequest();
 
@@ -163,34 +179,58 @@ void TreeManager::manageTreeEdgeDeletionEvent(tree_events::TreeEdgeDeletionEvent
 }
 
 void TreeManager::manageTreeNodeCreationEvent(tree_events::TreeNodeCreationEvent* event) {
-    cocos2d::Vec2 new_node_coord = event->new_node_coord;
     auto edge_factory = event->edge_factory;
     auto score_manager = score_management::ScoreManager::getInstance();
     auto scene = event->scene;
 
-    std::vector<cocos2d::Vec2> attach_nodes_coords;
-    for (auto tree_node: selected_nodes) {
-        attach_nodes_coords.push_back(tree_node->getPosition());
+    TreeNodeInterface* new_node = event->new_node;
+    edge_factory->setRequest(new_node, selected_nodes);
+
+    if (selected_nodes.size() < 2) {
+        return;
     }
 
-    edge_factory->setRequest(new_node_coord, attach_nodes_coords);
-
     if (score_manager.hasEnoughMoney(edge_factory)) {
+        auto tree_change = TreeChange();
+        tree_change.addTreePart(new_node);
+
+        scene->addChild(new_node, 10);
+
         auto edges = edge_factory->getEdges();
 
-        for (size_t i = 0; i != attach_nodes_coords.size(); ++i) {
-            edges[i]->setPosition(new_node_coord, attach_nodes_coords[i]);
-            scene->addChild(edges[i]);
+        auto edge_iter = edges.begin();
+        auto node_iter = selected_nodes.begin();
+        for (; edge_iter != edges.end() && node_iter != selected_nodes.end(); ++edge_iter, ++node_iter) {
+            auto edge = *edge_iter;
+            auto start_node = *node_iter;
+            start_node->setDeselected();
+
+            edge->setNodes(start_node, new_node);
+
+            tree_change.addTreePart(edge);
+            scene->addChild(edge, 8);
         }
 
         edge_factory->closeRequest();
+        tree_changes.push(tree_change);
+        selected_nodes.clear();
 
-        std::cout << "Tree manager: edge created" << std::endl;
+        std::cout << "Tree manager: node created" << std::endl;
     } else {
         std::cout << "Not enough money." << " Have: " << score_manager.getActivePlayerScore() << " Need: " << edge_factory->getBuyPrice() << std::endl;
     }
 
 
+}
+
+void TreeManager::manageRevertChangeEvent(tree_events::RevertLastChangeEvent*) {
+    std::cout << "Change revert" << std::endl;
+    revertLastChange();
+}
+
+void TreeManager::manageSubmitChangesEvent(tree_events::SubmitChangesEvent *) {
+    std::cout << "Change submit" << std::endl;
+    submitChanges();
 }
 
 
@@ -200,12 +240,14 @@ TreeManagerHolder::TreeManagerHolder(std::shared_ptr<TreeManager> manager_1_, st
         manager_1->setActive();
         manager_2->setPassive();
     }
+
+    addEvents();
 };
 
 std::shared_ptr<TreeManager> TreeManagerHolder::getActiveManager() {
     if (manager_1->isActive() && !manager_2->isActive()) {
         return manager_1;
-    } else if (manager_2->isActive() && !manager_2->isActive()) {
+    } else if (manager_2->isActive() && !manager_1->isActive()) {
         return manager_2;
     } else {
         return nullptr;

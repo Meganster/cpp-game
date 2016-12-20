@@ -3,14 +3,23 @@
 //
 
 #include "TreeScene.h"
-#include "TreeNode.h"
+#include "TreeParts/EdgeFunctionality/EdgeFactory.h"
 #include <iostream>
-#include "event_system/EventWrappers.h"
-#include "managers/TreeManagement/TreeManager.h"
+#include "ui/CocosGUI.h"
 USING_NS_CC;
 
 Scene* TreeScene::createScene() {
-    return TreeScene::create();
+    auto scene = new TreeScene();
+    if (scene && scene->initWithPhysics()) {
+        scene->autorelease();
+    } else {
+        CC_SAFE_DELETE(scene);
+        return nullptr;
+    }
+    scene->init();
+    scene->addEvents();
+
+    return scene;
 }
 
 bool TreeScene::init() {
@@ -32,51 +41,131 @@ bool TreeScene::init() {
     // add the sprite as a child to this layer
     this->addChild(sprite, 0);
 
-    auto start_point = Vec2(origin.x + 20, visibleSize.height/2 + origin.y);
+    auto start_point = Vec2(visibleSize.width / 2, visibleSize.height/2);
 
-    std::vector<TreeNode*> node_ptr_vec;
-    for (int i = 0; i != 10; ++i) {
-        auto node_ptr =TreeNode::create();
-        if (node_ptr != NULL) {
-            node_ptr->setPosition(start_point.x + 40 * i, start_point.y);
-            this->addChild(node_ptr, 10);
-            node_ptr_vec.push_back(node_ptr);
-        }
-    }
+    int start_length = 50;
+
+    auto left_bottom_1 = TreeNode::create();
+    left_bottom_1->setPosition(start_point.x - start_length - 300, start_point.y - start_length);
+    this->addChild(left_bottom_1, left_bottom_1->getScenePriority());
+    left_bottom_1->getPhysicsBody()->setDynamic(false);
+
+    auto right_bottom_1 = TreeNode::create();
+    right_bottom_1->setPosition(start_point.x + start_length - 300, start_point.y - start_length);
+    this->addChild(right_bottom_1, left_bottom_1->getScenePriority());
+    right_bottom_1->getPhysicsBody()->setDynamic(false);
+
+    auto right_top_1 = TreeNode::create();
+    right_top_1->setPosition(start_point.x + start_length - 300, start_point.y + start_length);
+    this->addChild(right_top_1, left_bottom_1->getScenePriority());
+    right_top_1->getPhysicsBody()->setVelocity(cocos2d::Vec2(300, 300));
+
+    auto left_top_1 = TreeNode::create();
+    left_top_1->setPosition(start_point.x - start_length - 300, start_point.y + start_length);
+    this->addChild(left_top_1, left_bottom_1->getScenePriority());
+
+
+    auto edge_1_1 = TreeEdge::create(left_bottom_1, right_bottom_1);
+    this->addChild(edge_1_1, 5);
+    //this->_physicsWorld->addJoint(edge_1_1->getSpring());
+
+    auto edge_2_1 = TreeEdge::create(right_bottom_1, right_top_1);
+    this->addChild(edge_2_1, 5);
+    this->_physicsWorld->addJoint(edge_2_1->getSpring());
+
+    auto edge_3_1 = TreeEdge::create(right_top_1, left_top_1);
+    this->addChild(edge_3_1, 5);
+    this->_physicsWorld->addJoint(edge_3_1->getSpring());
+
+    auto edge_4_1 = TreeEdge::create(left_top_1, left_bottom_1);
+    this->addChild(edge_4_1, 5);
+    this->_physicsWorld->addJoint(edge_4_1->getSpring());
+
+    auto edge_5_1 = TreeEdge::create(left_bottom_1, right_top_1);
+    this->addChild(edge_5_1, 5);
+    this->_physicsWorld->addJoint(edge_5_1->getSpring());
+
+    auto edge_6_1 = TreeEdge::create(right_bottom_1, left_top_1);
+    this->addChild(edge_6_1, 5);
+    this->_physicsWorld->addJoint(edge_6_1->getSpring());
+
+
+    auto left_bottom_2 = TreeNode::create();
+    left_bottom_2->setPosition(start_point.x - start_length + 300, start_point.y - start_length);
+    this->addChild(left_bottom_2, left_bottom_2->getScenePriority());
+
+    auto right_bottom_2 = TreeNode::create();
+    right_bottom_2->setPosition(start_point.x + start_length + 300, start_point.y - start_length);
+    this->addChild(right_bottom_2, left_bottom_2->getScenePriority());
+
+    auto right_top_2 = TreeNode::create();
+    right_top_2->setPosition(start_point.x + start_length + 300, start_point.y + start_length);
+    this->addChild(right_top_2, left_bottom_2->getScenePriority());
+
+    auto left_top_2 = TreeNode::create();
+    left_top_2->setPosition(start_point.x - start_length + 300, start_point.y + start_length);
+    this->addChild(left_top_2, left_bottom_2->getScenePriority());
+
+
+    auto edge_1_2 = TreeEdge::create(left_bottom_2, right_bottom_2);
+    this->addChild(edge_1_2, 5);
+
+    auto edge_2_2 = TreeEdge::create(right_bottom_2, right_top_2);
+    this->addChild(edge_2_2, 5);
+
+    auto edge_3_2 = TreeEdge::create(right_top_2, left_top_2);
+    this->addChild(edge_3_2, 5);
+
+    auto edge_4_2 = TreeEdge::create(left_top_2, left_bottom_2);
+    this->addChild(edge_4_2, 5);
+
+    auto edge_5_2 = TreeEdge::create(left_bottom_2, right_top_2);
+    this->addChild(edge_5_2, 5);
+
+    auto edge_6_2 = TreeEdge::create(right_bottom_2, left_top_2);
+    this->addChild(edge_6_2, 5);
+
+
+    auto button_revert = ui::Button::create("Undo.png");
+    button_revert->setPosition(Point(visibleSize.width - 100, visibleSize.height - 100));
+    button_revert->setSwallowTouches(true);
+    button_revert->addClickEventListener([this](Ref* pSender) -> void {
+        auto event = tree_events::RevertLastChangeEvent();
+        this->_eventDispatcher->dispatchEvent(&event); });
+    this->addChild(button_revert, 12);
+
+
+    auto button_submit = ui::Button::create("button_cancel.png");
+    button_submit->setPosition(Point(visibleSize.width - 50, visibleSize.height - 500));
+    button_submit->setSwallowTouches(true);
+    button_submit->addClickEventListener([this](Ref* pSender) -> void {
+        auto event = tree_events::SubmitChangesEvent();
+        this->_eventDispatcher->dispatchEvent(&event); });
+    this->addChild(button_submit, 12);
 
     return true;
 }
 
-/*void TreeScene::addNode(cocos2d::EventMouse* event, cocos2d::Scene* scene_ptr) {
-    cocos2d::Vec2 event_point = event->getLocation();
-    auto e = tree_events::TreeNodeCreationEvent(event_point, scene_ptr);
-    //scene_ptr->_eventDispatcher->dispatchEvent(&e);
-}*/
+void TreeScene::addNode(cocos2d::EventMouse* event, cocos2d::Scene* scene_ptr) {
+    auto new_node = TreeNode::create();
+    new_node->setPosition(event->getLocationInView());
+
+    auto factory = EdgeFactory::getInstance();
+    factory.setPrototype(TreeEdge::create());
+
+    auto e = tree_events::TreeNodeCreationEvent(new_node, scene_ptr, &factory);
+
+    Director::getInstance()->getEventDispatcher()->dispatchEvent(&e);
+}
 
 
 void TreeScene::addEvents() {
-    /*auto mouse_listener = cocos2d::EventListenerMouse::create();
 
-    mouse_listener->onMouseUp = [this] (cocos2d::EventMouse* event) {
+    auto mouse_listener = cocos2d::EventListenerMouse::create();
+    _eventDispatcher->addEventListenerWithSceneGraphPriority(mouse_listener, this);
+    mouse_listener->onMouseDown = [this] (cocos2d::EventMouse* event) {
         if (event->getMouseButton() == MOUSE_BUTTON_LEFT) {
             this->addNode(event, this);
-        }
-    };*/
-
-    auto listenerSelect = event_wrappers::create_listener<tree_events::TreeNodeSelectionEvent>\
-([](tree_events::TreeNodeSelectionEvent* event) -> void {event->selected_node->setScale(0.12);});
-    _eventDispatcher->addEventListenerWithSceneGraphPriority(listenerSelect, this);
-
-    auto listenerDeselect = event_wrappers::create_listener<tree_events::TreeNodeDeselectionEvent>\
-([](tree_events::TreeNodeDeselectionEvent* event) -> void {event->deselected_node->setScale(0.1);});
-    _eventDispatcher->addEventListenerWithSceneGraphPriority(listenerDeselect, this);
-
-    auto listenerAdd = event_wrappers::create_listener<tree_events::TreeNodeCreationEvent>\
-([](tree_events::TreeNodeCreationEvent* event) -> void { std::cout << "Nodes creation!" << std::endl;});
-    _eventDispatcher->addEventListenerWithSceneGraphPriority(listenerAdd, this);
-}
-
-void TreeScene::treeNodeSelectedCallback(TreeNodeSelectedEvent* event, TreeScene* tree_scene) {
-    TreeNode* tree_node_ptr = (TreeNode*)event->getUserData();
-    tree_node_ptr->setScale(0.25);
+        };
+    };
 }

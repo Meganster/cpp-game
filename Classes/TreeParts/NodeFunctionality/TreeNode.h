@@ -13,11 +13,13 @@
 
 class TreeNode : public tree_interfaces::TreeNodeInterface {
 public:
+
+    int getScenePriority() { return 10; };
+
     TreeNode();
     ~TreeNode();
 
     static TreeNode* create();
-    static TreeNode* createAttachedTreeNode(const std::vector<TreeNode*>&, const cocos2d::Vec2&);
 
     score_type getBuyPrice() const;
     score_type getSellPrice() const;
@@ -27,6 +29,8 @@ public:
 
     int getIndex() { return index_;};
     bool isSelected() { return selected;};
+    void setSelected() {selected = true; setScale(0.12);};
+    void setDeselected() {selected = false; setScale(0.1);};
 
     const static std::string kSpritePath;
 private:
@@ -45,19 +49,6 @@ private:
     static bool isAdding;
     static bool isSelecting;
     cocos2d::Vec2 location_;
-};
-
-
-class TreeNodeSelectedEvent : public event_wrappers::MyEventCustom {
-public:
-    //TreeNodeSelectedEvent() : event_wrappers::MyEventCustom(kEventName) {};
-    TreeNodeSelectedEvent() : event_wrappers::MyEventCustom(this) {};
-    TreeNodeSelectedEvent(int val) : event_wrappers::MyEventCustom(this), someVar(val) {};
-
-    static const std::string kEventName;
-
-    int someVar;
-
 };
 
 

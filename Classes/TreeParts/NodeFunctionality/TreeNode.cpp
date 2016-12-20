@@ -25,7 +25,7 @@ void TreeNode::rectScale(cocos2d::Rect* bound, int scale) {
 }
 
 void TreeNode::removeTreeNode(cocos2d::EventMouse* event, TreeNode* tree_node_ptr) {
-    cocos2d::Vec2 event_point = event->getLocation();
+    cocos2d::Vec2 event_point = event->getLocationInView();
     cocos2d::Rect bounding_box = tree_node_ptr->getBoundingBox();
 
     if (bounding_box.containsPoint(event_point)) {
@@ -34,7 +34,7 @@ void TreeNode::removeTreeNode(cocos2d::EventMouse* event, TreeNode* tree_node_pt
 }
 
 void TreeNode::addForce(cocos2d::EventMouse* event, TreeNode* tree_node_ptr) {
-    cocos2d::Vec2 event_point = event->getLocation();
+    cocos2d::Vec2 event_point = event->getLocationInView();
     cocos2d::Rect bounding_box = tree_node_ptr->getBoundingBox();
     //rectScale(&bounding_box, 2);
 
@@ -45,37 +45,34 @@ void TreeNode::addForce(cocos2d::EventMouse* event, TreeNode* tree_node_ptr) {
 
 void TreeNode::addTreeNode(cocos2d::EventMouse* event, TreeNode* tree_node_ptr) {
     isAdding = false;
-    cocos2d::Vec2 event_point = event->getLocation();
+    cocos2d::Vec2 event_point = event->getLocationInView();
     std::cout << event_point.x << "\t" << event_point.y << std::endl;
-    auto e = tree_events::TreeNodeCreationEvent(event_point, tree_node_ptr->getScene());
+
+    auto new_node = TreeNode::create();
+    new_node->setPosition(event_point);
+    auto e = tree_events::TreeNodeCreationEvent(new_node, tree_node_ptr->getScene());
     tree_node_ptr->_eventDispatcher->dispatchEvent(&e);
 
 }
 
 void TreeNode::selectTreeNode(cocos2d::EventMouse* event, TreeNode* tree_node_ptr) {
-    cocos2d::Vec2 event_point = event->getLocation();
+    cocos2d::Vec2 event_point = event->getLocationInView();
     cocos2d::Rect bounding_box = tree_node_ptr->getBoundingBox();
 
     if (bounding_box.containsPoint(event_point)) {
 
         if (tree_node_ptr->isSelected()) {
-            //std::cout << "Node deselected!" << std::endl;
             tree_node_ptr -> selected = false;
             auto event = tree_events::TreeNodeDeselectionEvent(tree_node_ptr);
             tree_node_ptr->_eventDispatcher->dispatchEvent(&event);
         } else {
-            //std::cout << "Node selected!" << std::endl;
             tree_node_ptr -> selected = true;
             auto event = tree_events::TreeNodeSelectionEvent(tree_node_ptr);
             tree_node_ptr->_eventDispatcher->dispatchEvent(&event);
         }
-        //isSelecting = true;
-        //auto select_event = TreeNodeSelectedEvent(100);
-        //tree_node_ptr->_eventDispatcher->dispatchEvent(&select_event);
+
+        event->stopPropagation();
     }
-    //else if (!isAdding && !isSelecting) {
-    //    addTreeNode(event, tree_node_ptr);
-    //}
 }
 
 void TreeNode::addEvents() {
@@ -89,7 +86,7 @@ void TreeNode::addEvents() {
 
     mouse_listener->onMouseDown = [this] (cocos2d::EventMouse* event) {
         if (event->getMouseButton() == MOUSE_BUTTON_RIGHT) {
-            this->removeTreeNode(event, this);
+            //this->removeTreeNode(event, this);
         } else if( event->getMouseButton() == MOUSE_BUTTON_LEFT) {
             this->selectTreeNode(event, this);
         }
@@ -106,21 +103,14 @@ TreeNode* TreeNode::create() {
         node_ptr->initOptions();
         node_ptr->addEvents();
 
+        auto body = cocos2d::PhysicsBody::create(1);    // TODO Refactor (just a test)
+        node_ptr->setPhysicsBody(body);
+
         return node_ptr;
     }
 
     CC_SAFE_DELETE(node_ptr);
     return NULL;
-}
-
-TreeNode* TreeNode::createAttachedTreeNode(const std::vector<TreeNode*>& nodes, const cocos2d::Vec2& position) {
-    TreeNode* TreeNode_ptr = TreeNode::create();
-    if (TreeNode_ptr == NULL) {
-        return NULL;
-    } else {
-        TreeNode_ptr->setPosition(position);
-        return TreeNode_ptr;
-    }
 }
 
 score_type TreeNode::getBuyPrice() const {
@@ -140,7 +130,4 @@ int TreeNode::curr_max_index_ = 0;
 bool TreeNode::isAdding = false;
 bool TreeNode::isSelecting = false;
 const std::string TreeNode::kSpritePath = "circle_blue.png";
-
-
-const std::string TreeNodeSelectedEvent::kEventName = "event_selected";
 

@@ -37,7 +37,7 @@ namespace event_wrappers {
     template <class T>
     cocos2d::EventListenerCustom* create_listener(const std::function<void(T*)>& callback) {
         auto inner_function = [callback](cocos2d::EventCustom* event_ptr) -> void {
-            auto original_event_ptr = (T*)event_ptr;
+            auto original_event_ptr = static_cast<T*>(event_ptr);
             callback(original_event_ptr);
         };
 
