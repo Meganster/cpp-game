@@ -156,7 +156,7 @@ set(GAME_HEADERS
         Classes/managers/ScoreManagement/ScoreManagement.cpp Classes/managers/ScoreManagement/ScoreManagement.h
         Classes/managers/ScoreManagement/Scorable.h Classes/managers/TreeManagement/TreePartsCreation.h
         Classes/TreeParts/EdgeFunctionality/EdgeFactory.cpp
-        Classes/TreeParts/EdgeFunctionality/EdgeFactory.h)
+        Classes/TreeParts/EdgeFunctionality/EdgeFactory.h Classes/managers/TreeManagement/ControlZone.cpp Classes/managers/TreeManagement/ControlZone.h Classes/TreeParts/NodeFunctionality/Force.cpp Classes/TreeParts/NodeFunctionality/Force.h)
 
 if( ANDROID )
     add_library(${APP_NAME} SHARED ${GAME_SRC} ${GAME_HEADERS})

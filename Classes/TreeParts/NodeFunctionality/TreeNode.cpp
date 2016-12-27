@@ -40,19 +40,8 @@ void TreeNode::addForce(cocos2d::EventMouse* event, TreeNode* tree_node_ptr) {
 
     if (bounding_box.containsPoint(event_point)) {
         std::cout << event->getCursorX() << " " << event->getCursorY() << std::endl;
+        tree_node_ptr->getPhysicsBody()->setVelocity(cocos2d::Vec2(300, 300));
     }
-}
-
-void TreeNode::addTreeNode(cocos2d::EventMouse* event, TreeNode* tree_node_ptr) {
-    isAdding = false;
-    cocos2d::Vec2 event_point = event->getLocationInView();
-    std::cout << event_point.x << "\t" << event_point.y << std::endl;
-
-    auto new_node = TreeNode::create();
-    new_node->setPosition(event_point);
-    auto e = tree_events::TreeNodeCreationEvent(new_node, tree_node_ptr->getScene());
-    tree_node_ptr->_eventDispatcher->dispatchEvent(&e);
-
 }
 
 void TreeNode::selectTreeNode(cocos2d::EventMouse* event, TreeNode* tree_node_ptr) {
@@ -124,10 +113,6 @@ score_type TreeNode::getSellPrice() const {
 void TreeNode::setPhantom() {}
 
 void TreeNode::setReal() {}
-
-tree_interfaces::TreePart* TreeNode::getClone() {
-    return nullptr;
-}
 
 int TreeNode::curr_max_index_ = 0;
 bool TreeNode::isAdding = false;

@@ -26,21 +26,17 @@ public:
 
     void setPhantom();
     void setReal();
-    tree_interfaces::TreePart* getClone();
 
     int getIndex() { return index_;};
     bool isSelected() { return selected;};
     void setSelected() {selected = true; setScale(0.12);};
     void setDeselected() {selected = false; setScale(0.1);};
-
-    const static std::string kSpritePath;
 private:
     void initOptions();
     void addEvents();
 
     static void removeTreeNode(cocos2d::EventMouse*, TreeNode*);
     static void selectTreeNode(cocos2d::EventMouse*, TreeNode*);
-    static void addTreeNode(cocos2d::EventMouse*, TreeNode*);
     static void addForce(cocos2d::EventMouse*, TreeNode*);
     static void rectScale(cocos2d::Rect*, int);
 
@@ -50,6 +46,8 @@ private:
     static bool isAdding;
     static bool isSelecting;
     cocos2d::Vec2 location_;
+
+    const static std::string kSpritePath;
 };
 
 

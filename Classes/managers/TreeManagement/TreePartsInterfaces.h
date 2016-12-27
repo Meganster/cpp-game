@@ -13,9 +13,9 @@ namespace tree_interfaces {
 
     class TreePart: public cocos2d::Sprite, public Scorable {
     public:
-        virtual void setPhantom() = 0;
-
-        virtual void setReal() = 0;
+        virtual void setPhantom() {};
+        virtual void setReal() {};
+        virtual void submit() {};
     };
 
 
@@ -31,7 +31,14 @@ namespace tree_interfaces {
         virtual int getScenePriority() = 0;
         virtual std::vector<TreeNodeInterface*> getNodes() = 0;
         virtual void setNodes(TreeNodeInterface*, TreeNodeInterface*) = 0;
+        virtual cocos2d::PhysicsJointSpring* getSpring() = 0;
         virtual TreeEdgeInterface* getClone(TreeNodeInterface*, TreeNodeInterface*) = 0;
+        virtual void destroy() = 0;
+    };
+
+    class ForceInterface: public TreePart {
+    public:
+        virtual int getScenePriority() { return 1;}
     };
 }
 

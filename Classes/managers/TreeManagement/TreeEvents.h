@@ -5,6 +5,7 @@
 #ifndef MYGAME_TREEEVENTS_H
 #define MYGAME_TREEEVENTS_H
 
+#include <set>
 #include "cocos2d.h"
 #include "TreePartsInterfaces.h"
 #include "TreePartsCreation.h"
@@ -42,17 +43,16 @@ namespace tree_events {
 
     class TreeEdgeDeletionEvent: public event_wrappers::MyEventCustom {
     public:
-        TreeEdgeDeletionEvent(tree_interfaces::TreeEdgeInterface *, cocos2d::Scene *);
+        TreeEdgeDeletionEvent(tree_interfaces::TreeEdgeInterface* tree_edge);
 
         static const std::string kEventName;
 
-        cocos2d::Scene* scene;
-        tree_interfaces::TreeEdgeInterface* edge_to_delete;
+        tree_interfaces::TreeEdgeInterface* tree_edge_;
     };
 
     class TreeNodeCreationEvent: public event_wrappers::MyEventCustom {
     public:
-        TreeNodeCreationEvent(TreeNodeInterface *, cocos2d::Scene *,
+        TreeNodeCreationEvent(TreeNodeInterface *, std::set<TreeNodeInterface*>, cocos2d::Scene *,
                               tree_part_creation::EdgeFactoryInterface *factory = nullptr);
 
         static const std::string kEventName;
@@ -60,6 +60,7 @@ namespace tree_events {
         cocos2d::Scene* scene;
         tree_part_creation::EdgeFactoryInterface* edge_factory;
         TreeNodeInterface* new_node;
+        std::set<TreeNodeInterface*> selected_nodes;
     };
 
     class TreeNodeSelectionEvent: public event_wrappers::MyEventCustom {
@@ -78,6 +79,16 @@ namespace tree_events {
         static const std::string kEventName;
 
         tree_interfaces::TreeNodeInterface* deselected_node;
+    };
+
+    class ForceApplyingEvent: public event_wrappers::MyEventCustom {
+    public:
+        ForceApplyingEvent(TreeNodeInterface *node, tree_interfaces::ForceInterface *force);
+
+        static const std::string kEventName;
+
+        tree_interfaces::ForceInterface* force;
+        tree_interfaces::TreeNodeInterface* node;
     };
 }
 

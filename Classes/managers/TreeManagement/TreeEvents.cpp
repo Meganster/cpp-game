@@ -27,16 +27,15 @@ TreeEdgeCreationEvent::TreeEdgeCreationEvent(TreeNodeInterface *tree_node_1, Tre
 const std::string TreeEdgeCreationEvent::kEventName = "TreeEdgeCreationEvent";
 
 
-TreeNodeCreationEvent::TreeNodeCreationEvent(TreeNodeInterface *new_node, cocos2d::Scene *parent_node,
-                                             EdgeFactoryInterface *edge_factory):
-        MyEventCustom{this}, new_node{new_node}, edge_factory{edge_factory}, scene{parent_node} {};
+TreeNodeCreationEvent::TreeNodeCreationEvent(TreeNodeInterface *new_node, std::set<TreeNodeInterface*> selected_nodes,
+                                             cocos2d::Scene *parent_node, EdgeFactoryInterface *edge_factory):
+        MyEventCustom{this}, new_node{new_node}, selected_nodes{selected_nodes}, edge_factory{edge_factory}, scene{parent_node} {};
 
 const std::string TreeNodeCreationEvent::kEventName = "TreeNodeCreationEvent";
 
 
-TreeEdgeDeletionEvent::TreeEdgeDeletionEvent(TreeEdgeInterface *edge_to_delete,
-                                             cocos2d::Scene *parent_node):
-        MyEventCustom{this}, edge_to_delete{edge_to_delete}, scene{parent_node} {};
+TreeEdgeDeletionEvent::TreeEdgeDeletionEvent(tree_interfaces::TreeEdgeInterface* tree_edge):
+        MyEventCustom{this}, tree_edge_{tree_edge}{};
 
 const std::string TreeEdgeDeletionEvent::kEventName = "TreeEdgeDeletionEvent";
 
@@ -51,4 +50,10 @@ TreeNodeDeselectionEvent::TreeNodeDeselectionEvent(TreeNodeInterface* deselected
         MyEventCustom{this}, deselected_node{deselected_node} {};
 
 const std::string TreeNodeDeselectionEvent::kEventName = "TreeNodeDeselectionEvent";
+
+
+ForceApplyingEvent::ForceApplyingEvent(TreeNodeInterface *node, tree_interfaces::ForceInterface *force):
+        MyEventCustom(this), node{node}, force(force) {};
+
+const std::string ForceApplyingEvent::kEventName = "ForceApplyingEvent";
 

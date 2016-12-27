@@ -39,16 +39,16 @@ class TreeChange {
 }
 
 class TreeManager {
-    manageTreeNodeSelectionEvent(TreeNodeSelectionEvent*)
-    manageTreeNodeDeselectionEvent(TreeNodeDeselectionEvent*)
-    manageTreeNodeCreationEvent(TreeNodeCreationEvent*)
+    manageActiveTreeNodeSelectionEvent(TreeNodeSelectionEvent*)
+    manageActiveTreeNodeDeselectionEvent(TreeNodeDeselectionEvent*)
+    manageControlZoneClickEvent(TreeNodeCreationEvent*)
     manageTreeChangeRevertEvent(TreeChangeRevertEvent*)
     manageTreeChangesSubmitEvent(TreeChangesSubmitEvent*)
 }
 class TreeManagerHolder {
     getActiveManager(): std::shared_ptr<TreeManager>
     getPassiveManager(): std::shared_ptr<TreeManager>
-    switchManagers(): void
+    makeTurn(): void
 }
 
 class ScoreManager {

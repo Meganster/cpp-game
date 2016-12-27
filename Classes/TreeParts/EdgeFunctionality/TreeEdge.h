@@ -10,23 +10,21 @@
 #include <map>
 #include <string>
 #include "./managers/TreeManagement/TreePartsInterfaces.h"
+#include "../../managers/TreeManagement/TreeEvents.h"
 
-struct Cost {
-    score_type costForSold;
-    score_type costForBuying;
-
-    Cost(score_type costSold, score_type costBuying): costForSold{costSold}, costForBuying{costBuying} {}
-};
+#include "iostream"
 
 class TreeEdge : public tree_interfaces::TreeEdgeInterface {
 public:
     TreeEdge() = delete;
 
-    TreeEdge(tree_interfaces::TreeNodeInterface*, tree_interfaces::TreeNodeInterface*);
-    ~TreeEdge();
+    TreeEdge(tree_interfaces::TreeNodeInterface *, tree_interfaces::TreeNodeInterface *, float, float,
+                 float max_force);
 
     int getScenePriority() { return 8; };
 
+    static TreeEdge* create(tree_interfaces::TreeNodeInterface*, tree_interfaces::TreeNodeInterface*,
+                            float, float, float);
     static TreeEdge* create(tree_interfaces::TreeNodeInterface*, tree_interfaces::TreeNodeInterface*);
     static TreeEdge* create();
 
@@ -48,22 +46,39 @@ public:
         return spring_;
     }
 
-
-    static std::string kSpritePath;
+    void destroy();
 
 private:
     void initOptions();
     void addEvents();
+    void update(float) override;
+
+    void removeEdge();
 
     float countAngle();
     float countLength();
     cocos2d::Vec2 countPosition();
 
+    void updateEdgePosition();
+
+    float getSpringLength();
+    float getSpringForce();
+
     tree_interfaces::TreeNodeInterface* node_1_;
     tree_interfaces::TreeNodeInterface* node_2_;
-    float rigidity_;   //parameter from physics
+    float stiffness_;
+    float damping_;
+
+    float init_length_;
+
+    float max_force_;
 
     cocos2d::PhysicsJointSpring* spring_;
+
+    static std::string kSpritePath;
+    static constexpr float default_stiffness = 100;
+    static constexpr float default_damping = 10;
+    static constexpr float default_max_force = 2000;
 };
 
 
