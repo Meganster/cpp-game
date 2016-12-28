@@ -4,4 +4,4 @@
 
 #include "Force.h"
 
-const std::string Force::kSpritePath = "force_arrow.png";
+const std::string Force::kSpritePath = "tree_assets/force_arrow.png";

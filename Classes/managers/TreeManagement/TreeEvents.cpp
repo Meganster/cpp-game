@@ -57,3 +57,12 @@ ForceApplyingEvent::ForceApplyingEvent(TreeNodeInterface *node, tree_interfaces:
 
 const std::string ForceApplyingEvent::kEventName = "ForceApplyingEvent";
 
+
+ScoreChangeEvent::ScoreChangeEvent(int new_score, bool is_active_player_score):
+        MyEventCustom{this}, new_score{new_score}, is_active_player_score{is_active_player_score} {};
+
+const std::string ScoreChangeEvent::kEventName = "ScoreChangeEvent";
+
+
+TurnFinishedEvent::TurnFinishedEvent(): MyEventCustom{this} {}
+const std::string TurnFinishedEvent::kEventName = "TurnFinishedEvent";

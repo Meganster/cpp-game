@@ -4,8 +4,7 @@
 
 #include "TreeScene.h"
 #include "TreeParts/EdgeFunctionality/EdgeFactory.h"
-#include <iostream>
-#include "ui/CocosGUI.h"
+#include "./managers/ScoreManagement/ScoreManagement.h"
 USING_NS_CC;
 
 Scene* TreeScene::createScene() {
@@ -32,6 +31,10 @@ bool TreeScene::init() {
     auto visibleSize = Director::getInstance()->getVisibleSize();
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
 
+    score_management::ScoreManager& score_manager = score_management::ScoreManager::getInstance();
+    score_manager.setPlayer1Score(1000);
+    score_manager.setPlayer2Score(1000);
+
     // add "HelloWorld" splash screen"
     auto sprite = Sprite::create("HelloWorld.png");
 
@@ -45,26 +48,10 @@ bool TreeScene::init() {
 
     int start_length = 50;
 
-    createStartStructure(cocos2d::Vec2(start_point.x - 300, start_point.y), start_length);
-    createStartStructure(cocos2d::Vec2(start_point.x + 300, start_point.y), start_length);
+    createStartStructure(cocos2d::Vec2(start_point.x - 300, start_point.y - 200), start_length);
+    createStartStructure(cocos2d::Vec2(start_point.x + 300, start_point.y - 200), start_length);
 
-
-    auto button_revert = ui::Button::create("Undo.png");
-    button_revert->setPosition(Point(visibleSize.width - 100, visibleSize.height - 100));
-    button_revert->setSwallowTouches(true);
-    button_revert->addClickEventListener([this](Ref* pSender) -> void {
-        auto event = tree_events::RevertLastChangeEvent();
-        this->_eventDispatcher->dispatchEvent(&event); });
-    this->addChild(button_revert, 12);
-
-
-    auto button_submit = ui::Button::create("button_cancel.png");
-    button_submit->setPosition(Point(visibleSize.width - 50, visibleSize.height - 500));
-    button_submit->setSwallowTouches(true);
-    button_submit->addClickEventListener([this](Ref* pSender) -> void {
-        auto event = tree_events::SubmitChangesEvent();
-        this->_eventDispatcher->dispatchEvent(&event); });
-    this->addChild(button_submit, 12);
+    createUI();
 
     return true;
 }
@@ -117,6 +104,14 @@ void TreeScene::createStartStructure(cocos2d::Vec2 center_point, float half_widt
     getPhysicsWorld()->addJoint(edge_6->getSpring());
 }
 
+void TreeScene::createUI() {
+    auto temp = DebugUI::create();
+    temp->setPosition(0, 0);
+    temp->setLeftPlayerScore(score_management::ScoreManager::getInstance().getPlayer1Score());
+    temp->setRightPlayerScore(score_management::ScoreManager::getInstance().getPlayer2Score());
+    addChild(temp, 100);
+}
+
 void TreeScene::addNode(cocos2d::EventMouse* event, cocos2d::Scene* scene_ptr) {
     auto new_node = TreeNode::create();
     new_node->setPosition(event->getLocationInView());
@@ -129,14 +124,4 @@ void TreeScene::addNode(cocos2d::EventMouse* event, cocos2d::Scene* scene_ptr) {
     //Director::getInstance()->getEventDispatcher()->dispatchEvent(&e);
 }
 
-void TreeScene::addEvents() {
-/*
-    auto mouse_listener = cocos2d::EventListenerMouse::create();
-    _eventDispatcher->addEventListenerWithSceneGraphPriority(mouse_listener, this);
-    mouse_listener->onMouseDown = [this] (cocos2d::EventMouse* event) {
-        if (event->getMouseButton() == MOUSE_BUTTON_LEFT) {
-            this->addNode(event, this);
-        };
-    };
-    */
-}
+void TreeScene::addEvents() {}

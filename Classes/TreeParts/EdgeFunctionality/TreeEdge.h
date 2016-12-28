@@ -76,9 +76,9 @@ private:
     cocos2d::PhysicsJointSpring* spring_;
 
     static std::string kSpritePath;
-    static constexpr float default_stiffness = 100;
+    static constexpr float default_stiffness = 1000;
     static constexpr float default_damping = 10;
-    static constexpr float default_max_force = 2000;
+    static constexpr float default_max_force = 10000;
 };
 
 

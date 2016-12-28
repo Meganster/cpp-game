@@ -93,6 +93,9 @@ TreeNode* TreeNode::create() {
         node_ptr->addEvents();
 
         auto body = cocos2d::PhysicsBody::create(1);    // TODO Refactor (just a test)
+        body->setLinearDamping(0.25);
+        //body->setAngularDamping(0);
+
         node_ptr->setPhysicsBody(body);
 
         return node_ptr;
@@ -117,5 +120,5 @@ void TreeNode::setReal() {}
 int TreeNode::curr_max_index_ = 0;
 bool TreeNode::isAdding = false;
 bool TreeNode::isSelecting = false;
-const std::string TreeNode::kSpritePath = "circle_blue.png";
+const std::string TreeNode::kSpritePath = "tree_assets/circle_blue.png";
 

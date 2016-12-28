@@ -6,7 +6,7 @@
 #include <iostream>
 #include <cmath>
 
-std::string TreeEdge::kSpritePath = "wooden_plank.png";
+std::string TreeEdge::kSpritePath = "tree_assets/wooden_plank.png";
 //const std::map<int, Cost> TreeEdge::specificCost; // need to record specificCost!
 
 TreeEdge::TreeEdge(tree_interfaces::TreeNodeInterface *node_1, tree_interfaces::TreeNodeInterface *node_2,
@@ -77,7 +77,7 @@ tree_interfaces::TreeEdgeInterface* TreeEdge::getClone(tree_interfaces::TreeNode
 }
 
 score_type TreeEdge::getBuyPrice() const {
-    return 1;
+    return score_type(0.1 * init_length_);
 }
 
 score_type TreeEdge::getSellPrice() const {

@@ -8,6 +8,8 @@
 #include <vector>
 #include "Scorable.h"
 #include "memory"
+#include "cocos2d.h"
+#include "../../managers/TreeManagement/TreeEvents.h"
 
 namespace score_management {
 
@@ -40,6 +42,8 @@ namespace score_management {
 
         void sell(const std::shared_ptr<Scorable>);
 
+        void sellToPassive(const Scorable*);
+
         bool buy(const Scorable *);
 
         bool buy(const std::shared_ptr<Scorable>);
@@ -53,7 +57,7 @@ namespace score_management {
          *
          * @return returns true if player has enough points to create objects and false otherwise
          */
-        bool hasEnoughMoney(const std::vector<Scorable *> &) const;
+        bool hasEnoughMoney(const std::shared_ptr<Scorable>) const;
 
         bool hasEnoughMoney(const Scorable *) const;
 
@@ -72,8 +76,13 @@ namespace score_management {
 
         void deposit(score_type);
 
+        void depositToPassive(score_type);
+
+        void sendScoreChangeEvent(int new_score, bool is_active_player);
+
         Player active_player;
         score_type* active_score;
+        score_type* passive_score;
         score_type player_1_score;
         score_type player_2_score;
     };

@@ -15,7 +15,7 @@ void TreeChange::submit() {
 }
 
 void TreeChange::revert() {
-    auto score_manager = score_management::ScoreManager::getInstance();
+    score_management::ScoreManager& score_manager = score_management::ScoreManager::getInstance();
 
     for (auto tree_part: tree_parts) {
         score_manager.revert(tree_part);
@@ -78,7 +78,7 @@ void TreeManager::manageTreeEdgeCreationEvent(tree_events::TreeEdgeCreationEvent
 
     edge_factory->setRequest(event->tree_node_1, event->tree_node_2);
 
-    auto score_manager = score_management::ScoreManager::getInstance();
+    score_management::ScoreManager& score_manager = score_management::ScoreManager::getInstance();
 
     if (score_manager.hasEnoughMoney(edge_factory)) {
         auto edge = edge_factory->getEdges()[0];
@@ -99,17 +99,17 @@ void TreeManager::manageTreeEdgeCreationEvent(tree_events::TreeEdgeCreationEvent
 }
 
 void TreeManager::manageTreeEdgeDeletionEvent(tree_events::TreeEdgeDeletionEvent* event) {
-    auto score_manager = score_management::ScoreManager::getInstance();
+    score_management::ScoreManager& score_manager = score_management::ScoreManager::getInstance();
 
     auto edge = event->tree_edge_;
-    score_manager.sell(edge);
+    score_manager.sellToPassive(edge);
 
     edge->destroy();
 }
 
 void TreeManager::manageTreeNodeCreationEvent(tree_events::TreeNodeCreationEvent* event) {
     auto edge_factory = event->edge_factory;
-    auto score_manager = score_management::ScoreManager::getInstance();
+    score_management::ScoreManager& score_manager = score_management::ScoreManager::getInstance();
     auto scene = event->scene;
 
     TreeNodeInterface* new_node = event->new_node;
@@ -124,6 +124,8 @@ void TreeManager::manageTreeNodeCreationEvent(tree_events::TreeNodeCreationEvent
     }
 
     if (score_manager.hasEnoughMoney(edge_factory)) {
+        score_manager.buy(edge_factory);
+
         auto tree_change = TreeChange();
         tree_change.addTreePart(new_node);
 
@@ -157,11 +159,13 @@ void TreeManager::manageTreeNodeCreationEvent(tree_events::TreeNodeCreationEvent
 }
 
 void TreeManager::manageForceApplyingEvent(tree_events::ForceApplyingEvent *event) {
-    auto score_manager = score_management::ScoreManager::getInstance();
+    score_management::ScoreManager& score_manager = score_management::ScoreManager::getInstance();
     auto scene = event->node->getScene();
     auto force = event->force;
 
     if (score_manager.hasEnoughMoney(force)) {
+        score_manager.buy(force);
+
         auto tree_change = TreeChange();
         tree_change.addTreePart(force);
 
@@ -231,6 +235,11 @@ void TreeManagerHolder::makeTurn() {
 
     control_zone_1->switchState();
     control_zone_2->switchState();
+
+    auto e = tree_events::TurnFinishedEvent();
+    cocos2d::Director::getInstance()->getEventDispatcher()->dispatchEvent(&e);
+
+    score_management::ScoreManager::getInstance().switchActivePlayer();
 }
 
 std::shared_ptr<TreeManager> TreeManagerHolder::getFirstManager() {

@@ -90,6 +90,22 @@ namespace tree_events {
         tree_interfaces::ForceInterface* force;
         tree_interfaces::TreeNodeInterface* node;
     };
+
+    class ScoreChangeEvent: public event_wrappers::MyEventCustom {
+    public:
+        ScoreChangeEvent(int new_score, bool is_active_player_score);
+
+        static const std::string kEventName;
+
+        int new_score;
+        bool is_active_player_score;
+    };
+
+    class TurnFinishedEvent: public event_wrappers::MyEventCustom {
+    public:
+        TurnFinishedEvent();
+        static const std::string kEventName;
+    };
 }
 
 #endif //MYGAME_TREEEVENTS_H

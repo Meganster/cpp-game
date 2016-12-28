@@ -30,7 +30,7 @@ namespace tree_part_creation {
         /**
          * This method returns the clone of sample edge
          */
-        virtual std::vector<TreeEdgeInterface*> getEdges() = 0;
+        virtual std::vector<TreeEdgeInterface*> getEdges() const = 0;
 
         /**
          * This method flushes all inner request structures

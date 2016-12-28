@@ -37,7 +37,11 @@ void EdgeFactory::setRequest(TreeNodeInterface* end_node, std::set<TreeNodeInter
 }
 
 score_type EdgeFactory::getBuyPrice() const {
-    return 0;
+    score_type result = 0;
+    for (auto edge: getEdges()) {
+        result += edge->getBuyPrice();
+    }
+    return result;
 }
 
 score_type EdgeFactory::getSellPrice() const {
@@ -49,7 +53,7 @@ void EdgeFactory::closeRequest() {
     end_nodes_.clear();
 }
 
-std::vector<TreeEdgeInterface*> EdgeFactory::getEdges() {
+std::vector<TreeEdgeInterface*> EdgeFactory::getEdges() const {
     auto edges = std::vector<TreeEdgeInterface*>();
 
     for (auto start_node: start_nodes_) {

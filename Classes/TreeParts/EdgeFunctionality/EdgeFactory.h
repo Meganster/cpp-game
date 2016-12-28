@@ -26,7 +26,7 @@ public:
 
     void setRequest(TreeNodeInterface *, std::set<TreeNodeInterface*> &);
 
-    std::vector<TreeEdgeInterface*> getEdges();
+    std::vector<TreeEdgeInterface*> getEdges() const ;
 
     void closeRequest();
 
