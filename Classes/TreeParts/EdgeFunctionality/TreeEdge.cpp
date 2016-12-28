@@ -126,10 +126,14 @@ void TreeEdge::removeEdge() {
 }
 
 void TreeEdge::update(float) {
+    auto scene_box = cocos2d::Director::getInstance()->getRunningScene()->getBoundingBox();
+
     if (node_1_ != nullptr && node_2_ != nullptr) {
         updateEdgePosition();
 
         if (getSpringForce() > max_force_) {
+            removeEdge();
+        } else if (!scene_box.containsPoint(node_1_->getPosition()) || !scene_box.containsPoint(node_2_->getPosition())) {
             removeEdge();
         }
     }

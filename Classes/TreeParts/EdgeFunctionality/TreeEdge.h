@@ -48,6 +48,8 @@ public:
 
     void destroy();
 
+    void submit() {getScene()->getPhysicsWorld()->addJoint(getSpring());}
+
 private:
     void initOptions();
     void addEvents();

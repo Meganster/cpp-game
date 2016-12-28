@@ -31,9 +31,11 @@ public:
     bool isSelected() { return selected;};
     void setSelected() {selected = true; setScale(0.12);};
     void setDeselected() {selected = false; setScale(0.1);};
+    void submit() {getPhysicsBody()->setDynamic(true);};
 private:
     void initOptions();
     void addEvents();
+    void update(float);
 
     static void removeTreeNode(cocos2d::EventMouse*, TreeNode*);
     static void selectTreeNode(cocos2d::EventMouse*, TreeNode*);

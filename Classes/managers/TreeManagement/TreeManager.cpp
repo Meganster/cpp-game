@@ -128,6 +128,7 @@ void TreeManager::manageTreeNodeCreationEvent(tree_events::TreeNodeCreationEvent
 
         auto tree_change = TreeChange();
         tree_change.addTreePart(new_node);
+        new_node->setPhantom();
 
         scene->addChild(new_node, new_node->getScenePriority());
 
@@ -140,10 +141,10 @@ void TreeManager::manageTreeNodeCreationEvent(tree_events::TreeNodeCreationEvent
             auto start_node = *node_iter;
 
             edge->setNodes(start_node, new_node);
+            edge->setPhantom();
 
             tree_change.addTreePart(edge);
             scene->addChild(edge, edge->getScenePriority());
-            scene->getPhysicsWorld()->addJoint(edge->getSpring());
         }
 
         edge_factory->closeRequest();

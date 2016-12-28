@@ -84,6 +84,12 @@ void TreeNode::addEvents() {
     _eventDispatcher->addEventListenerWithSceneGraphPriority(mouse_listener, this);
 };
 
+void TreeNode::update(float) {
+    if (getPhysicsBody()->getJoints().size() == 0) {
+        removeFromParentAndCleanup(true);
+    }
+}
+
 TreeNode* TreeNode::create() {
     TreeNode* node_ptr = new TreeNode();
 
@@ -113,7 +119,9 @@ score_type TreeNode::getSellPrice() const {
     return 0;
 }
 
-void TreeNode::setPhantom() {}
+void TreeNode::setPhantom() {
+    getPhysicsBody()->setDynamic(false);
+}
 
 void TreeNode::setReal() {}
 
